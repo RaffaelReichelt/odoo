@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- ========================================================= -->
+    <!-- OrbitPDF Paperformat System                               -->
+    <!-- ========================================================= -->
+
+    <!-- 1. A4 Standard -->
+    <record id="paperformat_a4_standard" model="report.paperformat">
+        <field name="name">OrbitPDF - A4</field>
+        <field name="format">A4</field>
+        <field name="margin_top">22</field>
+        <field name="margin_bottom">22</field>
+        <field name="margin_left">18</field>
+        <field name="margin_right">18</field>
+        <field name="orientation">Portrait</field>
+    </record>
+
+    <!-- 2. A4 Narrow Text -->
+    <record id="paperformat_a4_narrow_text" model="report.paperformat">
+        <field name="name">OrbitPDF - A4 Narrow</field>
+        <field name="format">A4</field>
+        <field name="margin_top">12.7</field>
+        <field name="margin_bottom">12.7</field>
+        <field name="margin_left">12.7</field>
+        <field name="margin_right">12.7</field>
+        <field name="orientation">Portrait</field>
+    </record>
+
+    <!-- 3. A4 Logistics -->
+    <record id="paperformat_a4_logistics" model="report.paperformat">
+        <field name="name">OrbitPDF - A4 Logistics</field>
+        <field name="format">A4</field>
+        <field name="margin_top">10</field>
+        <field name="margin_bottom">15</field>
+        <field name="margin_left">15</field>
+        <field name="margin_right">15</field>
+        <field name="orientation">Portrait</field>
+    </record>
+
+    <!-- 4. A4 Landscape -->
+    <record id="paperformat_a4_landscape" model="report.paperformat">
+        <field name="name">OrbitPDF - A4 Landscape</field>
+        <field name="format">A4</field>
+        <field name="margin_top">15</field>
+        <field name="margin_bottom">15</field>
+        <field name="margin_left">15</field>
+        <field name="margin_right">15</field>
+        <field name="orientation">Landscape</field>
+    </record>
+
+    <!-- 5. A5 Standard -->
+    <record id="paperformat_a5_standard" model="report.paperformat">
+        <field name="name">OrbitPDF - A5</field>
+        <field name="format">A5</field>
+        <field name="margin_top">12</field>
+        <field name="margin_bottom">12</field>
+        <field name="margin_left">12</field>
+        <field name="margin_right">12</field>
+        <field name="orientation">Portrait</field>
+    </record>
+
+    <!-- 6. US Letter -->
+    <record id="paperformat_us_letter" model="report.paperformat">
+        <field name="name">OrbitPDF - US Letter</field>
+        <field name="format">Letter</field>
+        <field name="margin_top">25.4</field>
+        <field name="margin_bottom">25.4</field>
+        <field name="margin_left">18</field>
+        <field name="margin_right">18</field>
+        <field name="orientation">Portrait</field>
+    </record>
+
+    <!-- 7. A3 Landscape -->
+    <record id="paperformat_a3_landscape" model="report.paperformat">
+        <field name="name">OrbitPDF - A3 Landscape</field>
+        <field name="format">A3</field>
+        <field name="margin_top">20</field>
+        <field name="margin_bottom">20</field>
+        <field name="margin_left">20</field>
+        <field name="margin_right">20</field>
+        <field name="orientation">Landscape</field>
+    </record>
+
+    <!-- 8. POS 80mm Receipt -->
+    <record id="paperformat_pos_80mm" model="report.paperformat">
+        <field name="name">OrbitPDF - POS 80mm Receipt</field>
+        <field name="format">custom</field>
+        <field name="page_width">80</field>
+        <field name="page_height">2000</field>
+        <field name="margin_top">0</field>
+        <field name="margin_bottom">0</field>
+        <field name="margin_left">0</field>
+        <field name="margin_right">0</field>
+        <field name="orientation">Portrait</field>
+    </record>
+
+    <!-- 9. Shipping Label 100x150 -->
+    <record id="paperformat_label_100x150" model="report.paperformat">
+        <field name="name">OrbitPDF - Shipping Label 100x150</field>
+        <field name="format">custom</field>
+        <field name="page_width">100</field>
+        <field name="page_height">150</field>
+        <field name="margin_top">2</field>
+        <field name="margin_bottom">2</field>
+        <field name="margin_left">2</field>
+        <field name="margin_right">2</field>
+        <field name="orientation">Portrait</field>
+    </record>
+
+</odoo>

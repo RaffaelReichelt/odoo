@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Override the default Odoo footer. We intentionally omit t-ignore="true"
+         so the database-stored content does NOT override our template. -->
+    <template id="pm_footer" inherit_id="website.footer_custom" name="PrivateMind Footer">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" t-if="not no_footer" class="pm-footer">
+                <div class="container py-5">
+                    <div class="row g-5">
+
+                        <!-- Col 1: Brand -->
+                        <div class="col-lg-4">
+                            <a href="/" class="d-inline-block mb-3">
+                                <img src="/privatemind_website/static/src/img/logo.svg"
+                                     alt="PrivateMind" height="36" style="filter:brightness(0) invert(1);"/>
+                            </a>
+                            <p class="pm-footer-tagline">
+                                Enterprise-grade AI for European SMEs.<br/>
+                                Local. Private. Fully managed.
+                            </p>
+                            <div class="pm-footer-badges">
+                                <span class="pm-footer-badge">🇩🇪 Made in Germany</span>
+                                <span class="pm-footer-badge">✅ GDPR-compliant</span>
+                                <span class="pm-footer-badge">⚡ NVIDIA GB10</span>
+                            </div>
+                        </div>
+
+                        <!-- Col 2: Navigation -->
+                        <div class="col-lg-2 col-md-4">
+                            <h6 class="pm-footer-heading">Navigation</h6>
+                            <ul class="pm-footer-links">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/products">Products &amp; Pricing</a></li>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Col 3: Products -->
+                        <div class="col-lg-2 col-md-4">
+                            <h6 class="pm-footer-heading">Appliances</h6>
+                            <ul class="pm-footer-links">
+                                <li><a href="/products">PrivateMind Standard</a></li>
+                                <li><a href="/products">PrivateMind Professional</a></li>
+                                <li><a href="/products">PrivateMind Premium</a></li>
+                                <li><a href="/products">PrivateMind Enterprise</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Col 4: Contact -->
+                        <div class="col-lg-4 col-md-4">
+                            <h6 class="pm-footer-heading">Contact</h6>
+                            <ul class="pm-footer-links">
+                                <li>
+                                    <span class="pm-footer-icon">📧</span>
+                                    <a href="mailto:info@privatemind.eu">info@privatemind.eu</a>
+                                </li>
+                                <li>
+                                    <span class="pm-footer-icon">📞</span>
+                                    <a href="tel:+4935148271891">+49 351 48271891</a>
+                                </li>
+                                <li>
+                                    <span class="pm-footer-icon">📍</span>
+                                    Kurparkstraße 6 · 01324 Dresden · Germany
+                                </li>
+                                <li>
+                                    <span class="pm-footer-icon">🌐</span>
+                                    <a href="https://privatemind.eu">privatemind.eu</a>
+                                </li>
+                            </ul>
+                            <a href="/contact" class="btn btn-sm mt-3" style="background:var(--pm-gradient);color:#fff;border:none;padding:8px 20px;border-radius:6px;font-weight:600;">
+                                Book a Free Consultation →
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Footer bottom bar -->
+                <div class="pm-footer-bottom">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center text-md-start">
+                                <span class="pm-footer-copy">
+                                    © 2026 PrivateMind GmbH (in Gründung) · Dresden, Germany
+                                </span>
+                            </div>
+                            <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                                <span class="pm-footer-legal">
+                                    <a href="/privacy">Privacy Policy</a>
+                                    <span class="mx-2">·</span>
+                                    <a href="/impressum">Impressum</a>
+                                </span>
+                                <span class="ms-3">
+                                    <t t-call="website.placeholder_header_language_selector"/>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Hide the default Odoo "Powered by" copyright bar since our footer has its own -->
+    <template id="pm_footer_copyright" inherit_id="website.layout" name="PrivateMind Copyright">
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="replace">
+            <div/>
+        </xpath>
+    </template>
+
+</odoo>

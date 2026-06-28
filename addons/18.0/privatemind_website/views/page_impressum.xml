@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <template id="page_impressum" name="PrivateMind Impressum">
+        <t t-call="website.layout">
+            <div id="wrap">
+
+                <!-- Hero -->
+                <section style="background:linear-gradient(135deg,#0a0f1e 0%,#0d1b3e 50%,#0a0f1e 100%);padding:60px 0 48px;border-bottom:1px solid rgba(255,255,255,0.08);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <p style="color:#6c9fff;font-size:0.82rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Legal Notice</p>
+                                <h1 style="color:#fff;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;line-height:1.2;margin-bottom:16px;">
+                                    Impressum
+                                </h1>
+                                <p style="color:rgba(255,255,255,0.6);font-size:1rem;margin:0;">
+                                    Legal notice pursuant to § 5 TMG
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Content -->
+                <section style="padding:64px 0 80px;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+
+                                <h2 style="font-size:1.25rem;font-weight:700;color:#0a0f1e;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;">Information pursuant to § 5 TMG</h2>
+
+                                <address style="font-style:normal;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:24px;margin-bottom:32px;font-size:1rem;line-height:1.9;">
+                                    <strong>Raffael Reichelt</strong><br/>
+                                    Kurparkstraße 6<br/>
+                                    01324 Dresden<br/>
+                                    <br/>
+                                    Email: <a href="mailto:info@privatemind.eu">info@privatemind.eu</a><br/>
+                                    Phone: <a href="tel:+4935148271891">+49 351 48271891</a>
+                                </address>
+
+                                <div class="p-4 rounded" style="background:#f0f7ff;border-left:4px solid #0052cc;">
+                                    <p style="margin:0;color:#1a3a6b;font-size:0.95rem;line-height:1.7;">
+                                        This website is operated in preparation for the formation of PrivateMind GmbH. Until registration in the commercial register, Raffael Reichelt is the personally responsible operator within the meaning of § 5 TMG.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <record id="page_impressum_record" model="website.page">
+        <field name="name">Impressum</field>
+        <field name="url">/impressum</field>
+        <field name="view_id" ref="page_impressum"/>
+        <field name="website_published">True</field>
+    </record>
+
+</odoo>

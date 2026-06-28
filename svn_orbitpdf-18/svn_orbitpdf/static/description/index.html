@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>OrbitPDF Document Engine</title>
+    <meta name="description" content="The next-generation HTML-to-PDF engine for Odoo, built on PlutoPrint.">
+    <meta property="og:title" content="PDF Engine for Odoo 18">
+    <meta property="og:description" content="A faster, clearer, fully customizable PDF engine for professionals.">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+    <main class="rounded border px-4 mt-2" style="color:#364050; font-size:16px; font-family:'Inter'; font-weight: 400;">
+        <div class="d-flex justify-content-between align-items-center p-2 py-md-3 pb-md-4 mb-0">
+            <div>
+                <span class="d-flex">
+                    <img src="//apps.odoocdn.com/apps/assets/19.0/omux_shared_lib/svelt.png" width="80px" height="80px" style="margin-left:-18px">
+                </span>
+            </div>
+            <div>
+                <a href="mailto:odoo@sveltware.com?subject=OrbitPDF" class="d-flex align-items-center gap-2" style="background-color:#3769b9;border-radius:8px;padding: 10px 18px;color:#fff;text-decoration:none">
+                    <i class="fa fa-lg fa-envelope-o"></i>
+                    <span class="ms-1">Talk to the author</span>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gx-lg-5">
+                <div class="col-12 pb-5">
+                    <div class="mx-auto text-center mb-4">
+                        <div class="lh-1 fw-bold" style="color:#3769b9;font-size: 5rem;">OrbitPDF™</div>
+                        <span style="color:#7891ac;font-size: 41px;">Document Engine</span>
+                    </div>
+
+                    <p class="mx-6 px-6 text-center" style="color:#364050; font-size:18px;">
+                        A serious, long-term foundation for document rendering in Odoo, bringing next-generation PDF engines into real-world deployments without disrupting existing QWeb templates.
+                    </p>
+
+                    <div class="d-flex flex-wrap px-4 pt-4 pt-md-5 justify-content-center">
+                        <div class="col-12 col-sm-6 col-lg-4 text-center px-3">
+                            <img src="img/statistics-report.png" style="width:60px; height:60px; object-fit:contain">
+                            <p class="pt-3 mb-2 mb-sm-3" style="font-weight:700; font-size:21px">
+                                A new rendering path
+                            </p>
+                            <p style="color:#364050; font-size:15px">
+                                Enable a modern renderer without touching legacy reports.
+                                OrbitPDF runs alongside wkhtmltopdf so teams can adopt it step by step.
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 text-center px-3 mt-4 mt-sm-0">
+                            <img src="img/referral.png" style="width:60px; height:60px; object-fit:contain">
+                            <p class="pt-3 mb-2 mb-sm-3" style="font-weight:700; font-size:21px">
+                                Multi-renderer flexibility
+                            </p>
+                            <p style="color:#364050; font-size:15px">
+                                OrbitPDF is not fixed to one engine. It works with PlutoPrint today
+                                and can extend to additional renderers with minimal changes.
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 text-center px-3 pt-4 pt-lg-0">
+                            <img src="img/lightbulb.png" style="width:60px; height:60px; object-fit:contain">
+                            <p class="pt-3 mb-2 mb-sm-3" style="font-weight:700; font-size:21px">
+                                Rendering efficiency
+                            </p>
+                            <p style="color:#364050; font-size:15px">
+                                OrbitPDF improves rendering efficiency across real Odoo workloads.
+                                Reports complete faster, and systems maintain stable performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-lg-5">
+                <div class="col-12 py-5 px-lg-6 border-top border-bottom" style="background-color:#f2f5f8">
+                    <div class="position-relative">
+                        <div class="inner-heading">
+                            <p class="fw-bolder mb-3" style="font-size:1.5rem">The Forces Behind OrbitPDF</p>
+                            <span style="height:1.5px; display:block; background-color:#F9B21D; width:70px; border-radius:6px" class="mb-4"></span>
+                        </div>
+                        <ul class="p-0 m-0">
+                            <li class="d-flex gap-3" style="color:#364050; padding-bottom:8px">
+                                <span style="width:7px;height:7px;border-radius:2px;background-color:#3769b9;" class="align-self-center me-1"></span>
+                                <span>Developers constrained by HTML written for wkhtmltopdf instead of following modern and consistent web standards.</span>
+                            </li>
+                            <li class="d-flex gap-3" style="color:#364050; padding-bottom:8px">
+                                <span style="width:7px;height:7px;border-radius:2px;background-color:#3769b9;" class="align-self-center me-1"></span>
+                                <span>Teams losing time on report layouts because rendering behavior requires repeated adjustments to achieve stable results.</span>
+                            </li>
+                            <li class="d-flex gap-3" style="color:#364050; padding-bottom:8px">
+                                <span style="width:7px;height:7px;border-radius:2px;background-color:#3769b9;" class="align-self-center me-1"></span>
+                                <span>Businesses impacted by slow PDF generation that increases infrastructure usage and operational cost during heavy workloads.</span>
+                            </li>
+                            <li class="d-flex gap-3" style="color:#364050; padding-bottom:8px">
+                                <span style="width:7px;height:7px;border-radius:2px;background-color:#3769b9;" class="align-self-center me-1"></span>
+                                <span>Teams preparing for newer rendering engines and requiring a gradual adoption path that avoids disrupting current deployments.</span>
+                            </li>
+                            <li class="d-flex gap-3" style="color:#364050; padding-bottom:8px">
+                                <span style="width:7px;height:7px;border-radius:2px;background-color:#3769b9;" class="align-self-center me-1"></span>
+                                <span>Organizations concerned about long-term stability as wkhtmltopdf becomes outdated and increasingly difficult to maintain.</span>
+                            </li>
+                            <li class="d-flex gap-3" style="color:#364050; padding-bottom:8px">
+                                <span style="width:7px;height:7px;border-radius:2px;background-color:#3769b9;" class="align-self-center me-1"></span>
+                                <span>Implementers wanting a modern renderer that can be enabled per report without touching existing QWeb templates.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-lg-5">
+                <div class="col-12 py-5 px-lg-6">
+                    <div class="position-relative">
+                        <div class="inner-heading">
+                            <p class="fw-bolder mb-3" style="font-size:1.5rem">PlutoPrint, Where the Path Begins</p>
+                            <span style="height:1.5px;display:block;background-color: #089949;width:77px;border-radius:6px" class="mb-4"></span>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-12 ">
+                                <div class="p-4 rounded-1 border bg-100">
+                                    <p class="mb-0" style="line-height:1.6;">
+                                        PlutoPrint represents a kind of engineering that is both rare and necessary today.
+                                        It does not attempt to behave like a browser, nor does it inherit assumptions carried over
+                                        from screen-oriented rendering engines.
+                                        Its premise is straightforward:
+                                        <strong>a document renderer should be designed around documents</strong>,
+                                        not adapted from systems built for interactive layouts.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="p-4 rounded-1" style="border:1px solid #d4d8e4;background-color:#f6edce32;">
+                                    <p class="mb-0" style="line-height:1.6;">
+                                        At its center is a clean document model, where HTML, CSS, page size, margins and metadata belong
+                                        together with clarity. PlutoPrint follows the path modern paged media expects:
+                                        <br><strong class="font-monospace">HTML &gt; CSS &gt; Layout &gt; PDF</strong>.
+                                        The process is purpose-built for documents, rather than derived from browser behavior
+                                        or legacy WebKit implementations.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="p-4 rounded-1" style="border:1px solid #d4d8e4;background-color:#f9e3d532;">
+                                    <p class="mb-0" style="line-height:1.6;">
+                                        The architecture is intentionally constrained:
+                                        <strong>compact enough to reason about, modern enough to remain relevant</strong>.<br>
+                                        There is no accumulated complexity from past constraints,
+                                        no layers added to compensate for architectural mismatches.
+                                        PlutoPrint evolves through a lightweight structure that preserves coherence
+                                        as the system grows.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 ">
+                                <div class="p-4 rounded-1 border bg-100">
+                                    <p class="mb-0" style="line-height:1.6;">
+                                        We chose PlutoPrint not because it is trending or widely adopted, but because in our evaluation it is
+                                        <strong>coherent</strong>.
+                                        The behavior of the engine aligns closely with its intended role.
+                                        <strong>Deterministic layout, reliable page boundaries, and stable typography</strong>
+                                        are treated as baseline requirements for the business documents Odoo produces,
+                                        not as optional refinements.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="color:#364050; font-size:17px" class="mt-4 mb-0">
+                            <strong>Clarity in design leads to clarity in output.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 py-5 px-lg-6 border-top border-bottom" style="background-color:#f2f5f8">
+                    <div class="position-relative">
+                        <div class="inner-heading">
+                            <p class="fw-bolder mb-3" style="font-size:1.5rem">The Engine-Agnostic Layer</p>
+                            <span style="height:1.5px; display:block; background-color:#F9B21D; width:70px; border-radius:6px" class="mb-4"></span>
+                        </div>
+                    </div>
+                    <div class="mb-4" style="color:#364050; font-size:16px;">
+                        <p class="mb-2">
+                            OrbitPDF is not a renderer. It is the layer that stands between Odoo documents and the engines that
+                            transform them into PDF. PlutoPrint is the first engine connected to that layer, but it is not the limit
+                            of what the layer is designed to support.
+                        </p>
+                    </div>
+                    <div class="mb-4" style="color:#364050; font-size:16px;">
+                        <p class="mb-2">
+                            The ecosystem is moving. wkhtmltopdf is aging. Browser-based engines change rapidly. Tools like Paper
+                            Muncher introduce new directions. In this environment, what businesses need is not another fixed
+                            dependency. They need
+                            <strong>a stable layer where engines can evolve without forcing documents to evolve with them</strong>.
+                        </p>
+                    </div>
+                    <div class="mb-4" style="color:#364050; font-size:16px;">
+                        <div class="d-flex gap-3 mb-2">
+                            <span style="width:7px;height:7px;border-radius:2px;background-color:#3769b9;margin-top:8px;"></span>
+                            <div>
+                                Developers gain a predictable integration point for new renderers without modifying existing
+                                QWeb templates.
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 mb-2">
+                            <span style="width:7px;height:7px;border-radius:2px;background-color:#3769b9;margin-top:8px;"></span>
+                            <div>
+                                Implementers gain a gradual migration path. Reports can transition engine by engine instead of
+                                through a disruptive rewriting effort.
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <span style="width:7px;height:7px;border-radius:2px;background-color:#3769b9;margin-top:8px;"></span>
+                            <div>
+                                Businesses gain continuity because documents remain stable while the rendering foundation improves.
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color:#364050; font-size:17px;" class="mt-4 mb-0">
+                        <strong>PlutoPrint is the first engine on this path. OrbitPDF is the layer that keeps the path open.</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row gx-lg-5">
+                <div class="col-12 pt-5 px-lg-6">
+                    <div class="position-relative">
+                        <div class="inner-heading">
+                            <p class="fw-bolder mb-3" style="font-size:1.5rem">Open Architecture, Solid Foundation</p>
+                            <span style="height:1.5px;display:block;background-color: #F9B21D;width:77px;border-radius:6px" class="mb-4"></span>
+                        </div>
+                        <div>
+                            <p class="mb-3" style="line-height:1.6;">
+                                OrbitPDF is built on an open architecture.
+                                The structural rules that govern document layout, pagination,
+                                and rendering are explicit, inspectable, and stable.
+                                This foundation exists to ensure correctness, predictability,
+                                and long-term viability across engines and systems.
+                            </p>
+
+                            <p class="mb-3" style="line-height:1.6;">
+                                Above this foundation, higher-level design and workflow concerns
+                                are addressed without altering the underlying structure.
+                                Authoring, preview, and operational tooling evolve independently,
+                                allowing the core architecture to remain consistent over time.
+                            </p>
+
+                            <p class="mb-0" style="line-height:1.6;">
+                                The separation is deliberate.
+                                Architecture provides stability.
+                                Everything else is built on top of it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-4 pb-6 px-lg-6">
+                    <div class="row p-4 mx-1 mt-2 rounded border bg-100">
+                        <div class="col-lg-6 text-center d-flex flex-column align-items-center pb-5 pb-lg-0 border-end">
+                            <div class="image-icon rounded-circle" style="width: 84px;height: 84px;padding: 26px;background-color: #edf1f7;margin-bottom: 10px;">
+                                <img src="img/magnet.png" class="w-100 h-100" style="object-fit:contain">
+                            </div>
+                            <p style="color:#364050; font-size:20px" class="m-0">Discover more solutions:
+                                <a href="https://apps.odoo.com/apps/themes/browse?author=Sveltware%20Solutions" target="_blank" class="text-break" style="color:#017e84">themes</a>
+                                ‣
+                                <a href="https://apps.odoo.com/apps/modules/browse?author=Sveltware%20Solutions" target="_blank" class="text-break" style="color:#017e84">modules</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-6 text-center d-flex flex-column align-items-center">
+                            <div class="image-icon rounded-circle" style="width: 84px;height: 84px;padding: 26px;background-color: #edf1f7;margin-bottom: 10px;">
+                                <img src="img/prism.png" class="w-100 h-100" style="object-fit:contain">
+                            </div>
+                            <p style="color:#364050; font-size:20px" class="m-0">Support PlutoPrint:
+                                <span class="text-break" style="color:#3769b9">github.com/sponsors/plutoprint</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-lg-5">
+                <div class="col-12 px-lg-6" id="orbitpdf-setup">
+                    <div class="position-relative">
+                        <div class="inner-heading">
+                            <p class="fw-bolder mb-3" style="font-size:1.5rem;">How OrbitPDF Works in Odoo</p>
+                            <span style="height:1.5px;display:block;background-color: #089949;width:77px;border-radius:6px" class="mb-4"></span>
+                        </div>
+
+                        <div class="border rounded d-flex flex-column p-4 bg-100" style="line-height:1.7;">
+                            <p>
+                                <strong>1. Install OrbitPDF</strong><br>
+                                Installing OrbitPDF introduces an additional rendering option without altering Odoo's default behavior.
+                                wkhtmltopdf remains the default engine, and all existing reports continue to render exactly as before
+                                until an alternative engine is explicitly selected.
+                            </p>
+                            <p class="mb-1">
+                                <strong>2. Choose the rendering engine per report</strong><br>
+                                OrbitPDF enables per-report rendering engine selection without altering report definitions.
+                                Paper format settings, page geometry, and layout constraints are preserved.
+                                Existing templates remain unchanged and continue to render using their original structure.
+                            </p>
+                            <p style="font-size:14px; line-height:1.6; color:#4b5563;">
+                                Compatible with wkhtmltopdf-style templates by design. In certain scenarios, paged-media CSS may be required to address integration edge cases.
+                            </p>
+                            <p>
+                                <strong>3. Render, compare, and refine</strong><br>
+                                The same report can be rendered using different engines and compared side by side.
+                                Templates written with document-oriented HTML typically retain consistent structure and page boundaries.
+                                When differences appear, they highlight legacy-dependent areas that can be refined
+                                to improve long-term consistency and maintainability.
+                            </p>
+                            <div class="media_iframe_video col-lg-12 mt-4" data-oe-expression="//www.youtube.com/embed/IdbNlllCSAk?autoplay=1&amp;rel=0">
+                                <div class="css_editable_mode_display" />
+                                <div class="media_iframe_video_size" contenteditable="false" />
+                                <iframe src="//www.youtube.com/embed/IdbNlllCSAk?autoplay=1&amp;rel=0" frameborder="0" contenteditable="false"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-lg-5">
+                <div class="col-12 py-5 px-lg-6">
+                    <div class="inner-heading">
+                        <p class="fw-bolder mb-3" style="font-size:1.5rem">Frequently Asked Questions</p>
+                        <span style="height:1.5px;display:block;background-color: #F9B21D;width:77px;border-radius:6px;"></span>
+                    </div>
+                    <div class="accordion-wrappper">
+                        <div class="accordion accordion-flush" id="accordionAppIndex">
+                            <div class="accordion-item" style="background-color:transparent">
+                                <p class="accordion-header" id="freeSupHead">
+                                    <a href="#freeSupport" class="accordion-button text-decoration-none px-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#freeSupport" aria-expanded="true" aria-controls="freeSupHead"
+                                        style="background-color:transparent; font-weight:600; font-size:18px; color:#364050">
+                                        What support is included with this module?
+                                    </a>
+                                </p>
+                                <div id="freeSupport" class="accordion-collapse collapse show" aria-labelledby="freeSupHead" data-bs-parent="#accordionAppIndex">
+                                    <div class="accordion-body pt-0 px-0">
+                                        <p class="m-0">
+                                            You are free to use, test, and deploy OrbitPDF in real environments.
+                                            <strong>If you modify or redistribute it, you must comply with the terms of the Mozilla Public License 2.0.</strong><br/>
+                                            Support is provided for issues that originate from OrbitPDF itself, including bug reports and reproducible defects in the core behavior of the module.
+                                            Customization, project-specific implementation, template refactoring, or integration work are not included in this scope.<br/>
+                                            For specialized integrations, architectural guidance, or custom requirements, please work with a professional Odoo partner or contact us directly by email.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" style="background-color:transparent">
+                                <p class="accordion-header" id="orbitpdfReplaceHead">
+                                    <a href="#orbitpdfReplace" class="accordion-button text-decoration-none px-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#orbitpdfReplace" aria-expanded="true" aria-controls="orbitpdfReplaceHead"
+                                        style="background-color:transparent; font-weight:600; font-size:18px; color:#364050">
+                                        Does OrbitPDF replace Odoo's PDF report pipeline?
+                                    </a>
+                                </p>
+                                <div id="orbitpdfReplace" class="accordion-collapse collapse" aria-labelledby="orbitpdfReplaceHead" data-bs-parent="#accordionAppIndex">
+                                    <div class="accordion-body pt-0 px-0">
+                                        <p>
+                                            No. OrbitPDF does not replace Odoo's PDF report pipeline, nor does it attempt to enforce a single
+                                            rendering model. OrbitPDF introduces a parallel rendering path that operates alongside Odoo's existing pipeline.
+                                            wkhtmltopdf remains available and unchanged, and reports can opt into an alternative rendering engine on a per-report basis
+                                        </p>
+                                        <p>
+                                            More importantly, OrbitPDF is not a PDF renderer.
+                                            It is a foundation layer that sits between Odoo documents and the engines that transform them into PDF.
+                                            Its role is to make rendering behavior explicit and controlled, so that engines can evolve without
+                                            forcing documents or workflows to evolve with them.
+                                        </p>
+                                        <p>
+                                            In this sense, OrbitPDF exists to decouple document authoring from rendering technology.
+                                            It does not replace Odoo's pipeline — it clarifies and extends it.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" style="background-color:transparent">
+                                <p class="accordion-header" id="rewriteTempHead">
+                                    <a href="#rewriteTemp" class="accordion-button collapsed text-decoration-none px-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#rewriteTemp" aria-expanded="false" aria-controls="rewriteTempHead"
+                                        style="background-color:transparent; font-weight:600; font-size:18px; color:#364050">
+                                        Does OrbitPDF require rewriting templates?
+                                    </a>
+                                </p>
+                                <div id="rewriteTemp" class="accordion-collapse collapse" aria-labelledby="rewriteTempHead" data-bs-parent="#accordionAppIndex">
+                                    <div class="accordion-body pt-0 px-0">
+                                        <p class="m-0">
+                                            In most scenarios, selecting the appropriate rendering engine and paper format is sufficient for predictable output.
+                                            For specific edge cases, paged-media CSS can be applied.
+                                            Enterprise-grade deployment assistance is available as a paid service when needed.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" style="background-color:transparent">
+                                <p class="accordion-header" id="paperMuncherHead">
+                                    <a href="#paperMuncher" class="accordion-button collapsed text-decoration-none px-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#paperMuncher" aria-expanded="false" aria-controls="paperMuncherHead"
+                                        style="background-color:transparent; font-weight:600; font-size:18px; color:#364050">
+                                        What happens when Odoo releases Paper Muncher?
+                                    </a>
+                                </p>
+                                <div id="paperMuncher" class="accordion-collapse collapse" aria-labelledby="paperMuncherHead" data-bs-parent="#accordionAppIndex">
+                                    <div class="accordion-body pt-0 px-0">
+                                        <p>
+                                            OrbitPDF currently operates with PlutoPrint only.
+                                            Integration with Paper Muncher is planned once the engine demonstrates production-ready
+                                            stability and behavior.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <strong>Paper Muncher</strong> follows a browser-based approach.
+                                                It treats HTML as a web runtime and focuses on improving fidelity and performance
+                                                within a modernized rendering stack.
+                                                This model aligns naturally with web-centric documents and evolving frontend layouts.
+                                            </li>
+                                            <li>
+                                                <strong>PlutoPrint</strong> takes a document-first approach.
+                                                It treats HTML as document markup and embeds pagination directly into the layout process,
+                                                prioritizing predictable output and long-term stability over browser simulation.
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            OrbitPDF remains engine-agnostic by design, allowing teams to select the rendering model
+                                            that best fits their operational requirements without committing to a single architectural path.
+                                            My assessment is that Paper Muncher treats HTML as a live web runtime, while PlutoPrint treats it
+                                            as document markup. That single distinction drives every meaningful difference between the two
+                                            engines.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" style="background-color:transparent">
+                                <p class="accordion-header" id="plutoSyntaxHead">
+                                    <a href="#plutoSyntax" class="accordion-button collapsed text-decoration-none px-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#plutoSyntax" aria-expanded="false" aria-controls="plutoSyntaxHead"
+                                        style="background-color:transparent; font-weight:600; font-size:18px; color:#364050">
+                                        Where can I see the syntax and capabilities of PlutoPrint?
+                                    </a>
+                                </p>
+                                <div id="plutoSyntax" class="accordion-collapse collapse" aria-labelledby="plutoSyntaxHead" data-bs-parent="#accordionAppIndex">
+                                    <div class="accordion-body pt-0 px-0">
+                                        <p class="m-0">
+                                            PlutoPrint is built on top of PlutoBook, an independent core project that provides
+                                            the underlying document model, layout logic and reference implementation. Both
+                                            projects are open and documented separately:
+                                            <span href="https://github.com/plutoprint" style="color:#3769b9">github.com/plutoprint</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" style="background-color:transparent">
+                                <p class="accordion-header" id="orbitPlutoHead">
+                                    <a href="#orbitPluto" class="accordion-button collapsed text-decoration-none px-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#orbitPluto" aria-expanded="false" aria-controls="orbitPlutoHead"
+                                        style="background-color:transparent; font-weight:600; font-size:18px; color:#364050">
+                                        How does OrbitPDF connect to PlutoPrint library?
+                                    </a>
+                                </p>
+                                <div id="orbitPluto" class="accordion-collapse collapse" aria-labelledby="orbitPlutoHead" data-bs-parent="#accordionAppIndex">
+                                    <div class="accordion-body pt-0 px-0">
+                                        <p class="mb-0">
+                                            OrbitPDF is not a renderer. It is the layer that lets Odoo work with multiple
+                                            rendering engines. PlutoPrint is simply the first engine connected to this layer.
+                                            OrbitPDF can extend to additional engines without changing templates or workflows.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" style="background-color:transparent">
+                                <p class="accordion-header" id="flush-headingSeven">
+                                    <a href="#flush-collapseSeven" class="accordion-button collapsed text-decoration-none px-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-headingSeven"
+                                        style="background-color:transparent; font-weight:600; font-size:18px; color:#364050">
+                                        Where can I get support for the module?
+                                    </a>
+                                </p>
+                                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionAppIndex">
+                                    <div class="accordion-body pt-0 px-0">
+                                        <p class="mb-0">
+                                            For issues directly related to OrbitPDF, including questions or bug reports, please contact <a style="color:#3769b9" href="mailto:odoo@sveltware.com">odoo@sveltware.com</a>.
+                                            For discussions regarding the roadmap or advanced technical details of PlutoPrint, please contact <a style="color:#3769b9" href="mailto:plutoprint@yahoo.com">plutoprint@yahoo.com</a>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

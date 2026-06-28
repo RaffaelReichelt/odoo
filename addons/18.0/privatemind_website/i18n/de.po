@@ -1,0 +1,1973 @@
+# German translation for PrivateMind Website module
+# Copyright (C) 2026 PrivateMind GmbH
+# This file is distributed under the same license as the privatemind_website module.
+# Raffael Reichelt <raffael.reichelt@mac.com>, 2026
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-28 07:36+0000\n"
+"PO-Revision-Date: 2026-06-28 08:00+0000\n"
+"Last-Translator: Raffael Reichelt <raffael.reichelt@mac.com>\n"
+"Language-Team: German <de@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "1 TB NVMe SSD"
+msgstr "1 TB NVMe SSD"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "128 GB LPDDR5X Unified Memory"
+msgstr "128 GB LPDDR5X Unified Memory"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "128 GB Unified Memory"
+msgstr "128 GB Unified Memory"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "192 GB GDDR6 VRAM (total)"
+msgstr "192 GB GDDR6 VRAM (gesamt)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "1× ASUS Ascent GX10"
+msgstr "1× ASUS Ascent GX10"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "1× ASUS Ascent GX10, 1 TB SSD"
+msgstr "1× ASUS Ascent GX10, 1 TB SSD"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "1× ASUS Ascent GX10, 2 TB SSD"
+msgstr "1× ASUS Ascent GX10, 2 TB SSD"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "1× GX10, 1 TB · Starter service level"
+msgstr "1× GX10, 1 TB · Service-Level Starter"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "2 TB NVMe SSD"
+msgstr "2 TB NVMe SSD"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "2 hours"
+msgstr "2 Stunden"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "20–100 concurrent users"
+msgstr "20–100 gleichzeitige Benutzer"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "24/7 proactive + alerting"
+msgstr "24/7 proaktiv + Alarmierung"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "24/7 proactive monitoring"
+msgstr "24/7 proaktives Monitoring"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "240W power consumption"
+msgstr "240 W Stromverbrauch"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "256 GB Unified Memory"
+msgstr "256 GB Unified Memory"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "256 GB Unified Memory (combined)"
+msgstr "256 GB Unified Memory (kombiniert)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "2U Rack Server, 19\" EIA"
+msgstr "2U Rack-Server, 19\" EIA"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "2U Rack, 19\" EIA"
+msgstr "2U Rack, 19\" EIA"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "2h SLA · On-site support"
+msgstr "2h SLA · Vor-Ort-Support"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "2h SLA · On-site support available"
+msgstr "2h SLA · Vor-Ort-Support verfügbar"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "2× 2 TB NVMe SSD"
+msgstr "2× 2 TB NVMe SSD"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "2× ASUS Ascent GX10 (Cluster)"
+msgstr "2× ASUS Ascent GX10 (Cluster)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "2× ASUS Ascent GX10 Cluster"
+msgstr "2× ASUS Ascent GX10 Cluster"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "2× GX10 Cluster, 2×2 TB · Professional service level"
+msgstr "2× GX10 Cluster, 2×2 TB · Service-Level Professional"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "2× NVIDIA GB10 Grace Blackwell"
+msgstr "2× NVIDIA GB10 Grace Blackwell"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "3–5 curated AI models"
+msgstr "3–5 kuratierte KI-Modelle"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "3–5 curated models"
+msgstr "3–5 kuratierte Modelle"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "3–8 concurrent users"
+msgstr "3–8 gleichzeitige Benutzer"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "4 hours"
+msgstr "4 Stunden"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "48 hours"
+msgstr "48 Stunden"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "4h SLA · Priority support"
+msgstr "4h SLA · Prioritäts-Support"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "4× NVIDIA L40S 48 GB"
+msgstr "4× NVIDIA L40S 48 GB"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "4× NVIDIA L40S 48 GB · Enterprise service level"
+msgstr "4× NVIDIA L40S 48 GB · Service-Level Enterprise"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "4× NVIDIA L40S 48 GB, 192 GB VRAM"
+msgstr "4× NVIDIA L40S 48 GB, 192 GB VRAM"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "8–20 concurrent users"
+msgstr "8–20 gleichzeitige Benutzer"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid ""
+"<select name=\"interested_in\" class=\"form-select\">\n"
+"                                                    <option value=\"\">— Please select —</option>\n"
+"                                                    <option value=\"standard\">PrivateMind Standard (€3,800 + €149/mo)</option>\n"
+"                                                    <option value=\"professional\">PrivateMind Professional (€4,500 + €699/mo)</option>\n"
+"                                                    <option value=\"premium\">PrivateMind Premium (€9,500 + €699/mo)</option>\n"
+"                                                    <option value=\"enterprise\">PrivateMind Enterprise (from €62,500)</option>\n"
+"                                                    <option value=\"bundle_standard\">Bundle Standard (€299/mo all-in)</option>\n"
+"                                                    <option value=\"bundle_professional\">Bundle Professional (€999/mo all-in)</option>\n"
+"                                                    <option value=\"demo\">Just a demo / general questions</option>\n"
+"                                                </select>"
+msgstr ""
+"<select name=\"interested_in\" class=\"form-select\">\n"
+"                                                    <option value=\"\">— Bitte wählen —</option>\n"
+"                                                    <option value=\"standard\">PrivateMind Standard (€3.800 + €149/Monat)</option>\n"
+"                                                    <option value=\"professional\">PrivateMind Professional (€4.500 + €699/Monat)</option>\n"
+"                                                    <option value=\"premium\">PrivateMind Premium (€9.500 + €699/Monat)</option>\n"
+"                                                    <option value=\"enterprise\">PrivateMind Enterprise (ab €62.500)</option>\n"
+"                                                    <option value=\"bundle_standard\">Bundle Standard (€299/Monat all-in)</option>\n"
+"                                                    <option value=\"bundle_professional\">Bundle Professional (€999/Monat all-in)</option>\n"
+"                                                    <option value=\"demo\">Nur Demo / allgemeine Fragen</option>\n"
+"                                                </select>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "<small style=\"color:#4a5d73;font-weight:500;\">Consultancies</small>"
+msgstr "<small style=\"color:#4a5d73;font-weight:500;\">Unternehmensberatungen</small>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "<small style=\"color:#4a5d73;font-weight:500;\">Engineering Firms</small>"
+msgstr "<small style=\"color:#4a5d73;font-weight:500;\">Ingenieurbüros</small>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "<small style=\"color:#4a5d73;font-weight:500;\">Financial Services</small>"
+msgstr "<small style=\"color:#4a5d73;font-weight:500;\">Finanzdienstleister</small>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "<small style=\"color:#4a5d73;font-weight:500;\">Law Firms</small>"
+msgstr "<small style=\"color:#4a5d73;font-weight:500;\">Kanzleien</small>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "<small style=\"color:#4a5d73;font-weight:500;\">Medical Practices</small>"
+msgstr "<small style=\"color:#4a5d73;font-weight:500;\">Arztpraxen</small>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "<small style=\"color:#4a5d73;font-weight:500;\">Tax Advisors</small>"
+msgstr "<small style=\"color:#4a5d73;font-weight:500;\">Steuerberater</small>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"<span class=\"badge\" style=\"background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;\">\n"
+"                                        🇩🇪 Germany\n"
+"                                    </span>\n"
+"                                    <span class=\"badge\" style=\"background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;\">\n"
+"                                        🇦🇹 Austria\n"
+"                                    </span>\n"
+"                                    <span class=\"badge\" style=\"background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;\">\n"
+"                                        🇨🇭 Switzerland\n"
+"                                    </span>\n"
+"                                    <span class=\"badge\" style=\"background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;\">\n"
+"                                        🇳🇱 Netherlands\n"
+"                                    </span>\n"
+"                                    <span class=\"badge\" style=\"background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;\">\n"
+"                                        🇬🇧 United Kingdom\n"
+"                                    </span>"
+msgstr ""
+"<span class=\"badge\" style=\"background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;\">\n"
+"                                        🇩🇪 Deutschland\n"
+"                                    </span>\n"
+"                                    <span class=\"badge\" style=\"background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;\">\n"
+"                                        🇦🇹 Österreich\n"
+"                                    </span>\n"
+"                                    <span class=\"badge\" style=\"background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;\">\n"
+"                                        🇨🇭 Schweiz\n"
+"                                    </span>\n"
+"                                    <span class=\"badge\" style=\"background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;\">\n"
+"                                        🇳🇱 Niederlande\n"
+"                                    </span>\n"
+"                                    <span class=\"badge\" style=\"background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;\">\n"
+"                                        🇬🇧 Vereinigtes Königreich\n"
+"                                    </span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"<span class=\"pm-price\">On Request</span>\n"
+"                                        <span class=\"pm-price-sub\">60-month term · individual pricing</span>"
+msgstr ""
+"<span class=\"pm-price\">Auf Anfrage</span>\n"
+"                                        <span class=\"pm-price-sub\">60-Monats-Laufzeit · individuelle Preisgestaltung</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"<span class=\"pm-price\">€299</span>\n"
+"                                        <span class=\"pm-price-sub\">/month · 36-month term</span>\n"
+"                                        <span class=\"pm-price-sub\">€10,764 total · hardware ownership after term</span>"
+msgstr ""
+"<span class=\"pm-price\">€299</span>\n"
+"                                        <span class=\"pm-price-sub\">/Monat · 36-Monats-Laufzeit</span>\n"
+"                                        <span class=\"pm-price-sub\">€10.764 gesamt · Hardware-Eigentumsübergang nach Laufzeit</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"<span class=\"pm-price\">€3,800</span>\n"
+"                                        <span class=\"pm-price-sub\">net, one-time · 19% VAT applies</span>"
+msgstr ""
+"<span class=\"pm-price\">€3.800</span>\n"
+"                                        <span class=\"pm-price-sub\">netto, einmalig · zzgl. 19% MwSt.</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"<span class=\"pm-price\">€3,800</span>\n"
+"                                        <span class=\"pm-price-sub\">one-time hardware + €149/mo service</span>\n"
+"                                        <span class=\"pm-price-sub\">or all-in bundle from €299/mo</span>"
+msgstr ""
+"<span class=\"pm-price\">€3.800</span>\n"
+"                                        <span class=\"pm-price-sub\">einmalig Hardware + €149/Monat Service</span>\n"
+"                                        <span class=\"pm-price-sub\">oder All-in-Bundle ab €299/Monat</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"<span class=\"pm-price\">€4,500</span>\n"
+"                                        <span class=\"pm-price-sub\">net, one-time · 19% VAT applies</span>"
+msgstr ""
+"<span class=\"pm-price\">€4.500</span>\n"
+"                                        <span class=\"pm-price-sub\">netto, einmalig · zzgl. 19% MwSt.</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"<span class=\"pm-price\">€4,500</span>\n"
+"                                        <span class=\"pm-price-sub\">one-time hardware + €699/mo service</span>\n"
+"                                        <span class=\"pm-price-sub\">or all-in bundle from €999/mo</span>"
+msgstr ""
+"<span class=\"pm-price\">€4.500</span>\n"
+"                                        <span class=\"pm-price-sub\">einmalig Hardware + €699/Monat Service</span>\n"
+"                                        <span class=\"pm-price-sub\">oder All-in-Bundle ab €999/Monat</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"<span class=\"pm-price\">€62,500</span>\n"
+"                                        <span class=\"pm-price-sub\">net, one-time · 19% VAT applies</span>"
+msgstr ""
+"<span class=\"pm-price\">€62.500</span>\n"
+"                                        <span class=\"pm-price-sub\">netto, einmalig · zzgl. 19% MwSt.</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"<span class=\"pm-price\">€62,500</span>\n"
+"                                        <span class=\"pm-price-sub\">one-time hardware + €1,999/mo service</span>"
+msgstr ""
+"<span class=\"pm-price\">€62.500</span>\n"
+"                                        <span class=\"pm-price-sub\">einmalig Hardware + €1.999/Monat Service</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"<span class=\"pm-price\">€9,500</span>\n"
+"                                        <span class=\"pm-price-sub\">net, one-time · 19% VAT applies</span>"
+msgstr ""
+"<span class=\"pm-price\">€9.500</span>\n"
+"                                        <span class=\"pm-price-sub\">netto, einmalig · zzgl. 19% MwSt.</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"<span class=\"pm-price\">€9,500</span>\n"
+"                                        <span class=\"pm-price-sub\">one-time hardware + €699/mo service</span>"
+msgstr ""
+"<span class=\"pm-price\">€9.500</span>\n"
+"                                        <span class=\"pm-price-sub\">einmalig Hardware + €699/Monat Service</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"<span class=\"pm-price\">€999</span>\n"
+"                                        <span class=\"pm-price-sub\">/month · 36-month term</span>\n"
+"                                        <span class=\"pm-price-sub\">€35,964 total · hardware ownership after term</span>"
+msgstr ""
+"<span class=\"pm-price\">€999</span>\n"
+"                                        <span class=\"pm-price-sub\">/Monat · 36-Monats-Laufzeit</span>\n"
+"                                        <span class=\"pm-price-sub\">€35.964 gesamt · Hardware-Eigentumsübergang nach Laufzeit</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"<span class=\"pm-trust-icon\">⚡</span>\n"
+"                                <span>NVIDIA Grace Blackwell GPU</span>"
+msgstr ""
+"<span class=\"pm-trust-icon\">⚡</span>\n"
+"                                <span>NVIDIA Grace Blackwell GPU</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"<span class=\"pm-trust-icon\">✅</span>\n"
+"                                <span>GDPR-compliant out of the box</span>"
+msgstr ""
+"<span class=\"pm-trust-icon\">✅</span>\n"
+"                                <span>DSGVO-konform von Anfang an</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"<span class=\"pm-trust-icon\">🇩🇪</span>\n"
+"                                <span>Based in Dresden, Germany</span>"
+msgstr ""
+"<span class=\"pm-trust-icon\">🇩🇪</span>\n"
+"                                <span>Standort: Dresden, Deutschland</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"<span class=\"pm-trust-icon\">🔒</span>\n"
+"                                <span>Data never leaves your premises</span>"
+msgstr ""
+"<span class=\"pm-trust-icon\">🔒</span>\n"
+"                                <span>Daten verlassen niemals Ihr Unternehmen</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"<span class=\"pm-trust-icon\">🔧</span>\n"
+"                                <span>Fully managed — zero IT expertise needed</span>"
+msgstr ""
+"<span class=\"pm-trust-icon\">🔧</span>\n"
+"                                <span>Vollständig verwaltet – kein IT-Fachwissen erforderlich</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"<span class=\"stat-number\">0</span>\n"
+"                                        <span class=\"stat-label\">Cloud Uploads</span>"
+msgstr ""
+"<span class=\"stat-number\">0</span>\n"
+"                                        <span class=\"stat-label\">Cloud-Uploads</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"<span class=\"stat-number\">70B+</span>\n"
+"                                        <span class=\"stat-label\">Parameter Models</span>"
+msgstr ""
+"<span class=\"stat-number\">70B+</span>\n"
+"                                        <span class=\"stat-label\">Parameter-Modelle</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"<span class=\"stat-number\">€299</span>\n"
+"                                        <span class=\"stat-label\">From / Month</span>"
+msgstr ""
+"<span class=\"stat-number\">€299</span>\n"
+"                                        <span class=\"stat-label\">Ab / Monat</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "<span>🇪🇺</span> GDPR-Compliant · Made in Germany · NVIDIA-Powered"
+msgstr "<span>🇪🇺</span> DSGVO-konform · Made in Germany · NVIDIA-betrieben"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid ""
+"<strong style=\"color:#111;\">Free consultation included.</strong><br/>\n"
+"                                        Every first contact includes a no-obligation 30-minute call where we\n"
+"                                        assess your requirements and recommend the right solution — or tell you\n"
+"                                        honestly if we're not the right fit."
+msgstr ""
+"<strong style=\"color:#111;\">Kostenlose Erstberatung inklusive.</strong><br/>\n"
+"                                        Jeder erste Kontakt beinhaltet ein unverbindliches 30-minütiges Gespräch, in dem wir\n"
+"                                        Ihre Anforderungen analysieren und die passende Lösung empfehlen – oder Ihnen\n"
+"                                        ehrlich sagen, wenn wir nicht die richtige Wahl sind."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"<strong style=\"color:#111;\">PrivateMind closes this gap.</strong> We deliver a complete,\n"
+"                                    managed AI system — hardware, software, models, support — in a single package\n"
+"                                    that any business can operate, regardless of IT expertise."
+msgstr ""
+"<strong style=\"color:#111;\">PrivateMind schließt diese Lücke.</strong> Wir liefern ein vollständiges,\n"
+"                                    verwaltetes KI-System – Hardware, Software, Modelle, Support – als Gesamtpaket,\n"
+"                                    das jedes Unternehmen betreiben kann, unabhängig von IT-Kenntnissen."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid ""
+"<strong style=\"color:#111;\">🔒 Privacy note:</strong><br/>\n"
+"                                        Your contact data is stored on our Odoo system, hosted on our own servers in Germany.\n"
+"                                        It is never shared with third parties and not used for AI training."
+msgstr ""
+"<strong style=\"color:#111;\">🔒 Datenschutzhinweis:</strong><br/>\n"
+"                                        Ihre Kontaktdaten werden in unserem Odoo-System gespeichert, das auf unseren eigenen Servern in Deutschland gehostet wird.\n"
+"                                        Sie werden niemals an Dritte weitergegeben und nicht für KI-Training verwendet."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"AI That Stays<br/>\n"
+"                                    <span class=\"accent\">In Your House.</span>"
+msgstr ""
+"KI, die bleibt.<br/>\n"
+"                                    <span class=\"accent\">In Ihrem Haus.</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "AI for Europe.<br/>Built in Germany."
+msgstr "KI für Europa.<br/>Gebaut in Deutschland."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"AI is no longer optional — but for many European businesses, mainstream "
+"cloud AI is simply not an option."
+msgstr ""
+"KI ist keine Option mehr – aber für viele europäische Unternehmen ist "
+"Cloud-KI schlicht keine Alternative."
+
+#. module: privatemind_website
+#: model:website.menu,name:privatemind_website.menu_about
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid "About"
+msgstr "Über uns"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "About PrivateMind"
+msgstr "Über PrivateMind"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Acme GmbH"
+msgstr "Musterfirma GmbH"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"All AI processing happens locally on your hardware. No internet required for"
+" inference. Zero cloud uploads, ever."
+msgstr ""
+"Die gesamte KI-Verarbeitung findet lokal auf Ihrer Hardware statt. Kein Internet für "
+"Inferenz erforderlich. Niemals Cloud-Uploads."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "All Professional features"
+msgstr "Alle Professional-Funktionen"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"All plans include hardware setup and configuration. Choose the level of "
+"ongoing support that fits your team."
+msgstr ""
+"Alle Tarife beinhalten Hardware-Einrichtung und -Konfiguration. Wählen Sie das "
+"Support-Niveau, das zu Ihrem Team passt."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"All prices net. 19% VAT applies for German businesses. Minimum contract term 12 months.\n"
+"                            Setup fees (€500–€2,000 depending on configuration) apply once."
+msgstr ""
+"Alle Preise netto. Für deutsche Unternehmen gilt 19% MwSt. Mindestlaufzeit 12 Monate.\n"
+"                            Einrichtungsgebühren (€500–€2.000 je nach Konfiguration) fallen einmalig an."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "All-In Enterprise"
+msgstr "All-In Enterprise"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "All-In Professional"
+msgstr "All-In Professional"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "All-In Standard"
+msgstr "All-In Standard"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "All-Inclusive Bundles"
+msgstr "All-Inclusive-Bundles"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Annual value per customer"
+msgstr "Jahreswert pro Kunde"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Basic dashboard"
+msgstr "Einfaches Dashboard"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Best Value"
+msgstr "Bestes Preis-Leistungs-Verhältnis"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Book a Free Consultation"
+msgstr "Kostenlose Beratung buchen"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Bundle Enterprise"
+msgstr "Bundle Enterprise"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Bundle Professional"
+msgstr "Bundle Professional"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Bundle Standard"
+msgstr "Bundle Standard"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Business Email *"
+msgstr "Geschäftliche E-Mail *"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Choose Your Setup"
+msgstr "Wählen Sie Ihre Konfiguration"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"Choose your hardware. Add a service plan. Every appliance is pre-configured,\n"
+"                            shipped to your office, and set up remotely by our team."
+msgstr ""
+"Wählen Sie Ihre Hardware. Fügen Sie einen Service-Plan hinzu. Jede Appliance ist vorkonfiguriert,\n"
+"                            wird zu Ihnen geliefert und von unserem Team remote eingerichtet."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Cloud AI Violates Compliance"
+msgstr "Cloud-KI verletzt Compliance-Vorgaben"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Cluster &amp; scaling support"
+msgstr "Cluster- &amp; Skalierungsunterstützung"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Cluster networking setup included"
+msgstr "Cluster-Netzwerkeinrichtung enthalten"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Clustering support"
+msgstr "Clustering-Unterstützung"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Company *"
+msgstr "Unternehmen *"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Compatible hardware"
+msgstr "Kompatible Hardware"
+
+#. module: privatemind_website
+#: model:website.menu,name:privatemind_website.menu_contact
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Contact PrivateMind"
+msgstr "PrivateMind kontaktieren"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Contact Sales"
+msgstr "Vertrieb kontaktieren"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "Contact Us"
+msgstr "Kontaktieren Sie uns"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Continuous"
+msgstr "Kontinuierlich"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Continuous + priority"
+msgstr "Kontinuierlich + Priorität"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Continuous model updates"
+msgstr "Kontinuierliche Modell-Updates"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Custom finetuning available"
+msgstr "Custom-Finetuning verfügbar"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Custom finetuning option"
+msgstr "Custom-Finetuning-Option"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Custom model selection"
+msgstr "Individuelle Modellauswahl"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Custom selection"
+msgstr "Individuelle Auswahl"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Custom, multiple parallel"
+msgstr "Individuell, mehrere parallel"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "Data Sovereignty"
+msgstr "Datensouveränität"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Data Stays With You"
+msgstr "Ihre Daten bleiben bei Ihnen"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Dedicated account manager"
+msgstr "Persönlicher Ansprechpartner"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Dedicated contact + on-site"
+msgstr "Persönlicher Kontakt + Vor-Ort"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Dedicated onboarding programme"
+msgstr "Dediziertes Onboarding-Programm"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Desktop form factor (15×15×5 cm)"
+msgstr "Desktop-Formfaktor (15×15×5 cm)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Documentation provided"
+msgstr "Dokumentation inklusive"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Doe"
+msgstr "Mustermann"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Down payment required"
+msgstr "Anzahlung erforderlich"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Kurparkstraße 6<br/>01324 Dresden<br/>Germany"
+msgstr "Kurparkstraße 6<br/>01324 Dresden<br/>Deutschland"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"Dual-node cluster for large teams or where maximum model quality and "
+"concurrent users matter."
+msgstr ""
+"Dual-Node-Cluster für große Teams oder wenn maximale Modellqualität und "
+"hohe Parallelnutzung gefragt sind."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Dual-system cluster for larger teams requiring maximum model quality."
+msgstr "Dual-System-Cluster für größere Teams mit höchsten Ansprüchen an Modellqualität."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Email"
+msgstr "E-Mail"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Email support · 48h SLA"
+msgstr "E-Mail-Support · 48h SLA"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Enterprise"
+msgstr "Enterprise"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Enterprise (4× L40S)"
+msgstr "Enterprise (4× L40S)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Enterprise Model Quality"
+msgstr "Enterprise-Modellqualität"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "Enterprise Performance"
+msgstr "Enterprise-Performance"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Enterprise Solutions Cost a Fortune"
+msgstr "Enterprise-Lösungen kosten ein Vermögen"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"Enterprise-grade AI for European SMEs — local, private, fully managed.\n"
+"                                    Your data never leaves your building. No cloud. No compliance risk. No IT expertise needed."
+msgstr ""
+"KI auf Enterprise-Niveau für europäische KMU – lokal, privat, vollständig verwaltet.\n"
+"                                    Ihre Daten verlassen niemals Ihr Gebäude. Keine Cloud. Kein Compliance-Risiko. Kein IT-Fachwissen erforderlich."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"Enterprise-grade AI for European SMEs. Local, private, GDPR-compliant. No "
+"cloud, no data leaves your building. NVIDIA GB10 Grace Blackwell Appliance."
+msgstr ""
+"KI auf Enterprise-Niveau für europäische KMU. Lokal, privat, DSGVO-konform. Keine "
+"Cloud, keine Daten verlassen Ihr Gebäude. NVIDIA GB10 Grace Blackwell Appliance."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Enterprise<br/><small class=\"opacity-75\">€1,999/mo</small>"
+msgstr "Enterprise<br/><small class=\"opacity-75\">€1.999/Monat</small>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"European SMEs face a paradox: AI has become a competitive necessity,\n"
+"                                    but the dominant cloud AI tools — ChatGPT, Copilot, Gemini — require sending\n"
+"                                    sensitive data to US servers. For law firms, medical practices, tax advisors,\n"
+"                                    and financial service providers, this isn't a grey area. It's a legal problem."
+msgstr ""
+"Europäische KMU stehen vor einem Paradoxon: KI ist zur Wettbewerbsnotwendigkeit geworden,\n"
+"                                    aber die dominanten Cloud-KI-Tools – ChatGPT, Copilot, Gemini – erfordern die Übermittlung\n"
+"                                    sensibler Daten an US-Server. Für Kanzleien, Arztpraxen, Steuerberater\n"
+"                                    und Finanzdienstleister ist das keine Grauzone. Es ist ein rechtliches Problem."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "European Values"
+msgstr "Europäische Werte"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Feature"
+msgstr "Funktion"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Fill in the form and we'll get back to you within one business day."
+msgstr "Füllen Sie das Formular aus und wir melden uns innerhalb eines Werktages."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "First Name *"
+msgstr "Vorname *"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"For solo practitioners and small teams who need private AI without the "
+"complexity."
+msgstr ""
+"Für Einzelpersonen und kleine Teams, die private KI ohne Komplexität benötigen."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "For teams that need custom model selection and proactive monitoring."
+msgstr "Für Teams, die individuelle Modellauswahl und proaktives Monitoring benötigen."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"For teams with demanding document workloads, RAG pipelines, and the need for"
+" proactive management."
+msgstr ""
+"Für Teams mit anspruchsvollen Dokumenten-Workflows, RAG-Pipelines und dem Bedarf nach "
+"proaktivem Management."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "Founder &amp; CEO, PrivateMind GmbH"
+msgstr "Gründer &amp; CEO, PrivateMind GmbH"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"Four configurations for every scale — from solo practitioners to enterprise deployments.\n"
+"                            All powered by NVIDIA GB10 Grace Blackwell. All managed by PrivateMind."
+msgstr ""
+"Vier Konfigurationen für jeden Bedarf – von Einzelpersonen bis hin zu Enterprise-Deployments.\n"
+"                            Alle mit NVIDIA GB10 Grace Blackwell. Alle von PrivateMind verwaltet."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"Four hardware configurations — from a solo practitioner to a 100-user enterprise deployment.\n"
+"                            All come with our managed service subscription."
+msgstr ""
+"Vier Hardware-Konfigurationen – von der Einzelperson bis zum Enterprise-Deployment mit 100 Nutzern.\n"
+"                            Alle mit unserem Managed-Service-Abonnement."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Frequently Asked Questions"
+msgstr "Häufig gestellte Fragen"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Full Pricing Details →"
+msgstr "Vollständige Preisübersicht →"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Full setup + multi-instance"
+msgstr "Volleinrichtung + Multi-Instanz"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Full setup included"
+msgstr "Vollständige Einrichtung inklusive"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"GDPR Art. 28, §203 StGB, DORA, NIS2 — regulated industries\n"
+"                                        cannot send client data, contracts, or financial records to\n"
+"                                        US cloud servers. Every ChatGPT query is a compliance risk."
+msgstr ""
+"DSGVO Art. 28, §203 StGB, DORA, NIS2 – regulierte Branchen\n"
+"                                        dürfen keine Mandantendaten, Verträge oder Finanzdokumente\n"
+"                                        an US-Cloud-Server übermitteln. Jede ChatGPT-Anfrage ist ein Compliance-Risiko."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"GDPR, EU AI Act, NIS2 — we treat European data law as a design principle, "
+"not a marketing claim."
+msgstr ""
+"DSGVO, EU-KI-Act, NIS2 – wir behandeln europäisches Datenschutzrecht als Designprinzip, "
+"nicht als Marketingaussage."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "GDPR-Compliant by Design"
+msgstr "DSGVO-konform by Design"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Geopolitical Independence"
+msgstr "Geopolitische Unabhängigkeit"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "Geopolitical Risk Is Real"
+msgstr "Das geopolitische Risiko ist real"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Get Bundle"
+msgstr "Bundle anfragen"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Get Started"
+msgstr "Jetzt starten"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Get Started →"
+msgstr "Jetzt starten →"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Get in Touch"
+msgstr "Kontakt aufnehmen"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid ""
+"Get in touch with PrivateMind. Schedule a free consultation or request a "
+"quote for your local AI appliance."
+msgstr ""
+"Kontaktieren Sie PrivateMind. Vereinbaren Sie eine kostenlose Beratung oder fordern Sie "
+"ein Angebot für Ihre lokale KI-Appliance an."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Hardware Appliances"
+msgstr "Hardware-Appliances"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Hardware ownership after 36 months"
+msgstr "Hardware-Eigentumsübergang nach 36 Monaten"
+
+#. module: privatemind_website
+#: model:website.menu,name:privatemind_website.menu_home
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid "Home"
+msgstr "Startseite"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "How long does setup take?"
+msgstr "Wie lange dauert die Einrichtung?"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid ""
+"I agree that PrivateMind may store and process my data to respond to this enquiry.\n"
+"                                                        I can request deletion at any time."
+msgstr ""
+"Ich stimme zu, dass PrivateMind meine Daten zur Beantwortung dieser Anfrage speichern und verarbeiten darf.\n"
+"                                                        Ich kann jederzeit die Löschung beantragen."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"Ideal for lawyers, medical practices, consultancies and solo AI users who "
+"need private inference without complexity."
+msgstr ""
+"Ideal für Anwälte, Arztpraxen, Beratungsunternehmen und Einzelnutzer, die "
+"private Inferenz ohne Komplexität benötigen."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"In June 2026, US export controls cut off access to leading AI models overnight\n"
+"                                        for European users — without warning or transition period.\n"
+"                                        Local AI is not just a privacy argument anymore. It's infrastructure sovereignty."
+msgstr ""
+"Im Juni 2026 haben US-Exportkontrollen den Zugang zu führenden KI-Modellen über Nacht\n"
+"                                        für europäische Nutzer abgeschnitten – ohne Warnung oder Übergangszeitraum.\n"
+"                                        Lokale KI ist nicht mehr nur ein Datenschutzargument. Es ist infrastrukturelle Souveränität."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Included"
+msgstr "Enthalten"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Included + finetuning option"
+msgstr "Enthalten + Finetuning-Option"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Interested In"
+msgstr "Interesse an"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Is PrivateMind GDPR-compliant?"
+msgstr "Ist PrivateMind DSGVO-konform?"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "John"
+msgstr "Max"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "Join the First Wave"
+msgstr "Seien Sie dabei"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Last Name *"
+msgstr "Nachname *"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Let's Talk"
+msgstr "Sprechen wir miteinander"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Location"
+msgstr "Standort"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Max model size: 200B FP16 / 405B INT4"
+msgstr "Max. Modellgröße: 200B FP16 / 405B INT4"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Max model size: 405B FP16 / 700B+ INT4"
+msgstr "Max. Modellgröße: 405B FP16 / 700B+ INT4"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Max model size: 70B FP16 / 200B INT4"
+msgstr "Max. Modellgröße: 70B FP16 / 200B INT4"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Message *"
+msgstr "Nachricht *"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Model tuning"
+msgstr "Modell-Tuning"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Model updates"
+msgstr "Modell-Updates"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"Model updates, OS patches, performance tuning, new model onboarding — all "
+"handled by PrivateMind. You focus on your business."
+msgstr ""
+"Modell-Updates, OS-Patches, Performance-Tuning, neue Modelle – alles "
+"wird von PrivateMind erledigt. Sie konzentrieren sich auf Ihr Geschäft."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Most Popular"
+msgstr "Am beliebtesten"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "NVIDIA GB10 Grace Blackwell"
+msgstr "NVIDIA GB10 Grace Blackwell"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"NVIDIA GB10 Grace Blackwell runs 70B+ parameter models at real-time speed. "
+"Same technology as data centres — on your desk."
+msgstr ""
+"NVIDIA GB10 Grace Blackwell führt Modelle mit 70B+ Parametern in Echtzeit aus. "
+"Dieselbe Technologie wie in Rechenzentren – auf Ihrem Schreibtisch."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"NVIDIA GB10 Grace Blackwell — the same GPU architecture used in data "
+"centres, now on your desk."
+msgstr ""
+"NVIDIA GB10 Grace Blackwell – dieselbe GPU-Architektur wie in Rechenzentren, "
+"jetzt auf Ihrem Schreibtisch."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"No data processing agreement needed for AI inference. Your data never leaves"
+" your premises — compliance is built in, not bolted on."
+msgstr ""
+"Kein Auftragsverarbeitungsvertrag für KI-Inferenz erforderlich. Ihre Daten verlassen"
+" niemals Ihre Räumlichkeiten – Compliance ist eingebaut, nicht nachgerüstet."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Not Sure Which Plan Fits?"
+msgstr "Nicht sicher, welcher Tarif passt?"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "OEM: ASUS ESC4000A-E12 or Dell PowerEdge R760xa"
+msgstr "OEM: ASUS ESC4000A-E12 oder Dell PowerEdge R760xa"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"On-premise AI from traditional vendors starts at €50,000+\n"
+"                                        and requires a dedicated IT team to operate. Most SMEs simply\n"
+"                                        cannot afford this — until now."
+msgstr ""
+"On-Premise-KI von herkömmlichen Anbietern beginnt bei €50.000+\n"
+"                                        und erfordert ein dediziertes IT-Team. Die meisten KMU können\n"
+"                                        sich das schlicht nicht leisten – bis jetzt."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "On-site setup available"
+msgstr "Vor-Ort-Einrichtung möglich"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"Open-source tools like Ollama require Linux expertise, Docker,\n"
+"                                        GPU drivers, and ongoing maintenance. SMEs don't have dedicated\n"
+"                                        IT staff — let alone ML engineers."
+msgstr ""
+"Open-Source-Tools wie Ollama erfordern Linux-Kenntnisse, Docker,\n"
+"                                        GPU-Treiber und laufende Wartung. KMU haben keine dedizierten\n"
+"                                        IT-Mitarbeiter – geschweige denn ML-Ingenieure."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Plug In &amp; Go"
+msgstr "Einstecken &amp; Loslegen"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"Plug in, switch on. We handle all the technical complexity. You focus on "
+"your work."
+msgstr ""
+"Einstecken, einschalten. Wir kümmern uns um die gesamte technische Komplexität. Sie konzentrieren sich auf "
+"Ihre Arbeit."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Pre-configured models"
+msgstr "Vorkonfigurierte Modelle"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"Prefer zero upfront cost? Our bundles include hardware, software, setup, and service\n"
+"                            in one monthly rate — 100% tax-deductible as operating expense (no capitalisation required)."
+msgstr ""
+"Lieber ohne Investitionskosten? Unsere Bundles beinhalten Hardware, Software, Einrichtung und Service\n"
+"                            in einer monatlichen Rate – 100% steuerlich absetzbar als Betriebsausgabe (keine Aktivierung erforderlich)."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Premium"
+msgstr "Premium"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Premium (2× GX10)"
+msgstr "Premium (2× GX10)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Priority + remote access"
+msgstr "Priorität + Fernzugriff"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Priority support · 4h SLA"
+msgstr "Prioritäts-Support · 4h SLA"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "PrivateMind"
+msgstr "PrivateMind"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"PrivateMind AI Appliances: Standard, Professional, Premium, Enterprise. "
+"Local AI for European SMEs. Pricing from €299/month all-inclusive."
+msgstr ""
+"PrivateMind KI-Appliances: Standard, Professional, Premium, Enterprise. "
+"Lokale KI für europäische KMU. Preise ab €299/Monat all-inclusive."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "PrivateMind Enterprise"
+msgstr "PrivateMind Enterprise"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"PrivateMind GmbH (in Gründung) is headquartered in Dresden, Saxony —\n"
+"                                    in the heart of one of Germany's fastest-growing tech ecosystems.\n"
+"                                    We serve customers across the DACH region with plans for expansion\n"
+"                                    into the Netherlands, Nordics, and UK."
+msgstr ""
+"PrivateMind GmbH (in Gründung) hat ihren Sitz in Dresden, Sachsen –\n"
+"                                    im Herzen eines der am schnellsten wachsenden Tech-Ökosysteme Deutschlands.\n"
+"                                    Wir betreuen Kunden im gesamten DACH-Raum mit Plänen zur Expansion\n"
+"                                    in die Niederlande, Skandinavien und das Vereinigte Königreich."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"PrivateMind GmbH — Based in Dresden, Germany. We build local AI "
+"infrastructure for European SMEs who can't send their data to the cloud."
+msgstr ""
+"PrivateMind GmbH – Standort Dresden, Deutschland. Wir bauen lokale KI-"
+"Infrastruktur für europäische KMU, die ihre Daten nicht in die Cloud senden können."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "PrivateMind Premium"
+msgstr "PrivateMind Premium"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "PrivateMind Professional"
+msgstr "PrivateMind Professional"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "PrivateMind Standard"
+msgstr "PrivateMind Standard"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"PrivateMind is his answer: a productised, managed AI service built on the latest\n"
+"                                        NVIDIA hardware — designed specifically for the SMEs that cloud AI vendors systematically\n"
+"                                        ignore."
+msgstr ""
+"PrivateMind ist seine Antwort: ein produktisierter, verwalteter KI-Service, der auf der neuesten\n"
+"                                        NVIDIA-Hardware aufbaut – speziell entwickelt für die KMU, die Cloud-KI-Anbieter systematisch\n"
+"                                        ignorieren."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "PrivateMind — AI That Stays In Your House"
+msgstr "PrivateMind – KI, die bei Ihnen bleibt"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "PrivateMind: Your AI Department as a Service"
+msgstr "PrivateMind: Ihre KI-Abteilung als Service"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Proactive (we monitor)"
+msgstr "Proaktiv (wir überwachen)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Proactive monitoring by PrivateMind"
+msgstr "Proaktives Monitoring durch PrivateMind"
+
+#. module: privatemind_website
+#: model:website.menu,name:privatemind_website.menu_products
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid "Products & Pricing"
+msgstr "Produkte & Preise"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid "Products &amp; Pricing"
+msgstr "Produkte &amp; Preise"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Products &amp; Pricing — PrivateMind"
+msgstr "Produkte &amp; Preise — PrivateMind"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Professional"
+msgstr "Professional"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Professional<br/><small class=\"opacity-75\">€699/mo</small>"
+msgstr "Professional<br/><small class=\"opacity-75\">€699/Monat</small>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Quarterly"
+msgstr "Vierteljährlich"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Quarterly model updates"
+msgstr "Vierteljährliche Modell-Updates"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Quickstart guide"
+msgstr "Schnellstartanleitung"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "R"
+msgstr "R"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "RAG pipeline setup included"
+msgstr "RAG-Pipeline-Einrichtung enthalten"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "RAG setup"
+msgstr "RAG-Einrichtung"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "RAG setup included"
+msgstr "RAG-Einrichtung enthalten"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"Rack-mount 2U server for mid-size enterprises and high-concurrency "
+"deployments."
+msgstr ""
+"2U Rack-Server für mittelgroße Unternehmen und Deployments mit hoher "
+"Parallelnutzung."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"Rack-mount server for mid-size enterprises, high-concurrency needs, and data"
+" centre integration."
+msgstr ""
+"Rack-Server für mittelgroße Unternehmen, hohe Parallelnutzung und "
+"Rechenzentrumsintegration."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "Raffael Reichelt"
+msgstr "Raffael Reichelt"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"Raffael is a software developer with decades of hands-on experience in enterprise IT.\n"
+"                                        Having worked across industries where data confidentiality is non-negotiable, he saw\n"
+"                                        first-hand how AI adoption was blocked not by willingness, but by the absence of a\n"
+"                                        suitable, compliant option."
+msgstr ""
+"Raffael ist Softwareentwickler mit jahrzehntelanger praktischer Erfahrung in der Enterprise-IT.\n"
+"                                        Durch seine Arbeit in Branchen, in denen Datenschutz nicht verhandelbar ist, erlebte er\n"
+"                                        aus erster Hand, wie die KI-Einführung nicht am Willen scheiterte, sondern am Fehlen\n"
+"                                        einer geeigneten, compliant-konformen Option."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Ready to Bring AI In-House?"
+msgstr "Bereit, KI ins Haus zu holen?"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "Regulatory Pressure"
+msgstr "Regulatorischer Druck"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Remote setup &amp; configuration included"
+msgstr "Remote-Einrichtung &amp; Konfiguration enthalten"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Remote setup included"
+msgstr "Remote-Einrichtung enthalten"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Request Quote"
+msgstr "Angebot anfragen"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Response Time"
+msgstr "Antwortzeit"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Response time SLA"
+msgstr "Antwortzeit SLA"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Schedule a Demo"
+msgstr "Demo vereinbaren"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid ""
+"Schedule a free 30-minute consultation. We'll assess your situation,\n"
+"                            recommend the right configuration, and answer every question — no sales pressure."
+msgstr ""
+"Vereinbaren Sie eine kostenlose 30-minütige Beratung. Wir analysieren Ihre Situation,\n"
+"                            empfehlen die richtige Konfiguration und beantworten alle Fragen – kein Verkaufsdruck."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"Schedule a free consultation. We'll help you pick the right configuration\n"
+"                            and show you what AI can do for your business — without touching your data."
+msgstr ""
+"Vereinbaren Sie eine kostenlose Beratung. Wir helfen Ihnen, die richtige Konfiguration zu wählen\n"
+"                            und zeigen Ihnen, was KI für Ihr Unternehmen leisten kann – ohne Ihre Daten anzufassen."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Self-Hosting Is Too Complex"
+msgstr "Self-Hosting ist zu komplex"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"Self-hosting open-source models is technically possible — but it requires\n"
+"                                    Linux expertise, GPU driver management, Docker orchestration, and ongoing\n"
+"                                    maintenance that simply doesn't exist in most SMEs."
+msgstr ""
+"Das Self-Hosting von Open-Source-Modellen ist technisch möglich – erfordert aber\n"
+"                                    Linux-Kenntnisse, GPU-Treiberverwaltung, Docker-Orchestrierung und laufende\n"
+"                                    Wartung, die in den meisten KMU schlicht nicht vorhanden ist."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Send Message →"
+msgstr "Nachricht senden →"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Send Us a Message"
+msgstr "Schreiben Sie uns"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Service Plan Comparison"
+msgstr "Service-Plan-Vergleich"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Setup &amp; configuration included"
+msgstr "Einrichtung &amp; Konfiguration enthalten"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Setup &amp; on-site optional configuration"
+msgstr "Einrichtung &amp; optionale Vor-Ort-Konfiguration"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Standard"
+msgstr "Standard"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Standard / Professional"
+msgstr "Standard / Professional"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Starter<br/><small class=\"opacity-75\">€149/mo</small>"
+msgstr "Starter<br/><small class=\"opacity-75\">€149/Monat</small>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Support channel"
+msgstr "Support-Kanal"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "System monitoring"
+msgstr "System-Monitoring"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Team training"
+msgstr "Team-Schulung"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid ""
+"Tell us about your use case, team size, and any compliance requirements..."
+msgstr ""
+"Beschreiben Sie Ihren Anwendungsfall, die Teamgröße und eventuelle Compliance-Anforderungen..."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "The AI Dilemma for European SMEs"
+msgstr "Das KI-Dilemma europäischer KMU"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"The EU AI Act (August 2024), record GDPR fines (€1.6B in 2024),\n"
+"                                        and DORA/NIS2 compliance requirements are pushing data-sensitive businesses\n"
+"                                        to look for local alternatives — now."
+msgstr ""
+"Der EU-KI-Act (August 2024), Rekordbußgelder nach DSGVO (€1,6 Mrd. im Jahr 2024)\n"
+"                                        und DORA/NIS2-Anforderungen treiben datensensible Unternehmen\n"
+"                                        dazu, lokale Alternativen zu suchen – jetzt."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "The Founder"
+msgstr "Der Gründer"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "The Hardware Breakthrough"
+msgstr "Der Hardware-Durchbruch"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "The Market Gap We're Filling"
+msgstr "Die Marktlücke, die wir schließen"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"The NVIDIA GB10 Grace Blackwell is the first chip to bring data-centre-grade\n"
+"                                        AI inference to desktop form factor. What required a rack 18 months ago\n"
+"                                        now fits in a 15×15×5 cm box consuming 240W."
+msgstr ""
+"Der NVIDIA GB10 Grace Blackwell ist der erste Chip, der KI-Inferenz auf Rechenzentrum-Niveau\n"
+"                                        in den Desktop-Formfaktor bringt. Was vor 18 Monaten noch einen Rack erforderte,\n"
+"                                        passt nun in eine 15×15×5 cm Box mit 240 W Leistungsaufnahme."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"Typically 2–4 hours for a standard remote setup. Hardware arrives pre-"
+"configured. You connect it to your network, power it on, and our team "
+"completes configuration remotely. On-site setup is available for complex "
+"environments or if you prefer a hands-on session with your team."
+msgstr ""
+"Typischerweise 2–4 Stunden für eine Standard-Remote-Einrichtung. Die Hardware wird vorkonfiguriert "
+"geliefert. Sie schließen sie ans Netzwerk an, schalten sie ein, und unser Team "
+"schließt die Konfiguration remote ab. Vor-Ort-Einrichtung ist für komplexe "
+"Umgebungen oder auf Wunsch mit persönlichem Session für Ihr Team verfügbar."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"US export controls can cut off cloud AI services overnight. Local "
+"infrastructure is the only structural hedge against this risk."
+msgstr ""
+"US-Exportkontrollen können Cloud-KI-Dienste über Nacht abschneiden. Lokale "
+"Infrastruktur ist die einzige strukturelle Absicherung gegen dieses Risiko."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Up to 200B FP16 models"
+msgstr "Bis zu 200B FP16 Modelle"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "Up to 70B FP16 models"
+msgstr "Bis zu 70B FP16 Modelle"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "View Plans"
+msgstr "Tarife ansehen"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "View Products"
+msgstr "Produkte ansehen"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "We Manage Everything"
+msgstr "Wir verwalten alles"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"We believe European businesses deserve AI that respects their data, their laws,\n"
+"                                    and their independence. PrivateMind was founded to fill the gap that no one else is filling:\n"
+"                                    powerful, private AI that any SME can actually operate."
+msgstr ""
+"Wir glauben, dass europäische Unternehmen eine KI verdienen, die ihre Daten, ihre Gesetze\n"
+"                                    und ihre Unabhängigkeit respektiert. PrivateMind wurde gegründet, um die Lücke zu schließen, die sonst niemand füllt:\n"
+"                                    leistungsstarke, private KI, die jedes KMU tatsächlich betreiben kann."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"We curate a selection of best-in-class open-weight models including Llama "
+"3.3 70B Instruct (all-purpose), DeepSeek-R1 70B (reasoning and analysis), "
+"Qwen2.5 72B (multilingual), Gemma 3 27B (fast, efficient), and Mistral Large"
+" (European languages). Custom model selection is available from the "
+"Professional plan onwards. Enterprise customers can request fine-tuning on "
+"their own data."
+msgstr ""
+"Wir kuratieren eine Auswahl erstklassiger Open-Weight-Modelle, darunter Llama "
+"3.3 70B Instruct (Allzweck), DeepSeek-R1 70B (Analyse und Reasoning), "
+"Qwen2.5 72B (mehrsprachig), Gemma 3 27B (schnell, effizient) und Mistral Large "
+"(europäische Sprachen). Individuelle Modellauswahl ist ab dem Professional-Tarif verfügbar. "
+"Enterprise-Kunden können Finetuning auf eigenen Daten anfragen."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"We deliver a complete, ready-to-use AI system — hardware, software, and ongoing service —\n"
+"                            in one monthly subscription. The only thing you do is turn it on."
+msgstr ""
+"Wir liefern ein vollständiges, sofort einsatzbereites KI-System – Hardware, Software und laufender Service –\n"
+"                            in einem monatlichen Abonnement. Sie müssen es nur einschalten."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid ""
+"We specialise in data-sensitive industries where cloud AI is not an option."
+msgstr ""
+"Wir sind spezialisiert auf datensensible Branchen, in denen Cloud-KI keine Option ist."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"We'll help you choose. Schedule a free 30-minute consultation — no "
+"commitment required."
+msgstr ""
+"Wir helfen Ihnen bei der Wahl. Vereinbaren Sie eine kostenlose 30-minütige Beratung – "
+"ohne Verpflichtung."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"We're working with our first pilot customers in DACH. Get in touch to see "
+"what local AI can do for your business."
+msgstr ""
+"Wir arbeiten mit unseren ersten Pilotkunden im DACH-Raum. Nehmen Sie Kontakt auf und sehen Sie, "
+"was lokale KI für Ihr Unternehmen leisten kann."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Website"
+msgstr "Website"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "What AI models are included?"
+msgstr "Welche KI-Modelle sind enthalten?"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid “What exactly does \”local AI\” mean?”
+msgstr “Was genau bedeutet \”lokale KI\”?”
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Who We Work With"
+msgstr "Mit wem wir arbeiten"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "Why Now Is the Right Moment"
+msgstr "Warum jetzt der richtige Zeitpunkt ist"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Within 1 business day<br/>Mon–Fri, 09:00–18:00 CET"
+msgstr "Innerhalb von 1 Werktag<br/>Mo–Fr, 09:00–18:00 Uhr MEZ"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Workshop + ongoing advisory"
+msgstr "Workshop + laufende Beratung"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"Yes — by design. Since all data processing happens locally on your hardware,"
+" there is no transfer of personal data to a third-party processor for AI "
+"inference. You do not need a Data Processing Agreement (DPA) with "
+"PrivateMind for your AI usage. This makes the solution inherently compatible"
+" with GDPR, §203 StGB professional secrecy obligations, DORA, and NIS2."
+msgstr ""
+"Ja – by Design. Da die gesamte Datenverarbeitung lokal auf Ihrer Hardware stattfindet, "
+"werden für die KI-Inferenz keine personenbezogenen Daten an einen Auftragsverarbeiter übermittelt. "
+"Sie benötigen keinen Auftragsverarbeitungsvertrag (AVV) mit "
+"PrivateMind für Ihre KI-Nutzung. Die Lösung ist damit inhärent kompatibel "
+"mit DSGVO, §203 StGB Berufsgeheimnis, DORA und NIS2."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"Your AI runs entirely on hardware inside your office or server room. When "
+"you ask a question or upload a document, the data is processed on your "
+"appliance — not on any cloud server. No internet connection is required for "
+"AI inference."
+msgstr ""
+"Ihre KI läuft vollständig auf Hardware in Ihrem Büro oder Serverraum. Wenn "
+"Sie eine Frage stellen oder ein Dokument hochladen, werden die Daten auf Ihrer "
+"Appliance verarbeitet – nicht auf einem Cloud-Server. Für die KI-Inferenz ist "
+"keine Internetverbindung erforderlich."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid ""
+"Your PrivateMind appliance arrives pre-configured. Connect to your network, "
+"power on — AI is running within minutes."
+msgstr ""
+"Ihre PrivateMind-Appliance wird vorkonfiguriert geliefert. Ans Netzwerk anschließen, "
+"einschalten – KI läuft innerhalb von Minuten."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid ""
+"Your data stays in your building. Every inference, every query, every "
+"document — processed locally."
+msgstr ""
+"Ihre Daten bleiben in Ihrem Gebäude. Jede Inferenz, jede Anfrage, jedes "
+"Dokument – lokal verarbeitet."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "Zero Expertise Needed"
+msgstr "Kein Fachwissen erforderlich"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "info@privatemind.eu"
+msgstr "info@privatemind.eu"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "+49 351 48271891"
+msgstr "+49 351 48271891"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "Phone"
+msgstr "Telefon"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "privatemind.eu"
+msgstr "privatemind.eu"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
+msgid "you@company.com"
+msgstr "sie@unternehmen.de"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "✓ + scaling expansion"
+msgstr "✓ + Skalierungserweiterung"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "✓ Included"
+msgstr "✓ Enthalten"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
+msgid "📍 Based in Dresden, Germany"
+msgstr "📍 Standort: Dresden, Deutschland"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid "<span class=\"mx-2\">·</span>"
+msgstr "<span class=\"mx-2\">·</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid ""
+"<span class=\"pm-footer-badge\">🇩🇪 Made in Germany</span>\n"
+"                                <span class=\"pm-footer-badge\">✅ GDPR-compliant</span>\n"
+"                                <span class=\"pm-footer-badge\">⚡ NVIDIA GB10</span>"
+msgstr ""
+"<span class=\"pm-footer-badge\">🇩🇪 Made in Germany</span>\n"
+"                                <span class=\"pm-footer-badge\">✅ DSGVO-konform</span>\n"
+"                                <span class=\"pm-footer-badge\">⚡ NVIDIA GB10</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid ""
+"<span class=\"pm-footer-copy\">\n"
+"                                    © 2026 PrivateMind GmbH (in Gründung) · Dresden, Germany\n"
+"                                </span>"
+msgstr ""
+"<span class=\"pm-footer-copy\">\n"
+"                                    © 2026 PrivateMind GmbH (in Gründung) · Dresden, Deutschland\n"
+"                                </span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid "<span class=\"pm-footer-icon\">🌐</span>"
+msgstr "<span class=\"pm-footer-icon\">🌐</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid ""
+"<span class=\"pm-footer-icon\">📍</span>\n"
+"                                    Kurparkstraße 6 · 01324 Dresden · Germany"
+msgstr ""
+"<span class=\"pm-footer-icon\">📍</span>\n"
+"                                    Kurparkstraße 6 · 01324 Dresden · Deutschland"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid "<span class=\"pm-footer-icon\">📧</span>"
+msgstr "<span class=\"pm-footer-icon\">📧</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid "Appliances"
+msgstr "Appliances"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid "Book a Free Consultation →"
+msgstr "Kostenlose Beratung buchen →"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid ""
+"Enterprise-grade AI for European SMEs.<br/>\n"
+"                                Local. Private. Fully managed."
+msgstr ""
+"KI auf Enterprise-Niveau für europäische KMU.<br/>\n"
+"                                Lokal. Privat. Vollständig verwaltet."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid "Impressum"
+msgstr "Impressum"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid "Navigation"
+msgstr "Navigation"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
+msgid "Privacy Policy"
+msgstr "Datenschutzerklärung"

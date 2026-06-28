@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- noupdate="1": Records are written only on first install.
+         Subsequent update runs do NOT overwrite them, so the parent_id
+         pointing to website 1 root menu is preserved permanently. -->
+    <data noupdate="1">
+        <record id="menu_home" model="website.menu">
+            <field name="name">{"en_US": "Home", "de_DE": "Startseite"}</field>
+            <field name="url">/</field>
+            <field name="sequence">10</field>
+            <field name="website_id" eval="1"/>
+        </record>
+
+        <record id="menu_products" model="website.menu">
+            <field name="name">{"en_US": "Products &amp; Pricing", "de_DE": "Produkte &amp; Preise"}</field>
+            <field name="url">/products</field>
+            <field name="sequence">20</field>
+            <field name="website_id" eval="1"/>
+        </record>
+
+        <record id="menu_about" model="website.menu">
+            <field name="name">{"en_US": "About", "de_DE": "Über uns"}</field>
+            <field name="url">/about</field>
+            <field name="sequence">30</field>
+            <field name="website_id" eval="1"/>
+        </record>
+
+        <record id="menu_contact" model="website.menu">
+            <field name="name">{"en_US": "Contact", "de_DE": "Kontakt"}</field>
+            <field name="url">/contact</field>
+            <field name="sequence">40</field>
+            <field name="website_id" eval="1"/>
+        </record>
+    </data>
+</odoo>

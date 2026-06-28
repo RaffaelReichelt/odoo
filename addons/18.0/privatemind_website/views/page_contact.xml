@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="page_contact" name="PrivateMind Contact">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Contact PrivateMind</t>
+            <t t-set="meta_description">Get in touch with PrivateMind. Schedule a free consultation or request a quote for your local AI appliance.</t>
+
+            <div id="wrap">
+
+                <!-- Hero -->
+                <section class="pm-page-hero">
+                    <div class="container">
+                        <h1>Let's Talk</h1>
+                        <p>
+                            Schedule a free 30-minute consultation. We'll assess your situation,
+                            recommend the right configuration, and answer every question — no sales pressure.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Contact Main -->
+                <section class="pm-section" style="background:#f8fafc;">
+                    <div class="container">
+                        <div class="row g-5 justify-content-center">
+
+                            <!-- Contact Form -->
+                            <div class="col-lg-7">
+                                <div class="pm-contact-card">
+                                    <h3 style="font-weight:700;margin-bottom:8px;">Send Us a Message</h3>
+                                    <p style="color:#4a5d73;font-size:0.92rem;margin-bottom:28px;">
+                                        Fill in the form and we'll get back to you within one business day.
+                                    </p>
+
+                                    <form action="/web/dataset/call_kw" method="post" class="o_website_form"
+                                          data-model_name="mail.mail" data-success_page="/contact/thank-you">
+
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-600" style="font-size:0.88rem;">First Name *</label>
+                                                <input type="text" name="first_name" class="form-control" required="required"
+                                                       placeholder="John"/>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-600" style="font-size:0.88rem;">Last Name *</label>
+                                                <input type="text" name="last_name" class="form-control" required="required"
+                                                       placeholder="Doe"/>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-600" style="font-size:0.88rem;">Company *</label>
+                                                <input type="text" name="company" class="form-control" required="required"
+                                                       placeholder="Acme GmbH"/>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-600" style="font-size:0.88rem;">Business Email *</label>
+                                                <input type="email" name="email_from" class="form-control" required="required"
+                                                       placeholder="you@company.com"/>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label fw-600" style="font-size:0.88rem;">Interested In</label>
+                                                <select name="interested_in" class="form-select">
+                                                    <option value="">— Please select —</option>
+                                                    <option value="standard">PrivateMind Standard (€3,800 + €149/mo)</option>
+                                                    <option value="professional">PrivateMind Professional (€4,500 + €699/mo)</option>
+                                                    <option value="premium">PrivateMind Premium (€9,500 + €699/mo)</option>
+                                                    <option value="enterprise">PrivateMind Enterprise (from €62,500)</option>
+                                                    <option value="bundle_standard">Bundle Standard (€299/mo all-in)</option>
+                                                    <option value="bundle_professional">Bundle Professional (€999/mo all-in)</option>
+                                                    <option value="demo">Just a demo / general questions</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label fw-600" style="font-size:0.88rem;">Message *</label>
+                                                <textarea name="body_html" class="form-control" rows="5" required="required"
+                                                          placeholder="Tell us about your use case, team size, and any compliance requirements..."/>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="privacy" required="required"/>
+                                                    <label class="form-check-label" for="privacy" style="font-size:0.85rem;color:#4a5d73;">
+                                                        I agree that PrivateMind may store and process my data to respond to this enquiry.
+                                                        I can request deletion at any time.
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-2">
+                                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                                    Send Message →
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Contact Info -->
+                            <div class="col-lg-4">
+                                <h3 style="font-weight:700;margin-bottom:24px;">Get in Touch</h3>
+
+                                <div class="pm-contact-info-item">
+                                    <div class="pm-contact-icon">📧</div>
+                                    <div>
+                                        <h6>Email</h6>
+                                        <p><a href="mailto:info@privatemind.eu" style="color:#007bff;text-decoration:none;">info@privatemind.eu</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="pm-contact-info-item">
+                                    <div class="pm-contact-icon">📞</div>
+                                    <div>
+                                        <h6>Phone</h6>
+                                        <p><a href="tel:+4935148271891" style="color:#007bff;text-decoration:none;">+49 351 48271891</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="pm-contact-info-item">
+                                    <div class="pm-contact-icon">📍</div>
+                                    <div>
+                                        <h6>Location</h6>
+                                        <p>Kurparkstraße 6<br/>01324 Dresden<br/>Germany</p>
+                                    </div>
+                                </div>
+
+                                <div class="pm-contact-info-item">
+                                    <div class="pm-contact-icon">🌐</div>
+                                    <div>
+                                        <h6>Website</h6>
+                                        <p>privatemind.eu</p>
+                                    </div>
+                                </div>
+
+                                <div class="pm-contact-info-item">
+                                    <div class="pm-contact-icon">⏱️</div>
+                                    <div>
+                                        <h6>Response Time</h6>
+                                        <p>Within 1 business day<br/>Mon–Fri, 09:00–18:00 CET</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 p-4 rounded" style="background:linear-gradient(135deg,rgba(0,123,255,0.08),rgba(139,42,248,0.06));border:1px solid rgba(0,123,255,0.15);">
+                                    <p style="font-size:0.88rem;color:#4a5d73;margin:0;line-height:1.6;">
+                                        <strong style="color:#111;">Free consultation included.</strong><br/>
+                                        Every first contact includes a no-obligation 30-minute call where we
+                                        assess your requirements and recommend the right solution — or tell you
+                                        honestly if we're not the right fit.
+                                    </p>
+                                </div>
+
+                                <div class="mt-4 p-4 rounded" style="background:#f8fafc;border:1px solid #e2e8f0;">
+                                    <p style="font-size:0.82rem;color:#4a5d73;margin:0;line-height:1.6;">
+                                        <strong style="color:#111;">🔒 Privacy note:</strong><br/>
+                                        Your contact data is stored on our Odoo system, hosted on our own servers in Germany.
+                                        It is never shared with third parties and not used for AI training.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Target customers -->
+                <section class="pm-section" style="background:#fff;">
+                    <div class="container">
+                        <h2 class="pm-section-title">Who We Work With</h2>
+                        <p class="pm-section-sub">We specialise in data-sensitive industries where cloud AI is not an option.</p>
+                        <div class="row g-3 justify-content-center">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="text-center p-3 rounded" style="background:#f8fafc;border:1px solid #e2e8f0;">
+                                    <div style="font-size:1.8rem;margin-bottom:8px;">⚖️</div>
+                                    <small style="color:#4a5d73;font-weight:500;">Law Firms</small>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="text-center p-3 rounded" style="background:#f8fafc;border:1px solid #e2e8f0;">
+                                    <div style="font-size:1.8rem;margin-bottom:8px;">🏥</div>
+                                    <small style="color:#4a5d73;font-weight:500;">Medical Practices</small>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="text-center p-3 rounded" style="background:#f8fafc;border:1px solid #e2e8f0;">
+                                    <div style="font-size:1.8rem;margin-bottom:8px;">📊</div>
+                                    <small style="color:#4a5d73;font-weight:500;">Tax Advisors</small>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="text-center p-3 rounded" style="background:#f8fafc;border:1px solid #e2e8f0;">
+                                    <div style="font-size:1.8rem;margin-bottom:8px;">🏗️</div>
+                                    <small style="color:#4a5d73;font-weight:500;">Engineering Firms</small>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="text-center p-3 rounded" style="background:#f8fafc;border:1px solid #e2e8f0;">
+                                    <div style="font-size:1.8rem;margin-bottom:8px;">💼</div>
+                                    <small style="color:#4a5d73;font-weight:500;">Consultancies</small>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="text-center p-3 rounded" style="background:#f8fafc;border:1px solid #e2e8f0;">
+                                    <div style="font-size:1.8rem;margin-bottom:8px;">🏦</div>
+                                    <small style="color:#4a5d73;font-weight:500;">Financial Services</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <record id="page_contact_record" model="website.page">
+        <field name="name">Contact</field>
+        <field name="url">/contact</field>
+        <field name="view_id" ref="page_contact"/>
+        <field name="website_published">True</field>
+    </record>
+</odoo>

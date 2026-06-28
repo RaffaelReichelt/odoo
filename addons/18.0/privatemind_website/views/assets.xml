@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="privatemind_website_css" model="ir.asset">
+        <field name="name">PrivateMind Website CSS</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">/privatemind_website/static/src/css/website.css</field>
+    </record>
+</odoo>

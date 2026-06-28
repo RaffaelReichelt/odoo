@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="external_layout_privatemind_cd" name="PrivateMind CD">
+        <div>
+            <t t-set="is_din_paperformat"
+                t-value="company.paperformat_id in [env.ref('l10n_din5008.paperformat_euro_din_a', raise_if_not_found=False), env.ref('l10n_din5008.paperformat_euro_din', raise_if_not_found=False)]"/>
+
+            <!-- Header -->
+            <div t-attf-class="header din_page o_company_#{company.id}_layout #{'din_page_pdf' if report_type == 'pdf' and is_din_paperformat else ''}">
+                <table class="company_header table-borderless w-100" t-att-style="'height: %dmm;' % (din_header_spacing or 27)">
+                    <tr>
+                        <td><div class="h3 mt0" t-field="company.report_header"/></td>
+                        <td class="text-end">
+                            <img t-if="company.logo"
+                                 t-att-src="image_data_uri(company.logo)"
+                                 t-att-style="'max-height: %dmm; max-width: 60mm;' % ((din_header_spacing or 27) - 2)"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Background -->
+            <t t-set="layout_background_url"
+               t-value="'data:image/png;base64,%s' % company.layout_background_image.decode('utf-8') if company.layout_background_image and company.layout_background == 'Custom' else
+                        '/base/static/img/demo_logo_report.png' if company.layout_background == 'Demo logo' else ''"/>
+
+            <!-- Body -->
+            <div t-attf-class="din_page invoice_note article o_company_#{company.id}_layout {{'o_report_layout_background' if company.layout_background in ['Geometric', 'Custom'] else ''}} #{'din_page_pdf' if report_type == 'pdf' and is_din_paperformat else ''}"
+                 t-attf-style="{{ 'background-image: url(%s);' % layout_background_url if layout_background_url else '' }}"
+                 t-att-data-oe-model="o and o._name"
+                 t-att-data-oe-id="o and o.id">
+                <table class="din_company_info table-borderless">
+                    <tr>
+                        <td>
+                            <div class="address" id="din5008_report_main_address">
+                                <div class="colored_address">
+                                    <t t-if="company.name"><span t-field="company.name"/></t>
+                                    <t t-if="company.street"><span>|</span> <span t-field="company.street"/></t>
+                                    <t t-if="company.street2"><span>|</span> <span t-field="company.street2"/></t>
+                                    <t t-if="company.zip"><span>|</span> <span t-field="company.zip"/></t>
+                                    <t t-if="company.city">
+                                        <span t-if="not company.zip">|</span> <span t-field="company.city"/>
+                                    </t>
+                                    <t t-if="company.country_id"><span>|</span> <span t-field="company.country_id.name"/></t>
+                                </div>
+                                <hr class="company_invoice_line"/>
+                                <span t-if="address">
+                                    <t t-out="address"/>
+                                </span>
+                                <span t-else="fallback_address">
+                                    <t t-out="fallback_address"
+                                       t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}'/>
+                                </span>
+                            </div>
+                        </td>
+                        <td t-if="din5008_document_information">
+                            <t t-out="din5008_document_information"/>
+                        </td>
+                    </tr>
+                    <t t-if="din5008_address_block">
+                        <t t-out="din5008_address_block"/>
+                    </t>
+                </table>
+                <h2>
+                    <span t-if="not o and not docs">Invoice</span>
+                    <span t-else="">
+                        <t t-set="o" t-value="docs[0]" t-if="not o"/>
+                        <t t-if="din5008_document_title">
+                            <t t-out="din5008_document_title"/>
+                        </t>
+                        <span t-elif="'name' in o" t-field="o.name"/>
+                    </span>
+                </h2>
+                <t t-out="0"/>
+            </div>
+
+            <!-- Footer -->
+            <div t-attf-class="din_page footer o_company_#{company.id}_layout #{'din_page_pdf' if report_type == 'pdf' and is_din_paperformat else ''}">
+                <div class="text-end page_number">
+                    <div class="text-muted">
+                        Seite: <span class="page"/> von <span class="topage"/>
+                    </div>
+                </div>
+                <div class="company_details">
+                    <table class="table-borderless w-100">
+                        <tr>
+                            <td>
+                                <ul class="list-inline">
+                                    <li t-if="company.name"><strong><span t-field="company.name"/></strong></li>
+                                    <li t-if="company.street"><span t-field="company.street"/></li>
+                                    <li t-if="company.zip or company.city">
+                                        <span t-if="company.zip" t-field="company.zip"/>
+                                        <span t-if="company.city" t-field="company.city"/>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="list-inline">
+                                    <li t-if="company.phone">Tel: <span t-field="company.phone"/></li>
+                                    <li t-if="company.email">E-Mail: <span t-field="company.email"/></li>
+                                    <li t-if="company.website">Web: <span t-field="company.website"/></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="list-inline">
+                                    <li t-if="company.vat">
+                                        <t t-out="company.account_fiscal_country_id.vat_label or 'USt-IdNr.'"/>:
+                                        <span t-if="forced_vat" t-out="forced_vat"/>
+                                        <span t-else="" t-field="company.vat"/>
+                                    </li>
+                                    <li t-if="company.company_registry">
+                                        HRB: <span t-field="company.company_registry"/>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td t-if="company.partner_id.bank_ids">
+                                <ul class="list-inline">
+                                    <t t-foreach="company.partner_id.bank_ids[:1]" t-as="bank">
+                                        <li><span t-field="bank.bank_id.name"/></li>
+                                        <li class="text-nowrap">IBAN: <span t-field="bank.acc_number"/></li>
+                                        <li>BIC: <span t-field="bank.bank_id.bic"/></li>
+                                    </t>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

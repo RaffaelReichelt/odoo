@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200">
+  <defs>
+    <!-- Kern-Glow für dunklen Hintergrund -->
+    <radialGradient id="coreGlowDark" cx="30%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#00e0ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 3D-Knoten-Gradient -->
+    <radialGradient id="nodeGradDark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#00d4ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#8b2af8" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Linien-Gradient Cyan → Violett -->
+    <linearGradient id="linkGradDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="50%" stop-color="#44a8ff"/>
+      <stop offset="100%" stop-color="#8b2af8"/>
+    </linearGradient>
+
+    <!-- Subtiler Tiefen-Glow für Dark-Mode -->
+    <filter id="softGlowDark" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.1
+                0 0 0 0 0.8
+                0 0 0 0 1
+                0 0 0 0.9 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Neuraler Energiekern (Dark-Mode) -->
+  <g transform="translate(80,100)" filter="url(#softGlowDark)">
+    <!-- Kern-Glow -->
+    <circle cx="0" cy="0" r="44" fill="url(#coreGlowDark)"/>
+
+    <!-- Verbindungs-Linien, spacig & organisch -->
+    <g stroke="url(#linkGradDark)" stroke-width="2.2" stroke-linecap="round">
+      <!-- Hauptachsen -->
+      <path d="M -72 0 Q -36 -10 0 0 T 72 0" fill="none" opacity="0.95"/>
+      <path d="M -52 -42 Q -16 -18 0 0 T 58 40" fill="none" opacity="0.9"/>
+      <path d="M -58 37 Q -22 12 0 0 T 52 -42" fill="none" opacity="0.85"/>
+
+      <!-- äußere Layer -->
+      <path d="M -82 -12 Q -42 -38 0 -26 T 68 -48" fill="none" opacity="0.6"/>
+      <path d="M -78 22 Q -38 38 0 26 T 72 38" fill="none" opacity="0.6"/>
+
+      <!-- innere, spiralförmige Energie-Linien -->
+      <path d="M -26 -6 Q -11 -26 0 -19 T 19 -6" fill="none" opacity="0.95"/>
+      <path d="M -19 11 Q -6 27 0 19 T 21 9" fill="none" opacity="0.95"/>
+      <path d="M -11 -23 Q 0 -32 11 -21" fill="none" opacity="0.75"/>
+      <path d="M -9 23 Q 0 32 13 21" fill="none" opacity="0.75"/>
+    </g>
+
+    <!-- Knoten mit 3D-Anmutung -->
+    <g fill="url(#nodeGradDark)">
+      <!-- äußere Knoten -->
+      <circle cx="-72" cy="0" r="5.7"/>
+      <circle cx="72" cy="0" r="6.1"/>
+      <circle cx="-52" cy="-42" r="5.1"/>
+      <circle cx="58" cy="40" r="5.3"/>
+      <circle cx="-58" cy="37" r="5.1"/>
+      <circle cx="52" cy="-42" r="5.3"/>
+      <circle cx="-82" cy="-12" r="4.7"/>
+      <circle cx="68" cy="-48" r="4.9"/>
+      <circle cx="-78" cy="22" r="4.7"/>
+      <circle cx="72" cy="38" r="4.9"/>
+
+      <!-- mittlere Knoten -->
+      <circle cx="-26" cy="-6" r="4.6"/>
+      <circle cx="26" cy="-6" r="4.6"/>
+      <circle cx="-19" cy="11" r="4.4"/>
+      <circle cx="23" cy="11" r="4.4"/>
+
+      <!-- Kern -->
+      <circle cx="0" cy="0" r="11" fill="url(#nodeGradDark)"/>
+    </g>
+  </g>
+
+  <!-- Wortmarke "PrivateMind" für Dark-Mode (weiß + Tech-Cyan) -->
+  <g transform="translate(210,112)">
+    <text x="0" y="0"
+      font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+      font-size="40"
+      font-weight="700"
+      letter-spacing="0.5">
+      <tspan fill="#ffffff">Private</tspan><tspan fill="#00d4ff">Mind</tspan>
+    </text>
+    <text x="0" y="28"
+      font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+      font-size="14"
+      font-weight="500"
+      letter-spacing="0"
+      textLength="232"
+      lengthAdjust="spacing"
+      fill="#a8b7c8">
+      Secure Intelligent Private
+    </text>
+  </g>
+</svg>

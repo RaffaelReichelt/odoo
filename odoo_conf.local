@@ -1,0 +1,22 @@
+[options]
+admin_passwd = $pbkdf2-sha512$600000$19r73/vfuzdmrDUmJESIMQ$Zh97JPHGm447el35thixMvTDur9v0b4KxaOX1/YnT/BVbpvo1xz05iRC3.87/mjLJc26AdyDXfIynDpv4fSpOw
+addons_path = /usr/src/odoo/community/addons,/usr/src/odoo/addons/18.0,/usr/src/odoo/reporting-engine,/usr/src/odoo/OCA/web, /usr/src/odoo/svn_orbitpdf-18, /usr/src/odoo/theme_liquid_glass
+db_name = odoo
+db_host = postgres
+db_port = 5432
+db_user = odoo
+db_password = odoo
+data_dir = /home/odoo
+list_db = True
+proxy_mode = False
+db_maxconn = 100
+max_cron_threads = 2
+max_connections = 1000
+session_timeout = 60
+session_gc = 60
+sessions.max_inactivity_seconds = 60
+
+[sessions]
+max_inactivity_seconds = 60
+
+ 

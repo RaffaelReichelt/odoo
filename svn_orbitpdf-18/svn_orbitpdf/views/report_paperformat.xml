@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="paperformat_view_form" model="ir.ui.view">
+        <field name="name">paper_format_view_form</field>
+        <field name="model">report.paperformat</field>
+        <field name="inherit_id" ref="base.paperformat_view_form"/>
+        <field name="arch" type="xml">
+            <group position="inside">
+                <group name="main">
+                    <separator name="x" string="General"/>
+                    <separator name="y" string="wkhtmltopdf Only"/>
+                </group>
+                <group name="css" string="CSS Paged Media"/>
+            </group>
+            <xpath expr="//separator[@name='x']" position="after">
+                <xpath expr="//field[@name='name']" position="move"/>
+                <xpath expr="//field[@name='format']" position="move"/>
+                <xpath expr="//field[@name='page_height']" position="move"/>
+                <xpath expr="//field[@name='page_width']" position="move"/>
+                <xpath expr="//field[@name='orientation']" position="move"/>
+                <xpath expr="//field[@name='report_ids']" position="move"/>
+            </xpath>
+            <xpath expr="//separator[@name='y']" position="after">
+                <xpath expr="//field[@name='dpi']" position="move"/>
+                <xpath expr="//field[@name='header_line']" position="move"/>
+                <xpath expr="//field[@name='header_spacing']" position="move"/>
+                <xpath expr="//field[@name='disable_shrinking']" position="move"/>
+                <separator string="Fallback Margins"/>
+                <xpath expr="//field[@name='margin_top']" position="move"/>
+                <xpath expr="//field[@name='margin_right']" position="move"/>
+                <xpath expr="//field[@name='margin_bottom']" position="move"/>
+                <xpath expr="//field[@name='margin_left']" position="move"/>
+            </xpath>
+            <xpath expr="//group[@name='css']" position="inside">
+                <field name="active" invisible="1"/>
+                <field name="css_media" widget="code" colspan="2" nolabel="1" options="{'mode': 'scss'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

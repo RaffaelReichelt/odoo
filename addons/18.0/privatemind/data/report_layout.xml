@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="report_layout_privatemind_cd" model="report.layout">
+            <field name="view_id" ref="privatemind.external_layout_privatemind_cd"/>
+            <field name="image"></field>
+            <field name="pdf"></field>
+            <field name="name">PrivateMind CD</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="page_homepage" name="PrivateMind Homepage">
+        <t t-call="website.layout">
+            <t t-set="pageName" t-value="'homepage'"/>
+            <t t-set="additional_title">PrivateMind — AI That Stays In Your House</t>
+            <t t-set="meta_description">Enterprise-grade AI for European SMEs. Local, private, GDPR-compliant. No cloud, no data leaves your building. NVIDIA GB10 Grace Blackwell Appliance.</t>
+
+            <div id="wrap">
+
+                <!-- ═══════════════════════════════════════════════
+                     HERO
+                ═══════════════════════════════════════════════ -->
+                <section class="pm-hero">
+                    <div class="container">
+                        <div class="row align-items-center g-5">
+
+                            <div class="col-lg-6">
+                                <div class="pm-badge">
+                                    <span>🇪🇺</span> GDPR-Compliant · Made in Germany · NVIDIA-Powered
+                                </div>
+                                <h1>
+                                    AI That Stays<br/>
+                                    <span class="accent">In Your House.</span>
+                                </h1>
+                                <p class="pm-lead">
+                                    Enterprise-grade AI for European SMEs — local, private, fully managed.
+                                    Your data never leaves your building. No cloud. No compliance risk. No IT expertise needed.
+                                </p>
+                                <div class="pm-cta-group">
+                                    <a href="/contact" class="btn btn-primary btn-lg px-4">Get Started →</a>
+                                    <a href="/products" class="btn btn-outline-light btn-lg px-4">View Plans</a>
+                                </div>
+
+                                <div class="pm-hero-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">70B+</span>
+                                        <span class="stat-label">Parameter Models</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">€299</span>
+                                        <span class="stat-label">From / Month</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">0</span>
+                                        <span class="stat-label">Cloud Uploads</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 text-center d-none d-lg-block">
+                                <img src="/privatemind_website/static/src/img/logo.svg"
+                                     alt="PrivateMind"
+                                     class="pm-hero-logo"/>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════════
+                     TRUST BAR
+                ═══════════════════════════════════════════════ -->
+                <div class="pm-trust">
+                    <div class="container">
+                        <div class="pm-trust-items">
+                            <div class="pm-trust-item">
+                                <span class="pm-trust-icon">🔒</span>
+                                <span>Data never leaves your premises</span>
+                            </div>
+                            <div class="pm-trust-item">
+                                <span class="pm-trust-icon">✅</span>
+                                <span>GDPR-compliant out of the box</span>
+                            </div>
+                            <div class="pm-trust-item">
+                                <span class="pm-trust-icon">⚡</span>
+                                <span>NVIDIA Grace Blackwell GPU</span>
+                            </div>
+                            <div class="pm-trust-item">
+                                <span class="pm-trust-icon">🇩🇪</span>
+                                <span>Based in Dresden, Germany</span>
+                            </div>
+                            <div class="pm-trust-item">
+                                <span class="pm-trust-icon">🔧</span>
+                                <span>Fully managed — zero IT expertise needed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ═══════════════════════════════════════════════
+                     PROBLEM
+                ═══════════════════════════════════════════════ -->
+                <section class="pm-section pm-problem">
+                    <div class="container">
+                        <h2 class="pm-section-title">The AI Dilemma for European SMEs</h2>
+                        <p class="pm-section-sub">
+                            AI is no longer optional — but for many European businesses, mainstream cloud AI is simply not an option.
+                        </p>
+
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="pm-problem-card">
+                                    <div class="pm-icon">⚠️</div>
+                                    <h4>Cloud AI Violates Compliance</h4>
+                                    <p>
+                                        GDPR Art. 28, §203 StGB, DORA, NIS2 — regulated industries
+                                        cannot send client data, contracts, or financial records to
+                                        US cloud servers. Every ChatGPT query is a compliance risk.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="pm-problem-card">
+                                    <div class="pm-icon">🔧</div>
+                                    <h4>Self-Hosting Is Too Complex</h4>
+                                    <p>
+                                        Open-source tools like Ollama require Linux expertise, Docker,
+                                        GPU drivers, and ongoing maintenance. SMEs don't have dedicated
+                                        IT staff — let alone ML engineers.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="pm-problem-card">
+                                    <div class="pm-icon">💸</div>
+                                    <h4>Enterprise Solutions Cost a Fortune</h4>
+                                    <p>
+                                        On-premise AI from traditional vendors starts at €50,000+
+                                        and requires a dedicated IT team to operate. Most SMEs simply
+                                        cannot afford this — until now.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════════
+                     SOLUTION
+                ═══════════════════════════════════════════════ -->
+                <section class="pm-section pm-solution">
+                    <div class="container">
+                        <h2 class="pm-section-title">PrivateMind: Your AI Department as a Service</h2>
+                        <p class="pm-section-sub">
+                            We deliver a complete, ready-to-use AI system — hardware, software, and ongoing service —
+                            in one monthly subscription. The only thing you do is turn it on.
+                        </p>
+
+                        <div class="pm-solution-grid">
+                            <div class="pm-solution-item">
+                                <div class="pm-check">✓</div>
+                                <div>
+                                    <h5>Plug In &amp; Go</h5>
+                                    <p>Your PrivateMind appliance arrives pre-configured. Connect to your network, power on — AI is running within minutes.</p>
+                                </div>
+                            </div>
+                            <div class="pm-solution-item">
+                                <div class="pm-check">✓</div>
+                                <div>
+                                    <h5>Data Stays With You</h5>
+                                    <p>All AI processing happens locally on your hardware. No internet required for inference. Zero cloud uploads, ever.</p>
+                                </div>
+                            </div>
+                            <div class="pm-solution-item">
+                                <div class="pm-check">✓</div>
+                                <div>
+                                    <h5>Enterprise Model Quality</h5>
+                                    <p>NVIDIA GB10 Grace Blackwell runs 70B+ parameter models at real-time speed. Same technology as data centres — on your desk.</p>
+                                </div>
+                            </div>
+                            <div class="pm-solution-item">
+                                <div class="pm-check">✓</div>
+                                <div>
+                                    <h5>We Manage Everything</h5>
+                                    <p>Model updates, OS patches, performance tuning, new model onboarding — all handled by PrivateMind. You focus on your business.</p>
+                                </div>
+                            </div>
+                            <div class="pm-solution-item">
+                                <div class="pm-check">✓</div>
+                                <div>
+                                    <h5>GDPR-Compliant by Design</h5>
+                                    <p>No data processing agreement needed for AI inference. Your data never leaves your premises — compliance is built in, not bolted on.</p>
+                                </div>
+                            </div>
+                            <div class="pm-solution-item">
+                                <div class="pm-check">✓</div>
+                                <div>
+                                    <h5>Geopolitical Independence</h5>
+                                    <p>US export controls can cut off cloud AI services overnight. Local infrastructure is the only structural hedge against this risk.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════════
+                     PRODUCTS OVERVIEW
+                ═══════════════════════════════════════════════ -->
+                <section class="pm-section pm-products">
+                    <div class="container">
+                        <h2 class="pm-section-title">Choose Your Setup</h2>
+                        <p class="pm-section-sub">
+                            Four hardware configurations — from a solo practitioner to a 100-user enterprise deployment.
+                            All come with our managed service subscription.
+                        </p>
+
+                        <div class="row g-4 align-items-stretch">
+
+                            <!-- Standard -->
+                            <div class="col-md-6 col-xl-3">
+                                <div class="pm-product-card">
+                                    <div class="pm-product-tier">Standard</div>
+                                    <h3>PrivateMind Standard</h3>
+                                    <p class="pm-product-desc">For solo practitioners and small teams who need private AI without the complexity.</p>
+                                    <div class="pm-price-block">
+                                        <span class="pm-price">€3,800</span>
+                                        <span class="pm-price-sub">one-time hardware + €149/mo service</span>
+                                        <span class="pm-price-sub">or all-in bundle from €299/mo</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul>
+                                        <li>1× ASUS Ascent GX10, 1 TB SSD</li>
+                                        <li>128 GB Unified Memory</li>
+                                        <li>Up to 70B FP16 models</li>
+                                        <li>3–8 concurrent users</li>
+                                        <li>3–5 curated AI models</li>
+                                        <li>Remote setup included</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-outline-primary w-100">Get Started</a>
+                                </div>
+                            </div>
+
+                            <!-- Professional -->
+                            <div class="col-md-6 col-xl-3">
+                                <div class="pm-product-card featured">
+                                    <div class="pm-featured-badge">Most Popular</div>
+                                    <div class="pm-product-tier">Professional</div>
+                                    <h3>PrivateMind Professional</h3>
+                                    <p class="pm-product-desc">For teams that need custom model selection and proactive monitoring.</p>
+                                    <div class="pm-price-block">
+                                        <span class="pm-price">€4,500</span>
+                                        <span class="pm-price-sub">one-time hardware + €699/mo service</span>
+                                        <span class="pm-price-sub">or all-in bundle from €999/mo</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul>
+                                        <li>1× ASUS Ascent GX10, 2 TB SSD</li>
+                                        <li>128 GB Unified Memory</li>
+                                        <li>Custom model selection</li>
+                                        <li>3–8 concurrent users</li>
+                                        <li>Proactive monitoring by PrivateMind</li>
+                                        <li>4h SLA · Priority support</li>
+                                        <li>RAG setup included</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-primary w-100">Get Started</a>
+                                </div>
+                            </div>
+
+                            <!-- Premium -->
+                            <div class="col-md-6 col-xl-3">
+                                <div class="pm-product-card">
+                                    <div class="pm-product-tier">Premium</div>
+                                    <h3>PrivateMind Premium</h3>
+                                    <p class="pm-product-desc">Dual-system cluster for larger teams requiring maximum model quality.</p>
+                                    <div class="pm-price-block">
+                                        <span class="pm-price">€9,500</span>
+                                        <span class="pm-price-sub">one-time hardware + €699/mo service</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul>
+                                        <li>2× ASUS Ascent GX10 Cluster</li>
+                                        <li>256 GB Unified Memory</li>
+                                        <li>Up to 200B FP16 models</li>
+                                        <li>8–20 concurrent users</li>
+                                        <li>All Professional features</li>
+                                        <li>Cluster &amp; scaling support</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-outline-primary w-100">Get Started</a>
+                                </div>
+                            </div>
+
+                            <!-- Enterprise -->
+                            <div class="col-md-6 col-xl-3">
+                                <div class="pm-product-card">
+                                    <div class="pm-product-tier">Enterprise</div>
+                                    <h3>PrivateMind Enterprise</h3>
+                                    <p class="pm-product-desc">Rack-mount 2U server for mid-size enterprises and high-concurrency deployments.</p>
+                                    <div class="pm-price-block">
+                                        <span class="pm-price">€62,500</span>
+                                        <span class="pm-price-sub">one-time hardware + €1,999/mo service</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul>
+                                        <li>4× NVIDIA L40S 48 GB, 192 GB VRAM</li>
+                                        <li>2U Rack, 19" EIA</li>
+                                        <li>20–100 concurrent users</li>
+                                        <li>Dedicated account manager</li>
+                                        <li>2h SLA · On-site support</li>
+                                        <li>Custom finetuning available</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-outline-primary w-100">Contact Sales</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="text-center mt-5">
+                            <a href="/products" class="btn btn-outline-primary btn-lg px-5">
+                                Full Pricing Details →
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════════
+                     FINAL CTA
+                ═══════════════════════════════════════════════ -->
+                <section class="pm-cta-section">
+                    <div class="container position-relative">
+                        <h2>Ready to Bring AI In-House?</h2>
+                        <p>
+                            Schedule a free consultation. We'll help you pick the right configuration
+                            and show you what AI can do for your business — without touching your data.
+                        </p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="/contact" class="btn btn-primary btn-lg px-5">Schedule a Demo</a>
+                            <a href="/about" class="btn btn-outline-light btn-lg px-5">About PrivateMind</a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <record id="page_homepage_record" model="website.page">
+        <field name="name">Homepage</field>
+        <field name="url">/</field>
+        <field name="view_id" ref="page_homepage"/>
+        <field name="website_published">True</field>
+        <field name="is_homepage">True</field>
+    </record>
+</odoo>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="page_products" name="PrivateMind Products &amp; Pricing">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Products &amp; Pricing — PrivateMind</t>
+            <t t-set="meta_description">PrivateMind AI Appliances: Standard, Professional, Premium, Enterprise. Local AI for European SMEs. Pricing from €299/month all-inclusive.</t>
+
+            <div id="wrap">
+
+                <!-- Page Hero -->
+                <section class="pm-page-hero">
+                    <div class="container">
+                        <h1>Products &amp; Pricing</h1>
+                        <p>
+                            Four configurations for every scale — from solo practitioners to enterprise deployments.
+                            All powered by NVIDIA GB10 Grace Blackwell. All managed by PrivateMind.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════════
+                     HARDWARE APPLIANCES
+                ═══════════════════════════════════════════════ -->
+                <section class="pm-section" style="background:#fff;">
+                    <div class="container">
+                        <h2 class="pm-section-title">Hardware Appliances</h2>
+                        <p class="pm-section-sub">
+                            Choose your hardware. Add a service plan. Every appliance is pre-configured,
+                            shipped to your office, and set up remotely by our team.
+                        </p>
+
+                        <div class="row g-4 align-items-stretch">
+
+                            <div class="col-md-6 col-xl-3">
+                                <div class="pm-product-card">
+                                    <div class="pm-product-tier">Standard</div>
+                                    <h3>PrivateMind Standard</h3>
+                                    <p class="pm-product-desc">Ideal for lawyers, medical practices, consultancies and solo AI users who need private inference without complexity.</p>
+                                    <div class="pm-price-block">
+                                        <span class="pm-price">€3,800</span>
+                                        <span class="pm-price-sub">net, one-time · 19% VAT applies</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul>
+                                        <li>1× ASUS Ascent GX10</li>
+                                        <li>NVIDIA GB10 Grace Blackwell</li>
+                                        <li>128 GB LPDDR5X Unified Memory</li>
+                                        <li>1 TB NVMe SSD</li>
+                                        <li>Max model size: 70B FP16 / 200B INT4</li>
+                                        <li>3–8 concurrent users</li>
+                                        <li>Desktop form factor (15×15×5 cm)</li>
+                                        <li>240W power consumption</li>
+                                        <li>Remote setup &amp; configuration included</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-outline-primary w-100">Request Quote</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xl-3">
+                                <div class="pm-product-card featured">
+                                    <div class="pm-featured-badge">Most Popular</div>
+                                    <div class="pm-product-tier">Professional</div>
+                                    <h3>PrivateMind Professional</h3>
+                                    <p class="pm-product-desc">For teams with demanding document workloads, RAG pipelines, and the need for proactive management.</p>
+                                    <div class="pm-price-block">
+                                        <span class="pm-price">€4,500</span>
+                                        <span class="pm-price-sub">net, one-time · 19% VAT applies</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul>
+                                        <li>1× ASUS Ascent GX10</li>
+                                        <li>NVIDIA GB10 Grace Blackwell</li>
+                                        <li>128 GB LPDDR5X Unified Memory</li>
+                                        <li>2 TB NVMe SSD</li>
+                                        <li>Max model size: 70B FP16 / 200B INT4</li>
+                                        <li>3–8 concurrent users</li>
+                                        <li>Custom model selection</li>
+                                        <li>Remote setup &amp; configuration included</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-primary w-100">Request Quote</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xl-3">
+                                <div class="pm-product-card">
+                                    <div class="pm-product-tier">Premium</div>
+                                    <h3>PrivateMind Premium</h3>
+                                    <p class="pm-product-desc">Dual-node cluster for large teams or where maximum model quality and concurrent users matter.</p>
+                                    <div class="pm-price-block">
+                                        <span class="pm-price">€9,500</span>
+                                        <span class="pm-price-sub">net, one-time · 19% VAT applies</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul>
+                                        <li>2× ASUS Ascent GX10 (Cluster)</li>
+                                        <li>2× NVIDIA GB10 Grace Blackwell</li>
+                                        <li>256 GB Unified Memory (combined)</li>
+                                        <li>2× 2 TB NVMe SSD</li>
+                                        <li>Max model size: 200B FP16 / 405B INT4</li>
+                                        <li>8–20 concurrent users</li>
+                                        <li>Cluster networking setup included</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-outline-primary w-100">Request Quote</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xl-3">
+                                <div class="pm-product-card">
+                                    <div class="pm-product-tier">Enterprise</div>
+                                    <h3>PrivateMind Enterprise</h3>
+                                    <p class="pm-product-desc">Rack-mount server for mid-size enterprises, high-concurrency needs, and data centre integration.</p>
+                                    <div class="pm-price-block">
+                                        <span class="pm-price">€62,500</span>
+                                        <span class="pm-price-sub">net, one-time · 19% VAT applies</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul>
+                                        <li>4× NVIDIA L40S 48 GB</li>
+                                        <li>192 GB GDDR6 VRAM (total)</li>
+                                        <li>2U Rack Server, 19" EIA</li>
+                                        <li>OEM: ASUS ESC4000A-E12 or Dell PowerEdge R760xa</li>
+                                        <li>Max model size: 405B FP16 / 700B+ INT4</li>
+                                        <li>20–100 concurrent users</li>
+                                        <li>On-site setup available</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-outline-primary w-100">Contact Sales</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════════
+                     ALL-INCLUSIVE BUNDLES
+                ═══════════════════════════════════════════════ -->
+                <section class="pm-section" style="background:#f8fafc;">
+                    <div class="container">
+                        <h2 class="pm-section-title">All-Inclusive Bundles</h2>
+                        <p class="pm-section-sub">
+                            Prefer zero upfront cost? Our bundles include hardware, software, setup, and service
+                            in one monthly rate — 100% tax-deductible as operating expense (no capitalisation required).
+                        </p>
+
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-4">
+                                <div class="pm-product-card text-center">
+                                    <div class="pm-product-tier">Bundle Standard</div>
+                                    <h3>All-In Standard</h3>
+                                    <div class="pm-price-block mt-3">
+                                        <span class="pm-price">€299</span>
+                                        <span class="pm-price-sub">/month · 36-month term</span>
+                                        <span class="pm-price-sub">€10,764 total · hardware ownership after term</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul class="text-start">
+                                        <li>1× GX10, 1 TB · Starter service level</li>
+                                        <li>Setup &amp; configuration included</li>
+                                        <li>Quarterly model updates</li>
+                                        <li>Email support · 48h SLA</li>
+                                        <li>Hardware ownership after 36 months</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-outline-primary w-100">Get Bundle</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="pm-product-card featured text-center">
+                                    <div class="pm-featured-badge">Best Value</div>
+                                    <div class="pm-product-tier">Bundle Professional</div>
+                                    <h3>All-In Professional</h3>
+                                    <div class="pm-price-block mt-3">
+                                        <span class="pm-price">€999</span>
+                                        <span class="pm-price-sub">/month · 36-month term</span>
+                                        <span class="pm-price-sub">€35,964 total · hardware ownership after term</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul class="text-start">
+                                        <li>2× GX10 Cluster, 2×2 TB · Professional service level</li>
+                                        <li>Setup &amp; on-site optional configuration</li>
+                                        <li>Continuous model updates</li>
+                                        <li>Priority support · 4h SLA</li>
+                                        <li>Proactive monitoring by PrivateMind</li>
+                                        <li>RAG pipeline setup included</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-primary w-100">Get Bundle</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="pm-product-card text-center">
+                                    <div class="pm-product-tier">Bundle Enterprise</div>
+                                    <h3>All-In Enterprise</h3>
+                                    <div class="pm-price-block mt-3">
+                                        <span class="pm-price">On Request</span>
+                                        <span class="pm-price-sub">60-month term · individual pricing</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul class="text-start">
+                                        <li>4× NVIDIA L40S 48 GB · Enterprise service level</li>
+                                        <li>Dedicated account manager</li>
+                                        <li>2h SLA · On-site support available</li>
+                                        <li>Custom finetuning option</li>
+                                        <li>24/7 proactive monitoring</li>
+                                        <li>Down payment required</li>
+                                    </ul>
+                                    <a href="/contact" class="btn btn-outline-primary w-100">Contact Sales</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════════
+                     SERVICE PLAN COMPARISON
+                ═══════════════════════════════════════════════ -->
+                <section class="pm-section" style="background:#fff;">
+                    <div class="container">
+                        <h2 class="pm-section-title">Service Plan Comparison</h2>
+                        <p class="pm-section-sub">
+                            All plans include hardware setup and configuration. Choose the level of ongoing support that fits your team.
+                        </p>
+
+                        <div class="pm-service-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th style="width:30%">Feature</th>
+                                        <th>Starter<br/><small class="opacity-75">€149/mo</small></th>
+                                        <th class="pm-highlight">Professional<br/><small class="opacity-75">€699/mo</small></th>
+                                        <th>Enterprise<br/><small class="opacity-75">€1,999/mo</small></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Compatible hardware</td>
+                                        <td>Standard / Professional</td>
+                                        <td>Premium (2× GX10)</td>
+                                        <td>Enterprise (4× L40S)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pre-configured models</td>
+                                        <td>3–5 curated models</td>
+                                        <td>Custom selection</td>
+                                        <td>Custom, multiple parallel</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Model updates</td>
+                                        <td>Quarterly</td>
+                                        <td>Continuous</td>
+                                        <td>Continuous + priority</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Support channel</td>
+                                        <td>Email</td>
+                                        <td>Priority + remote access</td>
+                                        <td>Dedicated contact + on-site</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Response time SLA</td>
+                                        <td>48 hours</td>
+                                        <td class="pm-highlight" style="color:#007bff;font-weight:600;">4 hours</td>
+                                        <td style="color:#007bff;font-weight:600;">2 hours</td>
+                                    </tr>
+                                    <tr>
+                                        <td>System monitoring</td>
+                                        <td>Basic dashboard</td>
+                                        <td>Proactive (we monitor)</td>
+                                        <td>24/7 proactive + alerting</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RAG setup</td>
+                                        <td>Documentation provided</td>
+                                        <td>Full setup included</td>
+                                        <td>Full setup + multi-instance</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Model tuning</td>
+                                        <td class="pm-dash-cell">—</td>
+                                        <td>Included</td>
+                                        <td>Included + finetuning option</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Team training</td>
+                                        <td>Quickstart guide</td>
+                                        <td>Workshop + ongoing advisory</td>
+                                        <td>Dedicated onboarding programme</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Clustering support</td>
+                                        <td class="pm-dash-cell">—</td>
+                                        <td class="pm-check-cell">✓ Included</td>
+                                        <td class="pm-check-cell">✓ + scaling expansion</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Annual value per customer</td>
+                                        <td>€1,788</td>
+                                        <td class="pm-highlight" style="font-weight:600;">€8,388</td>
+                                        <td style="font-weight:600;">€23,988</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class="text-center text-muted mt-4" style="font-size:0.85rem;">
+                            All prices net. 19% VAT applies for German businesses. Minimum contract term 12 months.
+                            Setup fees (€500–€2,000 depending on configuration) apply once.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════════
+                     FAQ / CONTEXT
+                ═══════════════════════════════════════════════ -->
+                <section class="pm-section" style="background:#f8fafc;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="pm-section-title">Frequently Asked Questions</h2>
+
+                                <div class="accordion" id="faqAccordion">
+                                    <div class="accordion-item border-0 mb-3 rounded" style="box-shadow:0 1px 8px rgba(0,0,0,0.06);">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed rounded fw-600" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                                What exactly does "local AI" mean?
+                                            </button>
+                                        </h2>
+                                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body text-muted">
+                                                Your AI runs entirely on hardware inside your office or server room. When you ask a question or upload a document, the data is processed on your appliance — not on any cloud server. No internet connection is required for AI inference.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-3 rounded" style="box-shadow:0 1px 8px rgba(0,0,0,0.06);">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed rounded" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                                Is PrivateMind GDPR-compliant?
+                                            </button>
+                                        </h2>
+                                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body text-muted">
+                                                Yes — by design. Since all data processing happens locally on your hardware, there is no transfer of personal data to a third-party processor for AI inference. You do not need a Data Processing Agreement (DPA) with PrivateMind for your AI usage. This makes the solution inherently compatible with GDPR, §203 StGB professional secrecy obligations, DORA, and NIS2.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-3 rounded" style="box-shadow:0 1px 8px rgba(0,0,0,0.06);">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed rounded" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                                                How long does setup take?
+                                            </button>
+                                        </h2>
+                                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body text-muted">
+                                                Typically 2–4 hours for a standard remote setup. Hardware arrives pre-configured. You connect it to your network, power it on, and our team completes configuration remotely. On-site setup is available for complex environments or if you prefer a hands-on session with your team.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-3 rounded" style="box-shadow:0 1px 8px rgba(0,0,0,0.06);">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed rounded" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq4">
+                                                What AI models are included?
+                                            </button>
+                                        </h2>
+                                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body text-muted">
+                                                We curate a selection of best-in-class open-weight models including Llama 3.3 70B Instruct (all-purpose), DeepSeek-R1 70B (reasoning and analysis), Qwen2.5 72B (multilingual), Gemma 3 27B (fast, efficient), and Mistral Large (European languages). Custom model selection is available from the Professional plan onwards. Enterprise customers can request fine-tuning on their own data.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA -->
+                <section class="pm-cta-section">
+                    <div class="container position-relative">
+                        <h2>Not Sure Which Plan Fits?</h2>
+                        <p>We'll help you choose. Schedule a free 30-minute consultation — no commitment required.</p>
+                        <a href="/contact" class="btn btn-primary btn-lg px-5">Book a Free Consultation</a>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <record id="page_products_record" model="website.page">
+        <field name="name">Products &amp; Pricing</field>
+        <field name="url">/products</field>
+        <field name="view_id" ref="page_products"/>
+        <field name="website_published">True</field>
+    </record>
+</odoo>

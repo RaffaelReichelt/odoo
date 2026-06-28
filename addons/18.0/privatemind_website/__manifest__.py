@@ -1,0 +1,23 @@
+{
+    'name': 'PrivateMind Website',
+    'version': '18.0.1.0',
+    'category': 'Website',
+    'summary': 'Public website for PrivateMind GmbH',
+    'author': 'Raffael Reichelt | PrivateMind',
+    'website': 'https://privatemind.eu',
+    'depends': ['website', 'website_mail'],
+    'data': [
+        'views/assets.xml',
+        'views/page_footer.xml',
+        'views/page_homepage.xml',
+        'views/page_privacy.xml',
+        'views/page_impressum.xml',
+        'views/page_products.xml',
+        'views/page_about.xml',
+        'views/page_contact.xml',
+        'views/website_menu.xml',
+    ],
+    'installable': True,
+    'application': False,
+    'auto_install': False,
+}

@@ -1,0 +1,75 @@
+services:
+
+  tailscale-odoo:
+    image: tailscale/tailscale:latest
+    hostname: tailscale-odoo
+    environment:
+      - TS_AUTHKEY=${TS_AUTHKEY?Variable not set}
+      - TS_HOSTNAME=odoo
+      - TS_STATE_DIR=/var/lib/tailscale
+      - TS_USERSPACE=true
+      - TS_SERVE_CONFIG=/etc/tailscale/serve.json
+    volumes:
+      - tailscale-odoo-state:/var/lib/tailscale
+      - /opt/stacks/privatemind/odoo/tailscale/serve.json:/etc/tailscale/serve.json:ro
+    networks:
+      - odoo-internal
+    deploy:
+      replicas: 1
+      labels:
+        - traefik.enable=false
+      placement:
+        constraints:
+          - node.role == manager
+      restart_policy:
+        condition: on-failure
+        delay: 10s
+
+  odoo:
+    image: privatemind/odoo:18.0
+    secrets:
+      - odoo_conf
+    volumes:
+      - /opt/stacks/privatemind/odoo/addons/18.0:/home/odoo/addons/18.0
+      - /opt/stacks/privatemind/odoo/home:/usr/src/odoo/data
+      - /opt/stacks/privatemind/odoo/community:/usr/src/odoo/community
+      - /opt/stacks/privatemind/odoo/web:/usr/src/odoo/OCA/web
+      - /opt/stacks/privatemind/odoo/reporting-engine:/usr/src/odoo/reporting-engine
+      - /opt/stacks/privatemind/odoo/theme_liquid_glass:/usr/src/odoo/theme_liquid_glass
+    networks:
+      - odoo-internal
+      - postgres_postgres
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      replicas: 1
+      labels:
+        - traefik.enable=false
+      placement:
+        constraints:
+          - node.role == manager
+      restart_policy:
+        condition: on-failure
+        delay: 15s
+        max_attempts: 5
+      update_config:
+        order: start-first
+        failure_action: rollback
+
+volumes:
+  tailscale-odoo-state:
+
+networks:
+  odoo-internal:
+    driver: overlay
+    attachable: true
+  postgres_postgres:
+    external: true
+
+secrets:
+  odoo_conf:
+    external: true
+    name: odoo_conf_v2

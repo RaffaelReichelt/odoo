@@ -63,8 +63,9 @@
                                                     <option value="professional">PrivateMind Professional (€4,500 + €699/mo)</option>
                                                     <option value="premium">PrivateMind Premium (€9,500 + €699/mo)</option>
                                                     <option value="enterprise">PrivateMind Enterprise (from €62,500)</option>
-                                                    <option value="bundle_standard">Bundle Standard (€299/mo all-in)</option>
-                                                    <option value="bundle_professional">Bundle Professional (€999/mo all-in)</option>
+                                                    <option value="bundle_standard">All-In Standard (€299/mo)</option>
+                                                    <option value="bundle_professional">All-In Professional (€999/mo)</option>
+                                                    <option value="bundle_enterprise">All-In Enterprise (on request)</option>
                                                     <option value="demo">Just a demo / general questions</option>
                                                 </select>
                                             </div>

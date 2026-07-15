@@ -204,8 +204,9 @@ msgid ""
 "                                                    <option value=\"professional\">PrivateMind Professional (€4,500 + €699/mo)</option>\n"
 "                                                    <option value=\"premium\">PrivateMind Premium (€9,500 + €699/mo)</option>\n"
 "                                                    <option value=\"enterprise\">PrivateMind Enterprise (from €62,500)</option>\n"
-"                                                    <option value=\"bundle_standard\">Bundle Standard (€299/mo all-in)</option>\n"
-"                                                    <option value=\"bundle_professional\">Bundle Professional (€999/mo all-in)</option>\n"
+"                                                    <option value=\"bundle_standard\">All-In Standard (€299/mo)</option>\n"
+"                                                    <option value=\"bundle_professional\">All-In Professional (€999/mo)</option>\n"
+"                                                    <option value=\"bundle_enterprise\">All-In Enterprise (on request)</option>\n"
 "                                                    <option value=\"demo\">Just a demo / general questions</option>\n"
 "                                                </select>"
 msgstr ""
@@ -215,8 +216,9 @@ msgstr ""
 "                                                    <option value=\"professional\">PrivateMind Professional (€4.500 + €699/Monat)</option>\n"
 "                                                    <option value=\"premium\">PrivateMind Premium (€9.500 + €699/Monat)</option>\n"
 "                                                    <option value=\"enterprise\">PrivateMind Enterprise (ab €62.500)</option>\n"
-"                                                    <option value=\"bundle_standard\">Bundle Standard (€299/Monat all-in)</option>\n"
-"                                                    <option value=\"bundle_professional\">Bundle Professional (€999/Monat all-in)</option>\n"
+"                                                    <option value=\"bundle_standard\">All-In Standard (€299/Monat)</option>\n"
+"                                                    <option value=\"bundle_professional\">All-In Professional (€999/Monat)</option>\n"
+"                                                    <option value=\"bundle_enterprise\">All-In Enterprise (auf Anfrage)</option>\n"
 "                                                    <option value=\"demo\">Nur Demo / allgemeine Fragen</option>\n"
 "                                                </select>"
 
@@ -319,11 +321,11 @@ msgstr ""
 msgid ""
 "<span class=\"pm-price\">€3,800</span>\n"
 "                                        <span class=\"pm-price-sub\">one-time hardware + €149/mo service</span>\n"
-"                                        <span class=\"pm-price-sub\">or all-in bundle from €299/mo</span>"
+"                                        <span class=\"pm-price-sub\">or All-In Standard from €299/mo</span>"
 msgstr ""
 "<span class=\"pm-price\">€3.800</span>\n"
 "                                        <span class=\"pm-price-sub\">einmalig Hardware + €149/Monat Service</span>\n"
-"                                        <span class=\"pm-price-sub\">oder All-in-Bundle ab €299/Monat</span>"
+"                                        <span class=\"pm-price-sub\">oder All-In Standard ab €299/Monat</span>"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
@@ -339,11 +341,11 @@ msgstr ""
 msgid ""
 "<span class=\"pm-price\">€4,500</span>\n"
 "                                        <span class=\"pm-price-sub\">one-time hardware + €699/mo service</span>\n"
-"                                        <span class=\"pm-price-sub\">or all-in bundle from €999/mo</span>"
+"                                        <span class=\"pm-price-sub\">or All-In Professional from €999/mo</span>"
 msgstr ""
 "<span class=\"pm-price\">€4.500</span>\n"
 "                                        <span class=\"pm-price-sub\">einmalig Hardware + €699/Monat Service</span>\n"
-"                                        <span class=\"pm-price-sub\">oder All-in-Bundle ab €999/Monat</span>"
+"                                        <span class=\"pm-price-sub\">oder All-In Professional ab €999/Monat</span>"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
@@ -396,10 +398,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
 msgid ""
 "<span class=\"pm-trust-icon\">⚡</span>\n"
-"                                <span>NVIDIA Grace Blackwell GPU</span>"
+"                                <span>NVIDIA-Powered Hardware</span>"
 msgstr ""
 "<span class=\"pm-trust-icon\">⚡</span>\n"
-"                                <span>NVIDIA Grace Blackwell GPU</span>"
+"                                <span>NVIDIA-Hardware</span>"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
@@ -459,10 +461,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
 msgid ""
 "<span class=\"stat-number\">€299</span>\n"
-"                                        <span class=\"stat-label\">From / Month</span>"
+"                                        <span class=\"stat-label\">All-In Bundle / Month</span>"
 msgstr ""
 "<span class=\"stat-number\">€299</span>\n"
-"                                        <span class=\"stat-label\">Ab / Monat</span>"
+"                                        <span class=\"stat-label\">All-In-Bundle / Monat</span>"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
@@ -508,10 +510,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
 msgid ""
 "AI That Stays<br/>\n"
-"                                    <span class=\"accent\">In Your House.</span>"
+"                                    <span class=\"accent\">In Your Company.</span>"
 msgstr ""
 "KI, die bleibt.<br/>\n"
-"                                    <span class=\"accent\">In Ihrem Haus.</span>"
+"                                    <span class=\"accent\">In Ihrem Unternehmen.</span>"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
@@ -570,10 +572,10 @@ msgstr ""
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
 msgid ""
-"All prices net. 19% VAT applies for German businesses. Minimum contract term 12 months.\n"
+"All prices net. 19% VAT applies for German businesses. Minimum contract term 12 months for standalone service plans (All-In bundles run 36–60 months, see above).\n"
 "                            Setup fees (€500–€2,000 depending on configuration) apply once."
 msgstr ""
-"Alle Preise netto. Für deutsche Unternehmen gilt 19% MwSt. Mindestlaufzeit 12 Monate.\n"
+"Alle Preise netto. Für deutsche Unternehmen gilt 19% MwSt. Mindestlaufzeit 12 Monate für einzeln gebuchte Service-Pläne (All-In-Bundles laufen 36–60 Monate, siehe oben).\n"
 "                            Einrichtungsgebühren (€500–€2.000 je nach Konfiguration) fallen einmalig an."
 
 #. module: privatemind_website
@@ -603,6 +605,21 @@ msgstr "Jahreswert pro Kunde"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "€1,788"
+msgstr "€1.788"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "€8,388"
+msgstr "€8.388"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "€23,988"
+msgstr "€23.988"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
 msgid "Basic dashboard"
 msgstr "Einfaches Dashboard"
 
@@ -615,21 +632,6 @@ msgstr "Bestes Preis-Leistungs-Verhältnis"
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
 msgid "Book a Free Consultation"
 msgstr "Kostenlose Beratung buchen"
-
-#. module: privatemind_website
-#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
-msgid "Bundle Enterprise"
-msgstr "Bundle Enterprise"
-
-#. module: privatemind_website
-#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
-msgid "Bundle Professional"
-msgstr "Bundle Professional"
-
-#. module: privatemind_website
-#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
-msgid "Bundle Standard"
-msgstr "Bundle Standard"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
@@ -849,19 +851,19 @@ msgstr "Enterprise-Lösungen kosten ein Vermögen"
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
 msgid ""
 "Enterprise-grade AI for European SMEs — local, private, fully managed.\n"
-"                                    Your data never leaves your building. No cloud. No compliance risk. No IT expertise needed."
+"                                    Your data never leaves your company — no cloud, no compliance risk. No IT expertise needed."
 msgstr ""
 "KI auf Enterprise-Niveau für europäische KMU – lokal, privat, vollständig verwaltet.\n"
-"                                    Ihre Daten verlassen niemals Ihr Gebäude. Keine Cloud. Kein Compliance-Risiko. Kein IT-Fachwissen erforderlich."
+"                                    Ihre Daten verlassen niemals Ihr Unternehmen – keine Cloud, kein Compliance-Risiko. Kein IT-Fachwissen erforderlich."
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
 msgid ""
 "Enterprise-grade AI for European SMEs. Local, private, GDPR-compliant. No "
-"cloud, no data leaves your building. NVIDIA GB10 Grace Blackwell Appliance."
+"cloud, no data leaves your company. NVIDIA GB10 Grace Blackwell Appliance."
 msgstr ""
 "KI auf Enterprise-Niveau für europäische KMU. Lokal, privat, DSGVO-konform. Keine "
-"Cloud, keine Daten verlassen Ihr Gebäude. NVIDIA GB10 Grace Blackwell Appliance."
+"Cloud, keine Daten verlassen Ihr Unternehmen. NVIDIA GB10 Grace Blackwell Appliance."
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
@@ -932,10 +934,10 @@ msgstr "Gründer &amp; CEO, PrivateMind GmbH"
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
 msgid ""
 "Four configurations for every scale — from solo practitioners to enterprise deployments.\n"
-"                            All powered by NVIDIA GB10 Grace Blackwell. All managed by PrivateMind."
+"                            Powered by NVIDIA — from GB10 Grace Blackwell to L40S. All managed by PrivateMind."
 msgstr ""
 "Vier Konfigurationen für jeden Bedarf – von Einzelpersonen bis hin zu Enterprise-Deployments.\n"
-"                            Alle mit NVIDIA GB10 Grace Blackwell. Alle von PrivateMind verwaltet."
+"                            Angetrieben von NVIDIA – von GB10 Grace Blackwell bis L40S. Alle von PrivateMind verwaltet."
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
@@ -957,6 +959,11 @@ msgid "Full Pricing Details →"
 msgstr "Vollständige Preisübersicht →"
 
 #. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
+msgid "All prices net, plus 19% VAT for German businesses."
+msgstr "Alle Preise netto, zzgl. 19% MwSt. für deutsche Unternehmen."
+
+#. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
 msgid "Full setup + multi-instance"
 msgstr "Volleinrichtung + Multi-Instanz"
@@ -969,11 +976,11 @@ msgstr "Vollständige Einrichtung inklusive"
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
 msgid ""
-"GDPR Art. 28, §203 StGB, DORA, NIS2 — regulated industries\n"
+"GDPR Art. 28, §203 StGB (German confidentiality law), DORA, NIS2 — regulated industries\n"
 "                                        cannot send client data, contracts, or financial records to\n"
 "                                        US cloud servers. Every ChatGPT query is a compliance risk."
 msgstr ""
-"DSGVO Art. 28, §203 StGB, DORA, NIS2 – regulierte Branchen\n"
+"DSGVO Art. 28, §203 StGB (Schweigepflicht), DORA, NIS2 – regulierte Branchen\n"
 "                                        dürfen keine Mandantendaten, Verträge oder Finanzdokumente\n"
 "                                        an US-Cloud-Server übermitteln. Jede ChatGPT-Anfrage ist ein Compliance-Risiko."
 
@@ -1275,8 +1282,8 @@ msgstr "Premium"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
-msgid "Premium (2× GX10)"
-msgstr "Premium (2× GX10)"
+msgid "Professional / Premium (2× GX10)"
+msgstr "Professional / Premium (2× GX10)"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
@@ -1361,7 +1368,7 @@ msgstr ""
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
-msgid "PrivateMind — AI That Stays In Your House"
+msgid "PrivateMind — AI That Stays In Your Company"
 msgstr "PrivateMind – KI, die bei Ihnen bleibt"
 
 #. module: privatemind_website
@@ -1481,8 +1488,8 @@ msgstr ""
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
-msgid "Ready to Bring AI In-House?"
-msgstr "Bereit, KI ins Haus zu holen?"
+msgid "Ready to Bring AI Into Your Company?"
+msgstr "Bereit, KI ins Unternehmen zu holen?"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
@@ -1583,11 +1590,6 @@ msgstr "Einrichtung &amp; optionale Vor-Ort-Konfiguration"
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
 msgid "Standard"
 msgstr "Standard"
-
-#. module: privatemind_website
-#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
-msgid "Standard / Professional"
-msgstr "Standard / Professional"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
@@ -1735,11 +1737,11 @@ msgstr ""
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
 msgid ""
-"We deliver a complete, ready-to-use AI system — hardware, software, and ongoing service —\n"
-"                            in one monthly subscription. The only thing you do is turn it on."
+"We deliver a complete AI system — hardware, software, and ongoing service —\n"
+"                            in one monthly subscription."
 msgstr ""
-"Wir liefern ein vollständiges, sofort einsatzbereites KI-System – Hardware, Software und laufender Service –\n"
-"                            in einem monatlichen Abonnement. Sie müssen es nur einschalten."
+"Wir liefern ein vollständiges KI-System – Hardware, Software und laufender Service –\n"
+"                            in einem monatlichen Abonnement."
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
@@ -1778,8 +1780,8 @@ msgstr "Welche KI-Modelle sind enthalten?"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
-msgid “What exactly does \”local AI\” mean?”
-msgstr “Was genau bedeutet \”lokale KI\”?”
+msgid "What exactly does \"local AI\" mean?"
+msgstr "Was genau bedeutet \"lokale KI\"?"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
@@ -1841,10 +1843,10 @@ msgstr ""
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
 msgid ""
-"Your data stays in your building. Every inference, every query, every "
+"Your data stays in your company. Every inference, every query, every "
 "document — processed locally."
 msgstr ""
-"Ihre Daten bleiben in Ihrem Gebäude. Jede Inferenz, jede Anfrage, jedes "
+"Ihre Daten bleiben in Ihrem Unternehmen. Jede Inferenz, jede Anfrage, jedes "
 "Dokument – lokal verarbeitet."
 
 #. module: privatemind_website

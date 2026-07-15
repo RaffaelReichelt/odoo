@@ -3,8 +3,8 @@
     <template id="page_homepage" name="PrivateMind Homepage">
         <t t-call="website.layout">
             <t t-set="pageName" t-value="'homepage'"/>
-            <t t-set="additional_title">PrivateMind — AI That Stays In Your House</t>
-            <t t-set="meta_description">Enterprise-grade AI for European SMEs. Local, private, GDPR-compliant. No cloud, no data leaves your building. NVIDIA GB10 Grace Blackwell Appliance.</t>
+            <t t-set="additional_title">PrivateMind — AI That Stays In Your Company</t>
+            <t t-set="meta_description">Enterprise-grade AI for European SMEs. Local, private, GDPR-compliant. No cloud, no data leaves your company. NVIDIA GB10 Grace Blackwell Appliance.</t>
 
             <div id="wrap">
 
@@ -21,11 +21,11 @@
                                 </div>
                                 <h1>
                                     AI That Stays<br/>
-                                    <span class="accent">In Your House.</span>
+                                    <span class="accent">In Your Company.</span>
                                 </h1>
                                 <p class="pm-lead">
                                     Enterprise-grade AI for European SMEs — local, private, fully managed.
-                                    Your data never leaves your building. No cloud. No compliance risk. No IT expertise needed.
+                                    Your data never leaves your company — no cloud, no compliance risk. No IT expertise needed.
                                 </p>
                                 <div class="pm-cta-group">
                                     <a href="/contact" class="btn btn-primary btn-lg px-4">Get Started →</a>
@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="stat-item">
                                         <span class="stat-number">€299</span>
-                                        <span class="stat-label">From / Month</span>
+                                        <span class="stat-label">All-In Bundle / Month</span>
                                     </div>
                                     <div class="stat-item">
                                         <span class="stat-number">0</span>
@@ -74,7 +74,7 @@
                             </div>
                             <div class="pm-trust-item">
                                 <span class="pm-trust-icon">⚡</span>
-                                <span>NVIDIA Grace Blackwell GPU</span>
+                                <span>NVIDIA-Powered Hardware</span>
                             </div>
                             <div class="pm-trust-item">
                                 <span class="pm-trust-icon">🇩🇪</span>
@@ -104,7 +104,7 @@
                                     <div class="pm-icon">⚠️</div>
                                     <h4>Cloud AI Violates Compliance</h4>
                                     <p>
-                                        GDPR Art. 28, §203 StGB, DORA, NIS2 — regulated industries
+                                        GDPR Art. 28, §203 StGB (German confidentiality law), DORA, NIS2 — regulated industries
                                         cannot send client data, contracts, or financial records to
                                         US cloud servers. Every ChatGPT query is a compliance risk.
                                     </p>
@@ -143,8 +143,8 @@
                     <div class="container">
                         <h2 class="pm-section-title">PrivateMind: Your AI Department as a Service</h2>
                         <p class="pm-section-sub">
-                            We deliver a complete, ready-to-use AI system — hardware, software, and ongoing service —
-                            in one monthly subscription. The only thing you do is turn it on.
+                            We deliver a complete AI system — hardware, software, and ongoing service —
+                            in one monthly subscription.
                         </p>
 
                         <div class="pm-solution-grid">
@@ -216,7 +216,7 @@
                                     <div class="pm-price-block">
                                         <span class="pm-price">€3,800</span>
                                         <span class="pm-price-sub">one-time hardware + €149/mo service</span>
-                                        <span class="pm-price-sub">or all-in bundle from €299/mo</span>
+                                        <span class="pm-price-sub">or All-In Standard from €299/mo</span>
                                     </div>
                                     <hr class="pm-divider"/>
                                     <ul>
@@ -241,7 +241,7 @@
                                     <div class="pm-price-block">
                                         <span class="pm-price">€4,500</span>
                                         <span class="pm-price-sub">one-time hardware + €699/mo service</span>
-                                        <span class="pm-price-sub">or all-in bundle from €999/mo</span>
+                                        <span class="pm-price-sub">or All-In Professional from €999/mo</span>
                                     </div>
                                     <hr class="pm-divider"/>
                                     <ul>
@@ -309,6 +309,7 @@
                             <a href="/products" class="btn btn-outline-primary btn-lg px-5">
                                 Full Pricing Details →
                             </a>
+                            <p class="text-muted mt-3" style="font-size:0.85rem;">All prices net, plus 19% VAT for German businesses.</p>
                         </div>
                     </div>
                 </section>
@@ -318,7 +319,7 @@
                 ═══════════════════════════════════════════════ -->
                 <section class="pm-cta-section">
                     <div class="container position-relative">
-                        <h2>Ready to Bring AI In-House?</h2>
+                        <h2>Ready to Bring AI Into Your Company?</h2>
                         <p>
                             Schedule a free consultation. We'll help you pick the right configuration
                             and show you what AI can do for your business — without touching your data.

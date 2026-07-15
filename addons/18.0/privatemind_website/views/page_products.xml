@@ -13,7 +13,7 @@
                         <h1>Products &amp; Pricing</h1>
                         <p>
                             Four configurations for every scale — from solo practitioners to enterprise deployments.
-                            All powered by NVIDIA GB10 Grace Blackwell. All managed by PrivateMind.
+                            Powered by NVIDIA — from GB10 Grace Blackwell to L40S. All managed by PrivateMind.
                         </p>
                     </div>
                 </section>
@@ -145,7 +145,7 @@
                         <div class="row g-4 justify-content-center">
                             <div class="col-md-4">
                                 <div class="pm-product-card text-center">
-                                    <div class="pm-product-tier">Bundle Standard</div>
+                                    <div class="pm-product-tier">Standard</div>
                                     <h3>All-In Standard</h3>
                                     <div class="pm-price-block mt-3">
                                         <span class="pm-price">€299</span>
@@ -166,7 +166,7 @@
                             <div class="col-md-4">
                                 <div class="pm-product-card featured text-center">
                                     <div class="pm-featured-badge">Best Value</div>
-                                    <div class="pm-product-tier">Bundle Professional</div>
+                                    <div class="pm-product-tier">Professional</div>
                                     <h3>All-In Professional</h3>
                                     <div class="pm-price-block mt-3">
                                         <span class="pm-price">€999</span>
@@ -187,7 +187,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="pm-product-card text-center">
-                                    <div class="pm-product-tier">Bundle Enterprise</div>
+                                    <div class="pm-product-tier">Enterprise</div>
                                     <h3>All-In Enterprise</h3>
                                     <div class="pm-price-block mt-3">
                                         <span class="pm-price">On Request</span>
@@ -232,8 +232,8 @@
                                 <tbody>
                                     <tr>
                                         <td>Compatible hardware</td>
-                                        <td>Standard / Professional</td>
-                                        <td>Premium (2× GX10)</td>
+                                        <td>Standard</td>
+                                        <td>Professional / Premium (2× GX10)</td>
                                         <td>Enterprise (4× L40S)</td>
                                     </tr>
                                     <tr>
@@ -301,7 +301,7 @@
                         </div>
 
                         <p class="text-center text-muted mt-4" style="font-size:0.85rem;">
-                            All prices net. 19% VAT applies for German businesses. Minimum contract term 12 months.
+                            All prices net. 19% VAT applies for German businesses. Minimum contract term 12 months for standalone service plans (All-In bundles run 36–60 months, see above).
                             Setup fees (€500–€2,000 depending on configuration) apply once.
                         </p>
                     </div>

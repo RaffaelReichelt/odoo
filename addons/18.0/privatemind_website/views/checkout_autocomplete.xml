@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!--
+        Fügt korrekte HTML-autocomplete-Attribute zum Checkout-Adressformular hinzu,
+        damit Browser (Safari, Chrome) Kontaktdaten in die richtigen Felder eintragen.
+    -->
+    <template id="address_autocomplete_fix" inherit_id="website_sale.address" name="Checkout Address Autocomplete Fix">
+        <xpath expr="//input[@name='name']" position="attributes">
+            <attribute name="autocomplete">name</attribute>
+        </xpath>
+        <xpath expr="//input[@name='phone']" position="attributes">
+            <attribute name="autocomplete">tel</attribute>
+        </xpath>
+        <xpath expr="//input[@name='street']" position="attributes">
+            <attribute name="autocomplete">address-line1</attribute>
+        </xpath>
+        <xpath expr="//input[@name='street2']" position="attributes">
+            <attribute name="autocomplete">address-line2</attribute>
+        </xpath>
+        <xpath expr="//input[@name='city']" position="attributes">
+            <attribute name="autocomplete">address-level2</attribute>
+        </xpath>
+        <xpath expr="//input[@name='zip']" position="attributes">
+            <attribute name="autocomplete">postal-code</attribute>
+        </xpath>
+    </template>
+</odoo>

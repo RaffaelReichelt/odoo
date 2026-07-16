@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200">
+  <defs>
+    <!-- Farbverläufe für 3D-Licht -->
+    <radialGradient id="coreGlow" cx="30%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#00e0ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#001020" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="nodeGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#00d4ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#8b2af8" stop-opacity="1"/>
+    </radialGradient>
+
+    <linearGradient id="linkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="50%" stop-color="#44a8ff"/>
+      <stop offset="100%" stop-color="#8b2af8"/>
+    </linearGradient>
+
+    <!-- Leichter Tiefen-Glow -->
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.1
+                0 0 0 0 0.7
+                0 0 0 0 1
+                0 0 0 0.7 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Neuraler Energiekern mit 3D-Glow -->
+  <g transform="translate(80,100)" filter="url(#softGlow)">
+    <!-- Kern-Glow -->
+    <circle cx="0" cy="0" r="42" fill="url(#coreGlow)"/>
+
+    <!-- Verbindungs-Linien (leicht organisch, spacig) -->
+    <g stroke="url(#linkGrad)" stroke-width="2.1" stroke-linecap="round">
+      <!-- horizontale / diagonale Hauptachsen -->
+      <path d="M -70 0 Q -35 -10 0 0 T 70 0" fill="none" opacity="0.9"/>
+      <path d="M -50 -40 Q -15 -15 0 0 T 55 38" fill="none" opacity="0.85"/>
+      <path d="M -55 35 Q -20 10 0 0 T 50 -40" fill="none" opacity="0.8"/>
+
+      <!-- äußere, leicht gebogene Layer -->
+      <path d="M -80 -10 Q -40 -35 0 -25 T 65 -45" fill="none" opacity="0.55"/>
+      <path d="M -75 20 Q -35 35 0 25 T 70 35" fill="none" opacity="0.55"/>
+
+      <!-- innere, spiralförmige Energie-Linien -->
+      <path d="M -25 -5 Q -10 -25 0 -18 T 18 -5" fill="none" opacity="0.9"/>
+      <path d="M -18 10 Q -5 25 0 18 T 20 8" fill="none" opacity="0.9"/>
+      <path d="M -10 -22 Q 0 -30 10 -20" fill="none" opacity="0.7"/>
+      <path d="M -8 22 Q 0 30 12 20" fill="none" opacity="0.7"/>
+    </g>
+
+    <!-- Knoten mit 3D-Anmutung -->
+    <g fill="url(#nodeGrad)">
+      <!-- äußere Knoten -->
+      <circle cx="-70" cy="0" r="5.5"/>
+      <circle cx="70" cy="0" r="6"/>
+      <circle cx="-50" cy="-40" r="5"/>
+      <circle cx="55" cy="38" r="5.2"/>
+      <circle cx="-55" cy="35" r="5"/>
+      <circle cx="50" cy="-40" r="5.2"/>
+      <circle cx="-80" cy="-10" r="4.5"/>
+      <circle cx="65" cy="-45" r="4.8"/>
+      <circle cx="-75" cy="20" r="4.5"/>
+      <circle cx="70" cy="35" r="4.8"/>
+
+      <!-- mittlere Knoten -->
+      <circle cx="-25" cy="-5" r="4.5"/>
+      <circle cx="25" cy="-5" r="4.5"/>
+      <circle cx="-18" cy="10" r="4.3"/>
+      <circle cx="22" cy="10" r="4.3"/>
+
+      <!-- Kern -->
+      <circle cx="0" cy="0" r="10" fill="url(#nodeGrad)"/>
+    </g>
+  </g>
+
+  <!-- Wortmarke "PrivateMind" rechts daneben -->
+  <g transform="translate(210,112)">
+    <text x="0" y="0"
+      font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+      font-size="40"
+      font-weight="700"
+      letter-spacing="0.5">
+      <tspan fill="#111111">Private</tspan><tspan fill="#007bff">Mind</tspan>
+    </text>
+    <text x="0" y="28"
+      font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+      font-size="14"
+      font-weight="500"
+      letter-spacing="0"
+      textLength="232"
+      lengthAdjust="spacing"
+      fill="#4a5d73">
+      Secure Intelligent Private
+    </text>
+  </g>
+</svg>

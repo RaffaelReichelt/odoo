@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="cG" cx="30%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#00e0ff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#f8fbff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nG" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#8b2af8"/>
+    </radialGradient>
+    <linearGradient id="lG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="50%" stop-color="#44a8ff"/>
+      <stop offset="100%" stop-color="#8b2af8"/>
+    </linearGradient>
+    <linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5faff"/>
+      <stop offset="100%" stop-color="#faf5ff"/>
+    </linearGradient>
+    <filter id="sg" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.1  0 0 0 0 0.7  0 0 0 0 1  0 0 0 0.7 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bgG)"/>
+
+  <!-- Neural network: scaled 2.5x from logo.svg, centered at (260, 215) -->
+  <g transform="translate(260, 215) scale(2.5)" filter="url(#sg)">
+    <circle cx="0" cy="0" r="42" fill="url(#cG)"/>
+    <g stroke="url(#lG)" stroke-width="2.1" stroke-linecap="round">
+      <path d="M -70 0 Q -35 -10 0 0 T 70 0" fill="none" opacity="0.9"/>
+      <path d="M -50 -40 Q -15 -15 0 0 T 55 38" fill="none" opacity="0.85"/>
+      <path d="M -55 35 Q -20 10 0 0 T 50 -40" fill="none" opacity="0.8"/>
+      <path d="M -80 -10 Q -40 -35 0 -25 T 65 -45" fill="none" opacity="0.55"/>
+      <path d="M -75 20 Q -35 35 0 25 T 70 35" fill="none" opacity="0.55"/>
+      <path d="M -25 -5 Q -10 -25 0 -18 T 18 -5" fill="none" opacity="0.9"/>
+      <path d="M -18 10 Q -5 25 0 18 T 20 8" fill="none" opacity="0.9"/>
+      <path d="M -10 -22 Q 0 -30 10 -20" fill="none" opacity="0.7"/>
+      <path d="M -8 22 Q 0 30 12 20" fill="none" opacity="0.7"/>
+    </g>
+    <g fill="url(#nG)">
+      <circle cx="-70" cy="0" r="5.5"/>
+      <circle cx="70" cy="0" r="6"/>
+      <circle cx="-50" cy="-40" r="5"/>
+      <circle cx="55" cy="38" r="5.2"/>
+      <circle cx="-55" cy="35" r="5"/>
+      <circle cx="50" cy="-40" r="5.2"/>
+      <circle cx="-80" cy="-10" r="4.5"/>
+      <circle cx="65" cy="-45" r="4.8"/>
+      <circle cx="-75" cy="20" r="4.5"/>
+      <circle cx="70" cy="35" r="4.8"/>
+      <circle cx="-25" cy="-5" r="4.5"/>
+      <circle cx="25" cy="-5" r="4.5"/>
+      <circle cx="-18" cy="10" r="4.3"/>
+      <circle cx="22" cy="10" r="4.3"/>
+      <circle cx="0" cy="0" r="10"/>
+    </g>
+  </g>
+
+  <!-- Tagline (exact style from logo.svg) -->
+  <text x="300" y="420"
+    font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+    font-size="13" font-weight="400"
+    text-anchor="middle" fill="#4a5d73" letter-spacing="3.5">
+    SECURE · INTELLIGENT · PRIVATE
+  </text>
+
+  <!-- Separator line in CI gradient -->
+  <line x1="80" y1="442" x2="520" y2="442" stroke="url(#lG)" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- PrivateMind wordmark (same as logo.svg) -->
+  <text x="300" y="495"
+    font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+    font-size="44" font-weight="700" letter-spacing="0.5"
+    text-anchor="middle">
+    <tspan fill="#111111">Private</tspan><tspan fill="#007bff">Mind</tspan>
+  </text>
+
+  <!-- Product subtitle -->
+  <text x="300" y="535"
+    font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+    font-size="17" font-weight="500"
+    text-anchor="middle" fill="#4a5d73">
+    KI-Service-Abonnement
+  </text>
+</svg>

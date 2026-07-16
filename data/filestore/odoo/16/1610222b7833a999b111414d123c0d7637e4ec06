@@ -1,0 +1,57 @@
+
+                // Simplified color-contrast function to replicate bootstrap in report preview.
+                @function preview-color-contrast($background) {
+                    @if (lightness($background) > 50) {
+                        @return black;
+                    } @else {
+                        @return white;
+                    }
+                }
+
+                .o_company_1_layout {
+                    font-family: Lato;
+
+                    h2 {
+                        color: #000000;
+                    }
+
+                    #informations strong {
+                        color: #000000;
+                    }
+
+                    .o_total strong {
+                        color: #000000;
+                    }
+
+                    .o_company_tagline {
+                        color: #000000
+                    }
+                    &.din_page {
+                        &.header {
+                            .company_header {
+                                .name_container {
+                                    color: #000000;
+                                }
+                            }
+                        }
+                        &.invoice_note {
+                            td {
+                                .address {
+                                    .colored_address {
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                            h2 {
+                                color: #000000;
+                            }
+                            .page {
+                                [name=invoice_line_table], [name=stock_move_table], .o_main_table {
+                                    th {
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }

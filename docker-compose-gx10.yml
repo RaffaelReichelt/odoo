@@ -28,6 +28,19 @@ services:
     image: privatemind/odoo:18.0
     secrets:
       - odoo_conf
+    environment:
+      - ODOO_ADDONS_PATH=/usr/src/odoo/community/addons,/home/odoo/addons/18.0,/usr/src/odoo/reporting-engine,/usr/src/odoo/OCA/web,/usr/src/odoo/svn_orbitpdf-18,/usr/src/odoo/theme_liquid_glass,/home/odoo/extra-addons
+      - ODOO_DB_PORT=5432
+      - ODOO_DB_USER=odoo
+      - ODOO_DB_NAME=odoo
+      - ODOO_DATA_DIR=/usr/src/odoo/data
+      - ODOO_LIST_DB=True
+      - ODOO_PROXY_MODE=True
+      - ODOO_DB_MAXCONN=100
+      - ODOO_MAX_CRON_THREADS=2
+      - ODOO_MAX_CONNECTIONS=1000
+      - ODOO_SESSION_TIMEOUT=60
+      - ODOO_SESSION_GC=60
     volumes:
       - /home/raffael/Projekte/PrivateMind/odoo/addons/18.0:/home/odoo/addons/18.0
       - /home/raffael/Projekte/PrivateMind/odoo/data:/usr/src/odoo/data
@@ -35,6 +48,9 @@ services:
       - /home/raffael/Projekte/PrivateMind/odoo/web:/usr/src/odoo/OCA/web
       - /home/raffael/Projekte/PrivateMind/odoo/reporting-engine:/usr/src/odoo/reporting-engine
       - /home/raffael/Projekte/PrivateMind/odoo/theme_liquid_glass:/usr/src/odoo/theme_liquid_glass
+      - /home/raffael/Projekte/PrivateMind/odoo/svn_orbitpdf-18:/usr/src/odoo/svn_orbitpdf-18
+      - /home/raffael/Projekte/PrivateMind/odoo/filestore:/usr/src/odoo/data/filestore
+      - /home/raffael/Projekte/PrivateMind/odoo/OCA/Subscription_Management_OCA:/home/odoo/extra-addons/Subscription_Management_OCA
     networks:
       - odoo-internal
       - postgres-odoo_postgres

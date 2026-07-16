@@ -5,7 +5,7 @@
     'summary': 'Public website for PrivateMind GmbH',
     'author': 'Raffael Reichelt | PrivateMind',
     'website': 'https://privatemind.eu',
-    'depends': ['website', 'website_mail'],
+    'depends': ['website', 'website_mail', 'website_sale'],
     'data': [
         'views/assets.xml',
         'views/page_footer.xml',
@@ -16,6 +16,7 @@
         'views/page_about.xml',
         'views/page_contact.xml',
         'views/website_menu.xml',
+        'views/checkout_autocomplete.xml',
     ],
     'installable': True,
     'application': False,

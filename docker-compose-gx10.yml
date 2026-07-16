@@ -2,9 +2,11 @@ services:
 
   tailscale-odoo:
     image: tailscale/tailscale:latest
-    hostname: odoo
+    hostname: odoo-stage
+    secrets:
+      - ts_authkey
     environment:
-      - TS_AUTHKEY=${TS_AUTHKEY?Variable not set}
+      - TS_AUTHKEY=file:/run/secrets/ts_authkey
       - TS_STATE_DIR=/var/lib/tailscale
       - TS_USERSPACE=true
       - TS_SERVE_CONFIG=/etc/tailscale/serve.json
@@ -86,4 +88,6 @@ networks:
 
 secrets:
   odoo_conf:
+    external: true
+  ts_authkey:
     external: true

@@ -59,9 +59,6 @@
 /* /web/static/src/webclient/navbar/navbar.variables.scss */
  
 
-/* /onboarding/static/src/scss/onboarding.variables.scss */
- 
-
 /* /mail/static/src/core/common/primary_variables.scss */
  
 
@@ -69,6 +66,9 @@
  
 
 /* /mail/static/src/scss/variables/primary_variables.scss */
+ 
+
+/* /onboarding/static/src/scss/onboarding.variables.scss */
  
 
 /* /web_editor/static/src/scss/web_editor.variables.scss */

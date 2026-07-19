@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Relabel the login submit button so it's consistently translated
+         ("Anmelden") instead of the stock community translation "Login" -->
+    <template id="login_button_relabel" inherit_id="web.login">
+        <xpath expr="//div[hasclass('oe_login_buttons')]/button[@type='submit'][not(@name)]" position="replace">
+            <button type="submit" class="btn btn-primary">Log in</button>
+        </xpath>
+    </template>
+
+</odoo>

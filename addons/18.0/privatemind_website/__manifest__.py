@@ -17,6 +17,7 @@
         'views/page_contact.xml',
         'views/website_menu.xml',
         'views/checkout_autocomplete.xml',
+        'views/login_customization.xml',
     ],
     'installable': True,
     'application': False,

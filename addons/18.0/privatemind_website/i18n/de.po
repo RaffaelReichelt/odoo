@@ -401,7 +401,7 @@ msgid ""
 "                                <span>NVIDIA-Powered Hardware</span>"
 msgstr ""
 "<span class=\"pm-trust-icon\">⚡</span>\n"
-"                                <span>NVIDIA-Hardware</span>"
+"                                <span>NVIDIA-beschleunigte Hardware</span>"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
@@ -410,7 +410,7 @@ msgid ""
 "                                <span>GDPR-compliant out of the box</span>"
 msgstr ""
 "<span class=\"pm-trust-icon\">✅</span>\n"
-"                                <span>DSGVO-konform von Anfang an</span>"
+"                                <span>DSGVO-konform ab Werk</span>"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
@@ -469,7 +469,7 @@ msgstr ""
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
 msgid "<span>🇪🇺</span> GDPR-Compliant · Made in Germany · NVIDIA-Powered"
-msgstr "<span>🇪🇺</span> DSGVO-konform · Made in Germany · NVIDIA-betrieben"
+msgstr "<span>🇪🇺</span> DSGVO-konform · Made in Germany · NVIDIA-beschleunigt"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
@@ -512,8 +512,8 @@ msgid ""
 "AI That Stays<br/>\n"
 "                                    <span class=\"accent\">In Your Company.</span>"
 msgstr ""
-"KI, die bleibt.<br/>\n"
-"                                    <span class=\"accent\">In Ihrem Unternehmen.</span>"
+"KI, die<br/>\n"
+"                                    <span class=\"accent\">bei Ihnen bleibt.</span>"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
@@ -722,12 +722,12 @@ msgstr "Kontinuierliche Modell-Updates"
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
 msgid "Custom finetuning available"
-msgstr "Custom-Finetuning verfügbar"
+msgstr "Individuelles Finetuning verfügbar"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
 msgid "Custom finetuning option"
-msgstr "Custom-Finetuning-Option"
+msgstr "Individuelle Finetuning-Option"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
@@ -909,7 +909,7 @@ msgid ""
 "For solo practitioners and small teams who need private AI without the "
 "complexity."
 msgstr ""
-"Für Einzelpersonen und kleine Teams, die private KI ohne Komplexität benötigen."
+"Für Einzelunternehmer und kleine Teams, die private KI ohne Komplexität benötigen."
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
@@ -936,7 +936,7 @@ msgid ""
 "Four configurations for every scale — from solo practitioners to enterprise deployments.\n"
 "                            Powered by NVIDIA — from GB10 Grace Blackwell to L40S. All managed by PrivateMind."
 msgstr ""
-"Vier Konfigurationen für jeden Bedarf – von Einzelpersonen bis hin zu Enterprise-Deployments.\n"
+"Vier Konfigurationen für jeden Bedarf – von Einzelunternehmern bis hin zu Enterprise-Deployments.\n"
 "                            Angetrieben von NVIDIA – von GB10 Grace Blackwell bis L40S. Alle von PrivateMind verwaltet."
 
 #. module: privatemind_website
@@ -945,7 +945,7 @@ msgid ""
 "Four hardware configurations — from a solo practitioner to a 100-user enterprise deployment.\n"
 "                            All come with our managed service subscription."
 msgstr ""
-"Vier Hardware-Konfigurationen – von der Einzelperson bis zum Enterprise-Deployment mit 100 Nutzern.\n"
+"Vier Hardware-Konfigurationen – vom Einzelunternehmer bis zum Enterprise-Deployment mit 100 Nutzern.\n"
 "                            Alle mit unserem Managed-Service-Abonnement."
 
 #. module: privatemind_website
@@ -996,7 +996,7 @@ msgstr ""
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
 msgid "GDPR-Compliant by Design"
-msgstr "DSGVO-konform by Design"
+msgstr "DSGVO-konform ab Werk"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
@@ -1126,6 +1126,11 @@ msgstr "Nachname *"
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
 msgid "Let's Talk"
 msgstr "Sprechen wir miteinander"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.login_button_relabel
+msgid "Log in"
+msgstr "Anmelden"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_contact
@@ -1484,7 +1489,7 @@ msgstr ""
 "Raffael ist Softwareentwickler mit jahrzehntelanger praktischer Erfahrung in der Enterprise-IT.\n"
 "                                        Durch seine Arbeit in Branchen, in denen Datenschutz nicht verhandelbar ist, erlebte er\n"
 "                                        aus erster Hand, wie die KI-Einführung nicht am Willen scheiterte, sondern am Fehlen\n"
-"                                        einer geeigneten, compliant-konformen Option."
+"                                        einer geeigneten, regelkonformen Option."
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
@@ -1508,7 +1513,7 @@ msgstr "Remote-Einrichtung enthalten"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
-msgid "Request Quote"
+msgid "Request a Quote"
 msgstr "Angebot anfragen"
 
 #. module: privatemind_website
@@ -1542,7 +1547,7 @@ msgid ""
 "                            and show you what AI can do for your business — without touching your data."
 msgstr ""
 "Vereinbaren Sie eine kostenlose Beratung. Wir helfen Ihnen, die richtige Konfiguration zu wählen\n"
-"                            und zeigen Ihnen, was KI für Ihr Unternehmen leisten kann – ohne Ihre Daten anzufassen."
+"                            und zeigen Ihnen, was KI für Ihr Unternehmen leisten kann – ohne Einblick in Ihre Daten zu nehmen."
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
@@ -1698,6 +1703,11 @@ msgid "View Plans"
 msgstr "Tarife ansehen"
 
 #. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "View Product →"
+msgstr "Zum Produkt →"
+
+#. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
 msgid "View Products"
 msgstr "Produkte ansehen"
@@ -1812,7 +1822,7 @@ msgid ""
 "PrivateMind for your AI usage. This makes the solution inherently compatible"
 " with GDPR, §203 StGB professional secrecy obligations, DORA, and NIS2."
 msgstr ""
-"Ja – by Design. Da die gesamte Datenverarbeitung lokal auf Ihrer Hardware stattfindet, "
+"Ja, und zwar von Anfang an. Da die gesamte Datenverarbeitung lokal auf Ihrer Hardware stattfindet, "
 "werden für die KI-Inferenz keine personenbezogenen Daten an einen Auftragsverarbeiter übermittelt. "
 "Sie benötigen keinen Auftragsverarbeitungsvertrag (AVV) mit "
 "PrivateMind für Ihre KI-Nutzung. Die Lösung ist damit inhärent kompatibel "
@@ -1973,3 +1983,401 @@ msgstr "Navigation"
 #: model_terms:ir.ui.view,arch_db:privatemind_website.pm_footer
 msgid "Privacy Policy"
 msgstr "Datenschutzerklärung"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "1. Data Controller"
+msgstr "1. Verantwortlicher"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "2. Collection and Processing of Personal Data"
+msgstr "2. Erhebung und Verarbeitung personenbezogener Daten"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "2.1 Server Logs"
+msgstr "2.1 Serverprotokolle"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "2.2 Contact Form"
+msgstr "2.2 Kontaktformular"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "2.3 No Cookies / No Tracking"
+msgstr "2.3 Keine Cookies / kein Tracking"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "3. Disclosure to Third Parties"
+msgstr "3. Weitergabe an Dritte"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "4. Data Security"
+msgstr "4. Datensicherheit"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "5. Your Rights as a Data Subject"
+msgstr "5. Ihre Rechte als betroffene Person"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "6. Right to Lodge a Complaint"
+msgstr "6. Beschwerderecht"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "7. Currency of This Policy"
+msgstr "7. Aktualität dieser Erklärung"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_impressum
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"<br/>\n"
+"                                    Phone:"
+msgstr ""
+"<br/>\n"
+"                                    Telefon:"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"<br/>\n"
+"                                    Web:"
+msgstr ""
+"<br/>\n"
+"                                    Web:"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"<strong style=\"color:#0a0f1e;\">Access</strong> <span "
+"style=\"color:#6c757d;font-size:0.8rem;\">Art. 15 GDPR</span>"
+msgstr ""
+"<strong style=\"color:#0a0f1e;\">Auskunft</strong> <span "
+"style=\"color:#6c757d;font-size:0.8rem;\">Art. 15 DSGVO</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"<strong style=\"color:#0a0f1e;\">Erasure</strong> <span "
+"style=\"color:#6c757d;font-size:0.8rem;\">Art. 17 GDPR</span>"
+msgstr ""
+"<strong style=\"color:#0a0f1e;\">Löschung</strong> <span "
+"style=\"color:#6c757d;font-size:0.8rem;\">Art. 17 DSGVO</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"<strong style=\"color:#0a0f1e;\">Objection</strong> <span "
+"style=\"color:#6c757d;font-size:0.8rem;\">Art. 21 GDPR</span>"
+msgstr ""
+"<strong style=\"color:#0a0f1e;\">Widerspruch</strong> <span "
+"style=\"color:#6c757d;font-size:0.8rem;\">Art. 21 DSGVO</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"<strong style=\"color:#0a0f1e;\">Portability</strong> <span "
+"style=\"color:#6c757d;font-size:0.8rem;\">Art. 20 GDPR</span>"
+msgstr ""
+"<strong style=\"color:#0a0f1e;\">Datenübertragbarkeit</strong> <span "
+"style=\"color:#6c757d;font-size:0.8rem;\">Art. 20 DSGVO</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"<strong style=\"color:#0a0f1e;\">Rectification</strong> <span "
+"style=\"color:#6c757d;font-size:0.8rem;\">Art. 16 GDPR</span>"
+msgstr ""
+"<strong style=\"color:#0a0f1e;\">Berichtigung</strong> <span "
+"style=\"color:#6c757d;font-size:0.8rem;\">Art. 16 DSGVO</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"<strong style=\"color:#0a0f1e;\">Restriction</strong> <span "
+"style=\"color:#6c757d;font-size:0.8rem;\">Art. 18 GDPR</span>"
+msgstr ""
+"<strong style=\"color:#0a0f1e;\">Einschränkung</strong> <span "
+"style=\"color:#6c757d;font-size:0.8rem;\">Art. 18 DSGVO</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"<strong>In brief:</strong> PrivateMind processes your data exclusively on "
+"its own servers in Germany. We do not share personal data with third parties"
+" and do not use cloud-based AI services. This page fully describes what data"
+" we collect and how we process it."
+msgstr ""
+"<strong>Kurzfassung:</strong> PrivateMind verarbeitet Ihre Daten "
+"ausschließlich auf eigenen Servern in Deutschland. Wir geben keine "
+"personenbezogenen Daten an Dritte weiter und setzen keine Cloud-KI-Dienste "
+"ein. Diese Seite beschreibt vollständig, welche Daten wir erheben und wie "
+"wir diese verarbeiten."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"<strong>PrivateMind GmbH (in formation)</strong><br/>\n"
+"                                    Raffael Reichelt<br/>\n"
+"                                    Dresden, Saxony · Germany<br/>\n"
+"                                    <br/>\n"
+"                                    Email:"
+msgstr ""
+"<strong>PrivateMind GmbH (in Gründung)</strong><br/>\n"
+"                                    Raffael Reichelt<br/>\n"
+"                                    Dresden, Sachsen · Deutschland<br/>\n"
+"                                    <br/>\n"
+"                                    E-Mail:"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"<strong>Saxon Data Protection Commissioner</strong><br/>\n"
+"                                    Devrientstraße 5<br/>\n"
+"                                    01067 Dresden<br/>"
+msgstr ""
+"<strong>Sächsischer Datenschutzbeauftragter</strong><br/>\n"
+"                                    Devrientstraße 5<br/>\n"
+"                                    01067 Dresden<br/>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "Browser type and operating system"
+msgstr "Browser-Typ und Betriebssystem"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "Date and time of access"
+msgstr "Datum und Uhrzeit des Zugriffs"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "IP address (anonymised after 7 days)"
+msgstr "IP-Adresse (anonymisiert nach 7 Tagen)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "Last updated: January 2026"
+msgstr "Stand: Januar 2026"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "Legal"
+msgstr "Rechtliches"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"Legal basis: Art. 6(1)(b) GDPR (pre-contractual measures) or Art. 6(1)(f) "
+"GDPR (legitimate interest in responding to enquiries)."
+msgstr ""
+"Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) bzw."
+" Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Beantwortung von "
+"Anfragen)."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"Legal basis: Art. 6(1)(f) GDPR (legitimate interest in the operation and "
+"security of the website). Log files are automatically deleted after 30 days."
+msgstr ""
+"Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an "
+"Betrieb und Sicherheit der Website). Die Logfiles werden nach 30 Tagen "
+"automatisch gelöscht."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"Our website is transmitted exclusively over HTTPS (TLS 1.3). Our servers are"
+" located in a German data centre and are protected by firewalls, access "
+"controls, and regular security updates. As a provider of AI appliances, we "
+"treat data security as a core competency."
+msgstr ""
+"Unsere Website wird ausschließlich über HTTPS übertragen (TLS 1.3). Unsere "
+"Server befinden sich in einem deutschen Rechenzentrum und sind durch "
+"Firewalls, Zugriffskontrolle und regelmäßige Sicherheitsupdates geschützt. "
+"Als Anbieter von KI-Appliances betreiben wir Datensicherheit als "
+"Kernkompetenz."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"The controller within the meaning of the General Data Protection Regulation "
+"(GDPR) is:"
+msgstr ""
+"Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"This privacy policy is current as of January 2026. We reserve the right to "
+"update it to reflect changes in legal requirements or our services. The "
+"current version is always available at"
+msgstr ""
+"Diese Datenschutzerklärung hat den Stand Januar 2026. Wir behalten uns vor, "
+"sie bei Änderungen der rechtlichen Anforderungen oder unserer Dienste "
+"anzupassen. Die jeweils aktuelle Version ist stets unter"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"This website does not use tracking cookies, analytics tools (e.g. Google "
+"Analytics), or social media tracking. Only technically necessary session "
+"cookies are used; these are deleted when you close your browser."
+msgstr ""
+"Diese Website verwendet keine Tracking-Cookies, keine Analyse-Tools (z. B. "
+"Google Analytics) und kein Social-Media-Tracking. Es werden ausschließlich "
+"technisch notwendige Session-Cookies eingesetzt, die nach dem Schließen des "
+"Browsers gelöscht werden."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "To exercise your rights, please contact:"
+msgstr "Zur Ausübung Ihrer Rechte wenden Sie sich bitte an:"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "URL accessed"
+msgstr "Aufgerufene URL"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "Under the GDPR you have the following rights against us:"
+msgstr "Sie haben nach der DSGVO folgende Rechte gegenüber uns:"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "Volume of data transferred"
+msgstr "Übertragene Datenmenge"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"We do not use US-based cloud services. All data remains on servers located "
+"in Germany."
+msgstr ""
+"Wir setzen keine US-amerikanischen Cloud-Dienste ein. Sämtliche Daten "
+"verbleiben auf Servern in Deutschland."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"When you use our contact form, we process the data you provide (name, email "
+"address, company name, message) in order to handle your enquiry."
+msgstr ""
+"Wenn Sie unser Kontaktformular nutzen, verarbeiten wir die von Ihnen "
+"eingegebenen Daten (Name, E-Mail-Adresse, Unternehmensname, Nachricht) zur "
+"Bearbeitung Ihrer Anfrage."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"When you visit our website, technical access data is automatically stored in"
+" server log files. This includes:"
+msgstr ""
+"Beim Besuch unserer Website werden automatisch technische Zugriffsdaten in "
+"sogenannten Server-Logfiles gespeichert. Diese umfassen:"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"You have the right to lodge a complaint with the competent data protection "
+"supervisory authority. The authority responsible for Saxony is:"
+msgstr ""
+"Sie haben das Recht, sich bei der zuständigen Datenschutz-Aufsichtsbehörde "
+"zu beschweren. Die für Sachsen zuständige Behörde ist:"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"You may object to the processing of your data on the basis of legitimate "
+"interests."
+msgstr ""
+"Sie können der Verarbeitung Ihrer Daten auf Basis berechtigter Interessen "
+"widersprechen."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "You may receive your data in a structured, machine-readable format."
+msgstr "Sie können Ihre Daten in einem strukturierten Format erhalten."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "You may request information about the data we store about you."
+msgstr "Sie können Auskunft über die von uns gespeicherten Daten verlangen."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "You may request that processing of your data be restricted."
+msgstr "Sie können die Einschränkung der Verarbeitung Ihrer Daten verlangen."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "You may request the correction of inaccurate data."
+msgstr "Sie können die Berichtigung unrichtiger Daten verlangen."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"You may request the deletion of your data, provided no statutory retention "
+"obligations apply."
+msgstr ""
+"Sie können die Löschung Ihrer Daten verlangen, sofern keine gesetzlichen "
+"Aufbewahrungspflichten entgegenstehen."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"Your data is stored on our own Odoo server in Germany and is not shared with"
+" third parties. Enquiries that do not result in a contract are deleted after"
+" 24 months."
+msgstr ""
+"Die Daten werden auf unserem eigenen Odoo-Server in Deutschland gespeichert "
+"und nicht an Dritte weitergegeben. Anfragen werden nach 24 Monaten ohne "
+"Vertragsschluss gelöscht."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"Your personal data will <strong>not</strong> be disclosed to third parties "
+"unless:"
+msgstr ""
+"Eine Weitergabe Ihrer personenbezogenen Daten an Dritte erfolgt "
+"<strong>nicht</strong>, es sei denn:"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid ""
+"disclosure is necessary for the performance of a contract (Art. 6(1)(b) "
+"GDPR), or"
+msgstr ""
+"die Weitergabe ist zur Erfüllung eines Vertrages erforderlich (Art. 6 Abs. 1"
+" lit. b DSGVO), oder"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "privatemind.eu/privacy"
+msgstr ""
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "we are legally obliged to do so (Art. 6(1)(c) GDPR)."
+msgstr "wir sind gesetzlich dazu verpflichtet (Art. 6 Abs. 1 lit. c DSGVO)."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "www.saechsdsb.de"
+msgstr ""
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_privacy
+msgid "you have given your explicit consent (Art. 6(1)(a) GDPR), or"
+msgstr ""
+"Sie haben ausdrücklich eingewilligt (Art. 6 Abs. 1 lit. a DSGVO), oder"

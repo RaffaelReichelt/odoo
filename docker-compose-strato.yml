@@ -27,6 +27,9 @@ services:
 
   odoo:
     image: privatemind/odoo:18.0
+    command: ["sh", "-c", "exec /usr/src/odoo/community/odoo-bin --config=/run/secrets/odoo_conf --addons-path=\"$$ODOO_ADDONS_PATH\""]
+    environment:
+      - ODOO_ADDONS_PATH=/usr/src/odoo/community/addons,/home/odoo/addons/18.0,/usr/src/odoo/reporting-engine,/usr/src/odoo/OCA/web,/usr/src/odoo/theme_liquid_glass,/usr/src/odoo/OCA-extra
     secrets:
       - odoo_conf
     volumes:
@@ -36,6 +39,7 @@ services:
       - /opt/stacks/privatemind/odoo/web:/usr/src/odoo/OCA/web
       - /opt/stacks/privatemind/odoo/reporting-engine:/usr/src/odoo/reporting-engine
       - /opt/stacks/privatemind/odoo/theme_liquid_glass:/usr/src/odoo/theme_liquid_glass
+      - /opt/stacks/privatemind/odoo/OCA/Subscription_Management_OCA:/usr/src/odoo/OCA-extra/Subscription_Management_OCA
     networks:
       - odoo-internal
       - postgres_postgres
@@ -72,4 +76,4 @@ networks:
 secrets:
   odoo_conf:
     external: true
-    name: odoo_conf_v2
+    name: odoo_conf_v3

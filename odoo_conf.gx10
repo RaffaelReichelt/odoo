@@ -1,0 +1,4 @@
+db_host      = postgres
+db_password  = odoo
+admin_passwd = $pbkdf2-sha512$600000$19r73/vfuzdmrDUmJESIMQ$Zh97JPHGm447el35thixMvTDur9v0b4KxaOX1/YnT/BVbpvo1xz05iRC3.87/mjLJc26AdyDXfIynDpv4fSpOw
+exit

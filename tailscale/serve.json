@@ -7,8 +7,8 @@
   "Web": {
     "${TS_CERT_DOMAIN}:443": {
       "Handlers": {
-        "/websocket": {
-          "Proxy": "http://odoo:8072"
+        "/bus/websocket": {
+          "Proxy": "http://odoo:8069"
         },
         "/": {
           "Proxy": "http://odoo:8069"

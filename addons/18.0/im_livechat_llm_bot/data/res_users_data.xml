@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Technischer interner User fuer den KI-Bot-Partner, damit er als
+         Livechat-Operator auftreten kann, auch wenn kein Mensch online ist.
+         Ohne Passwort angelegt: kein interaktives Login moeglich. -->
+    <record id="user_llm_bot" model="res.users">
+        <field name="name">KI-Assistent</field>
+        <field name="login">ki-assistent-bot</field>
+        <field name="partner_id" ref="partner_llm_bot"/>
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_user')])]"/>
+        <field name="active">True</field>
+    </record>
+</odoo>

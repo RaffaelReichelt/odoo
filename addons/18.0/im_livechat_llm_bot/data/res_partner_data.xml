@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="partner_llm_bot" model="res.partner">
+        <field name="name">KI-Assistent</field>
+        <field name="active">True</field>
+        <field name="type">contact</field>
+    </record>
+</odoo>

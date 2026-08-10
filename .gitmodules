@@ -13,3 +13,7 @@
 [submodule "OCA/Subscription_Management_OCA"]
 	path = OCA/Subscription_Management_OCA
 	url = git@github.com:MIT0101/Subscription-Management-OCA.git
+[submodule "odoo-llm"]
+	path = odoo-llm
+	url = https://github.com/apexive/odoo-llm.git
+	branch = 18.0

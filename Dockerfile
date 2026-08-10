@@ -32,6 +32,8 @@ RUN pip3 install --upgrade pyOpenSSL
 
 COPY ./community/requirements.txt requirements.txt
 RUN echo "\nphonenumbers" >> requirements.txt
+# Python-Abhaengigkeiten fuer die odoo-llm Module (llm, llm_tool, llm_thread, llm_assistant, llm_ollama)
+RUN echo "\nemoji\nmarkdown2\njinja2\npyyaml\njsonschema\nollama\npydantic>=2.0.0\nmcp\npackaging" >> requirements.txt
 RUN pip3 install -r requirements.txt
 
 

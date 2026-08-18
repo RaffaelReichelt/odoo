@@ -2381,3 +2381,224 @@ msgstr ""
 msgid "you have given your explicit consent (Art. 6(1)(a) GDPR), or"
 msgstr ""
 "Sie haben ausdrücklich eingewilligt (Art. 6 Abs. 1 lit. a DSGVO), oder"
+
+
+# ---- Backup & Data Protection (added 2026-08-16) ----
+
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Backup &amp; Data Protection"
+msgstr "Backup &amp; Datensicherung"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"Chats, uploaded documents and RAG indexes live on your appliance's local SSD. Add a backup\n"
+"                            option so a hardware failure, theft, or mistake never means permanent data loss —\n"
+"                            every option below stays on your premises, encrypted. No third-party cloud storage,\n"
+"                            consistent with our no-cloud-dependency principle."
+msgstr ""
+"Chats, hochgeladene Dokumente und RAG-Indizes liegen lokal auf der SSD Ihrer Appliance. Mit einer\n"
+"                            passenden Backup-Option führen ein Hardware-Ausfall, Diebstahl oder Bedienfehler nie zu dauerhaftem Datenverlust —\n"
+"                            jede Option bleibt verschlüsselt bei Ihnen vor Ort. Keine Cloud-Speicherung durch Dritte,\n"
+"                            im Einklang mit unserem Grundsatz der Cloud-Unabhängigkeit."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Add-on"
+msgstr "Zusatzoption"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "PrivateMind Backup Basic"
+msgstr "PrivateMind Backup Basic"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "PrivateMind Backup Plus"
+msgstr "PrivateMind Backup Plus"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "PrivateMind Backup Cluster"
+msgstr "PrivateMind Backup Cluster"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "PrivateMind Backup Enterprise"
+msgstr "PrivateMind Backup Enterprise"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "For PrivateMind Standard. Encrypted external SSD with automated weekly snapshots, kept separately from the appliance."
+msgstr "Für PrivateMind Standard. Verschlüsselte externe SSD mit automatisierten wöchentlichen Snapshots, getrennt von der Appliance aufbewahrt."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "For PrivateMind Professional. Local NAS with daily automated backups and 30-day version history."
+msgstr "Für PrivateMind Professional. Lokales NAS mit täglichen automatisierten Backups und 30 Tagen Versionshistorie."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "For PrivateMind Premium. NAS backup covering both cluster nodes, with periodic restore testing."
+msgstr "Für PrivateMind Premium. NAS-Backup für beide Cluster-Knoten, mit regelmäßigen Restore-Tests."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "For PrivateMind Enterprise. Dedicated backup storage array with optional second-site redundancy."
+msgstr "Für PrivateMind Enterprise. Dediziertes Backup-Storage-Array mit optionaler Redundanz am Zweitstandort."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"<span class=\"pm-price\">€550</span>\n"
+"                                        <span class=\"pm-price-sub\">net, one-time · 19% VAT applies</span>\n"
+"                                        <span class=\"pm-price-sub\">+ €29/mo Managed-Backup (optional)</span>"
+msgstr ""
+"<span class=\"pm-price\">€550</span>\n"
+"                                        <span class=\"pm-price-sub\">netto, einmalig · zzgl. 19% MwSt.</span>\n"
+"                                        <span class=\"pm-price-sub\">+ €29/Monat Managed-Backup (optional)</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"<span class=\"pm-price\">€1,100</span>\n"
+"                                        <span class=\"pm-price-sub\">net, one-time · 19% VAT applies</span>\n"
+"                                        <span class=\"pm-price-sub\">+ €59/mo Managed-Backup (optional)</span>"
+msgstr ""
+"<span class=\"pm-price\">€1.100</span>\n"
+"                                        <span class=\"pm-price-sub\">netto, einmalig · zzgl. 19% MwSt.</span>\n"
+"                                        <span class=\"pm-price-sub\">+ €59/Monat Managed-Backup (optional)</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"<span class=\"pm-price\">€1,700</span>\n"
+"                                        <span class=\"pm-price-sub\">net, one-time · 19% VAT applies</span>\n"
+"                                        <span class=\"pm-price-sub\">+ €99/mo Managed-Backup (optional)</span>"
+msgstr ""
+"<span class=\"pm-price\">€1.700</span>\n"
+"                                        <span class=\"pm-price-sub\">netto, einmalig · zzgl. 19% MwSt.</span>\n"
+"                                        <span class=\"pm-price-sub\">+ €99/Monat Managed-Backup (optional)</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid ""
+"<span class=\"pm-price\">from €5,500</span>\n"
+"                                        <span class=\"pm-price-sub\">net, one-time · 19% VAT applies</span>\n"
+"                                        <span class=\"pm-price-sub\">+ €249/mo Managed-Backup (optional)</span>"
+msgstr ""
+"<span class=\"pm-price\">ab €5.500</span>\n"
+"                                        <span class=\"pm-price-sub\">netto, einmalig · zzgl. 19% MwSt.</span>\n"
+"                                        <span class=\"pm-price-sub\">+ €249/Monat Managed-Backup (optional)</span>"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Fits PrivateMind Standard (1 TB)"
+msgstr "Passt zu PrivateMind Standard (1 TB)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "External encrypted NVMe/USB-C SSD, 2 TB"
+msgstr "Externe verschlüsselte NVMe/USB-C-SSD, 2 TB"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Weekly encrypted snapshot backup"
+msgstr "Wöchentliches verschlüsseltes Snapshot-Backup"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Kept separate from the appliance (fire protection)"
+msgstr "Getrennt von der Appliance aufbewahrt (Brandschutz)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "100% on-premises — no cloud storage"
+msgstr "100% vor Ort — keine Cloud-Speicherung"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Setup included"
+msgstr "Einrichtung inklusive"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Fits PrivateMind Professional (2 TB)"
+msgstr "Passt zu PrivateMind Professional (2 TB)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Local NAS, RAID 1, 4 TB"
+msgstr "Lokales NAS, RAID 1, 4 TB"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Daily incremental backup, 30-day version history"
+msgstr "Tägliches inkrementelles Backup, 30 Tage Versionshistorie"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Fits PrivateMind Premium (2× GX10 Cluster)"
+msgstr "Passt zu PrivateMind Premium (2× GX10 Cluster)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Local NAS, RAID 5/6, 8 TB — covers both nodes"
+msgstr "Lokales NAS, RAID 5/6, 8 TB — sichert beide Knoten"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Daily backup, 30-day version history"
+msgstr "Tägliches Backup, 30 Tage Versionshistorie"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Half-yearly restore test"
+msgstr "Halbjährlicher Restore-Test"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Optional second NAS at a second site"
+msgstr "Optional zweites NAS am Zweitstandort"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Fits PrivateMind Enterprise (Rack)"
+msgstr "Passt zu PrivateMind Enterprise (Rack)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Dedicated backup storage array, RAID 6, 16+ TB"
+msgstr "Dediziertes Backup-Storage-Array, RAID 6, 16+ TB"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Daily backup + snapshot rotation, 90-day version history"
+msgstr "Tägliches Backup + Snapshot-Rotation, 90 Tage Versionshistorie"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Quarterly restore test"
+msgstr "Vierteljährlicher Restore-Test"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Recommended: second rack unit at a second site (customer-owned)"
+msgstr "Empfohlen: zweites Rack-Gerät am Zweitstandort (im Kundeneigentum)"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Managed-Backup is an optional monthly add-on: we monitor backup status, alert on failure, and run scheduled restore tests. Hardware and setup can also be purchased standalone without an ongoing subscription."
+msgstr "Managed-Backup ist eine optionale monatliche Zusatzleistung: Wir überwachen den Backup-Status, alarmieren bei Fehlschlägen und führen planmäßige Restore-Tests durch. Hardware und Einrichtung sind auch einzeln ohne laufendes Abo erhältlich."
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "What if the appliance fails or gets stolen — is my data gone?"
+msgstr "Was passiert, wenn die Appliance ausfällt oder gestohlen wird — sind meine Daten weg?"
+
+#. module: privatemind_website
+#: model_terms:ir.ui.view,arch_db:privatemind_website.page_products
+msgid "Not if you add a backup option. Chats, documents, and RAG indexes live on the appliance's local SSD, so without a backup they are lost along with the hardware. We offer a matching backup option for every tier — an encrypted external drive or NAS kept on your premises, never in the cloud. Optionally, our Managed-Backup service monitors backup health and runs periodic restore tests for you. See Backup &amp; Data Protection above."
+msgstr "Nicht, wenn Sie eine Backup-Option hinzubuchen. Chats, Dokumente und RAG-Indizes liegen auf der lokalen SSD der Appliance — ohne Backup gehen sie zusammen mit der Hardware verloren. Wir bieten für jede Stufe eine passende Backup-Option: eine verschlüsselte externe Festplatte oder ein NAS bei Ihnen vor Ort, niemals in der Cloud. Optional überwacht unser Managed-Backup-Service die Backup-Integrität und führt regelmäßige Restore-Tests für Sie durch. Siehe Backup &amp; Datensicherung oben."

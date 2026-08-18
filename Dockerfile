@@ -34,6 +34,9 @@ COPY ./community/requirements.txt requirements.txt
 RUN echo "\nphonenumbers" >> requirements.txt
 # Python-Abhaengigkeiten fuer die odoo-llm Module (llm, llm_tool, llm_thread, llm_assistant, llm_ollama)
 RUN echo "\nemoji\nmarkdown2\njinja2\npyyaml\njsonschema\nollama\npydantic>=2.0.0\nmcp\npackaging" >> requirements.txt
+# Python-Abhaengigkeiten fuer die RAG-Module (llm_knowledge, llm_pgvector, llm_tool_knowledge)
+# und den website.page-Connector in im_livechat_llm_bot
+RUN echo "\nrequests\nmarkdownify\nPyMuPDF\nnumpy\npgvector\nbeautifulsoup4" >> requirements.txt
 RUN pip3 install -r requirements.txt
 
 

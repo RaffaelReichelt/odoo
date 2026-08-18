@@ -161,7 +161,7 @@
                                         <li>Email support · 48h SLA</li>
                                         <li>Hardware ownership after 36 months</li>
                                     </ul>
-                                    <a href="/shop/pm-bdl-std-bundle-standard-36-mo-all-inclusive-11" class="btn btn-outline-primary w-100">View Product →</a>
+                                    <a href="/shop/pm-bdl-std-all-in-bundle-standard-36-monate-11" class="btn btn-outline-primary w-100">View Product →</a>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -183,7 +183,7 @@
                                         <li>Proactive monitoring by PrivateMind</li>
                                         <li>RAG pipeline setup included</li>
                                     </ul>
-                                    <a href="/shop/pm-bdl-pro-bundle-professional-36-mo-all-inclusive-12" class="btn btn-primary w-100">View Product →</a>
+                                    <a href="/shop/pm-bdl-pro-all-in-bundle-professional-36-monate-12" class="btn btn-primary w-100">View Product →</a>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -207,6 +207,121 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════════
+                     BACKUP &amp; DATA PROTECTION
+                ═══════════════════════════════════════════════ -->
+                <section class="pm-section" style="background:#fff;">
+                    <div class="container">
+                        <h2 class="pm-section-title">Backup &amp; Data Protection</h2>
+                        <p class="pm-section-sub">
+                            Chats, uploaded documents and RAG indexes live on your appliance's local SSD. Add a backup
+                            option so a hardware failure, theft, or mistake never means permanent data loss —
+                            every option below stays on your premises, encrypted. No third-party cloud storage,
+                            consistent with our no-cloud-dependency principle.
+                        </p>
+
+                        <div class="row g-4 align-items-stretch">
+
+                            <div class="col-md-6 col-xl-3">
+                                <div class="pm-product-card">
+                                    <div class="pm-product-tier">Add-on</div>
+                                    <h3>PrivateMind Backup Basic</h3>
+                                    <p class="pm-product-desc">For PrivateMind Standard. Encrypted external SSD with automated weekly snapshots, kept separately from the appliance.</p>
+                                    <div class="pm-price-block">
+                                        <span class="pm-price">€550</span>
+                                        <span class="pm-price-sub">net, one-time · 19% VAT applies</span>
+                                        <span class="pm-price-sub">+ €29/mo Managed-Backup (optional)</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul>
+                                        <li>Fits PrivateMind Standard (1 TB)</li>
+                                        <li>External encrypted NVMe/USB-C SSD, 2 TB</li>
+                                        <li>Weekly encrypted snapshot backup</li>
+                                        <li>Kept separate from the appliance (fire protection)</li>
+                                        <li>100% on-premises — no cloud storage</li>
+                                        <li>Setup included</li>
+                                    </ul>
+                                    <a href="/shop/pm-bak-basic-privatemind-backup-basic-13" class="btn btn-outline-primary w-100">View Product →</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xl-3">
+                                <div class="pm-product-card">
+                                    <div class="pm-product-tier">Add-on</div>
+                                    <h3>PrivateMind Backup Plus</h3>
+                                    <p class="pm-product-desc">For PrivateMind Professional. Local NAS with daily automated backups and 30-day version history.</p>
+                                    <div class="pm-price-block">
+                                        <span class="pm-price">€1,100</span>
+                                        <span class="pm-price-sub">net, one-time · 19% VAT applies</span>
+                                        <span class="pm-price-sub">+ €59/mo Managed-Backup (optional)</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul>
+                                        <li>Fits PrivateMind Professional (2 TB)</li>
+                                        <li>Local NAS, RAID 1, 4 TB</li>
+                                        <li>Daily incremental backup, 30-day version history</li>
+                                        <li>Kept separate from the appliance (fire protection)</li>
+                                        <li>100% on-premises — no cloud storage</li>
+                                        <li>Setup included</li>
+                                    </ul>
+                                    <a href="/shop/pm-bak-plus-privatemind-backup-plus-15" class="btn btn-outline-primary w-100">View Product →</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xl-3">
+                                <div class="pm-product-card">
+                                    <div class="pm-product-tier">Add-on</div>
+                                    <h3>PrivateMind Backup Cluster</h3>
+                                    <p class="pm-product-desc">For PrivateMind Premium. NAS backup covering both cluster nodes, with periodic restore testing.</p>
+                                    <div class="pm-price-block">
+                                        <span class="pm-price">€1,700</span>
+                                        <span class="pm-price-sub">net, one-time · 19% VAT applies</span>
+                                        <span class="pm-price-sub">+ €99/mo Managed-Backup (optional)</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul>
+                                        <li>Fits PrivateMind Premium (2× GX10 Cluster)</li>
+                                        <li>Local NAS, RAID 5/6, 8 TB — covers both nodes</li>
+                                        <li>Daily backup, 30-day version history</li>
+                                        <li>Half-yearly restore test</li>
+                                        <li>Optional second NAS at a second site</li>
+                                        <li>Setup included</li>
+                                    </ul>
+                                    <a href="/shop/pm-bak-cluster-privatemind-backup-cluster-17" class="btn btn-outline-primary w-100">View Product →</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xl-3">
+                                <div class="pm-product-card">
+                                    <div class="pm-product-tier">Add-on</div>
+                                    <h3>PrivateMind Backup Enterprise</h3>
+                                    <p class="pm-product-desc">For PrivateMind Enterprise. Dedicated backup storage array with optional second-site redundancy.</p>
+                                    <div class="pm-price-block">
+                                        <span class="pm-price">from €5,500</span>
+                                        <span class="pm-price-sub">net, one-time · 19% VAT applies</span>
+                                        <span class="pm-price-sub">+ €249/mo Managed-Backup (optional)</span>
+                                    </div>
+                                    <hr class="pm-divider"/>
+                                    <ul>
+                                        <li>Fits PrivateMind Enterprise (Rack)</li>
+                                        <li>Dedicated backup storage array, RAID 6, 16+ TB</li>
+                                        <li>Daily backup + snapshot rotation, 90-day version history</li>
+                                        <li>Quarterly restore test</li>
+                                        <li>Recommended: second rack unit at a second site (customer-owned)</li>
+                                        <li>Setup included</li>
+                                    </ul>
+                                    <a href="/shop/pm-bak-ent-privatemind-backup-enterprise-19" class="btn btn-outline-primary w-100">View Product →</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <p class="text-center text-muted mt-4" style="font-size:0.85rem;">
+                            Managed-Backup is an optional monthly add-on: we monitor backup status, alert on failure, and run scheduled restore tests. Hardware and setup can also be purchased standalone without an ongoing subscription.
+                        </p>
                     </div>
                 </section>
 
@@ -367,6 +482,19 @@
                                         <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                             <div class="accordion-body text-muted">
                                                 We curate a selection of best-in-class open-weight models including Llama 3.3 70B Instruct (all-purpose), DeepSeek-R1 70B (reasoning and analysis), Qwen2.5 72B (multilingual), Gemma 3 27B (fast, efficient), and Mistral Large (European languages). Custom model selection is available from the Professional plan onwards. Enterprise customers can request fine-tuning on their own data.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-3 rounded" style="box-shadow:0 1px 8px rgba(0,0,0,0.06);">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed rounded" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq5">
+                                                What if the appliance fails or gets stolen — is my data gone?
+                                            </button>
+                                        </h2>
+                                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body text-muted">
+                                                Not if you add a backup option. Chats, documents, and RAG indexes live on the appliance's local SSD, so without a backup they are lost along with the hardware. We offer a matching backup option for every tier — an encrypted external drive or NAS kept on your premises, never in the cloud. Optionally, our Managed-Backup service monitors backup health and runs periodic restore tests for you. See Backup &amp; Data Protection above.
                                             </div>
                                         </div>
                                     </div>

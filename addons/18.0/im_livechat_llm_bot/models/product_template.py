@@ -122,7 +122,20 @@ class ProductTemplate(models.Model):
                     # nicht mehr selbst aus Fliesstext herausparsen (Fehlerquelle
                     # fuer Zahlendreher/falsche Waehrung), sondern kann sie direkt
                     # uebernehmen.
-                    'price': product.list_price,
+                    #
+                    # Live beobachtet (19.08.): list_price ist ein Odoo-Float-Feld
+                    # und kam bisher UNFORMATIERT im Tool-Ergebnis an, z.B. als
+                    # 62500.0 statt 62500 - JSON-Serialisierung eines Python-Floats
+                    # haengt bei einer ganzen Zahl immer ".0" an. Das durchgaengig
+                    # reproduzierbare Zahlen-Mangling ("62500 EUR" -> "62,50 EUR")
+                    # ueber FUENF verschiedene Fine-Tuning-Versuche hinweg legt nahe,
+                    # dass genau diese ".0"-Endung das Modell beim Umformulieren in
+                    # Flieszext verwirrt (z.B. als Cent-Trennzeichen missinterpretiert).
+                    # Alle Preise in unserem Katalog sind ganze Euro-Betraege, daher
+                    # hier hart auf int gerundet uebergeben - ein Tool-seitiger Fix
+                    # ist zuverlaessiger als zu hoffen, dass jedes Modell "62500.0"
+                    # beim Aufschreiben korrekt behandelt.
+                    'price': round(product.list_price),
                     'currency': product.currency_id.name,
                 }
                 for product in products

@@ -156,45 +156,92 @@ def _ensure_german(text, provider, model):
     return _SAFE_LANGUAGE_FALLBACK_TEXT
 
 
-def _get_known_prices(env):
+def _get_known_prices_by_product(env):
     """Sammelt alle echten Preise direkt aus dem Produktkatalog - eine
     Quelle der Wahrheit, die bei Preisaenderungen automatisch aktuell
-    bleibt (keine hartkodierte Liste, die aus dem Ruder laufen kann)."""
+    bleibt (keine hartkodierte Liste, die aus dem Ruder laufen kann).
+
+    Anders als eine simple Preis-Menge wird hier PRO Produktname
+    gespeichert, welche Preise fuer GENAU dieses Produkt gueltig sind.
+
+    Live beobachtet (21.08., "Steuerbuero mit 4 Steuerberatern"): eine
+    flache Menge aller Katalogpreise laesst eine falsche Zahl durchgehen,
+    solange sie IRGENDWO im Katalog real vorkommt - hier wurde "29 EUR
+    pro Monat" fuer das "All-In Bundle Standard" genannt (echter Preis:
+    299 EUR/Monat), aber 29 EUR ist der reale Preis von "PrivateMind
+    Backup Basic - Managed", einem voellig unverwandten Produkt. Die alte
+    Pruefung haette das durchgelassen, weil 29 ein "bekannter Preis" ist -
+    nur eben fuer das falsche Produkt. Grund fuer die Verwechslung: bei
+    dieser Anfrage matchte kein Produkt die Suchbegriffe, wodurch
+    search_sellable_products auf den Fallback "kompletten Katalog
+    zurueckgeben" auswich (siehe product_template.py) - das Modell sah
+    dadurch auch preislich unpassende Nebenprodukte wie die Backup-Plaene."""
     products = env['product.template'].sudo().search(
         [('sale_ok', '=', True), ('active', '=', True)])
-    known = set()
+    by_product = {}
     for p in products:
-        if not p.list_price:
+        if not p.list_price or not p.name:
             continue
         price = round(p.list_price)
-        known.add(price)
+        prices = {price}
         # All-In Bundles laufen ueber 36 Monate - der oft genannte
         # Gesamtbetrag (monatlich * 36) ist im Text ebenfalls ein legitimer
         # "bekannter" Wert, keine Erfindung.
-        if 'all-in' in (p.name or '').lower():
-            known.add(price * 36)
-    return known
+        if 'all-in' in p.name.lower():
+            prices.add(price * 36)
+        by_product[p.name] = prices
+    return by_product
 
 
-def _validate_prices(text, known_prices):
+def _validate_prices(text, known_prices_by_product):
     """Prueft jede "<Zahl> EUR"-Erwaehnung gegen die echten Katalogpreise
-    (Trennzeichen egal - "62.500", "62500" werden gleich behandelt). Findet
-    sich eine Zahl, die zu keinem bekannten Preis passt, wird die komplette
-    Antwort durch eine sichere Ausweichantwort ersetzt (siehe Kommentar
-    oben, warum keine Korrektur versucht wird)."""
-    if not known_prices:
+    (Trennzeichen egal - "62.500", "62500" werden gleich behandelt).
+
+    Wird VOR der Preisnennung im Text bereits ein konkreter Produktname
+    genannt, muss die Zahl zum Preis GENAU DIESES Produkts passen - nicht
+    nur zu irgendeinem Preis irgendwo im Katalog (siehe Kommentar bei
+    _get_known_prices_by_product, warum die alte, produktlose Pruefung
+    eine falsche Zahl durchgelassen hat). Ohne erkennbaren Produktnamen in
+    der Naehe bleibt die alte, grosszuegigere Pruefung gegen den
+    Gesamtkatalog als Sicherheitsnetz bestehen. Findet sich eine Zahl, die
+    zu keinem (passenden) Preis passt, wird die komplette Antwort durch
+    eine sichere Ausweichantwort ersetzt (siehe Kommentar oben, warum
+    keine Korrektur versucht wird)."""
+    if not known_prices_by_product:
         return text
+
+    all_known_prices = set().union(*known_prices_by_product.values())
+
+    # Position jeder Produktnennung im Text sammeln, um beim Pruefen einer
+    # Preisangabe das zuletzt zuvor genannte Produkt zu ermitteln.
+    name_positions = sorted(
+        (m.start(), name)
+        for name in known_prices_by_product
+        for m in re.finditer(re.escape(name), text, re.IGNORECASE)
+    )
 
     for match in _PRICE_MENTION_RE.finditer(text):
         raw = match.group(1)
         digits_only = re.sub(r'[.,]', '', raw)
         as_int = int(digits_only) if digits_only.isdigit() else None
-        if as_int not in known_prices:
+
+        current_product = None
+        for name_pos, name in name_positions:
+            if name_pos > match.start():
+                break
+            current_product = name
+        allowed_prices = (
+            known_prices_by_product[current_product]
+            if current_product else all_known_prices
+        )
+
+        if as_int not in allowed_prices:
             _logger.warning(
-                "Livechat-KI-Bot: Preisangabe in Bot-Antwort passt zu "
-                "keinem bekannten Katalogpreis (%s EUR) - ersetze komplette "
+                "Livechat-KI-Bot: Preisangabe in Bot-Antwort (%s EUR%s) "
+                "passt zu keinem bekannten Katalogpreis - ersetze komplette "
                 "Antwort durch sichere Ausweichantwort statt eine "
                 "moeglicherweise falsche Zahl zu zeigen.", raw,
+                f" fuer '{current_product}'" if current_product else "",
             )
             return _SAFE_PRICE_FALLBACK_TEXT
 
@@ -320,7 +367,26 @@ class DiscussChannel(models.Model):
         # Nachricht), damit sie im Besucher-Widget an derselben Stelle erscheint.
         clean_body = _strip_fabricated_self_urls(reply.body or '')
         clean_body = _ensure_german(clean_body, thread.provider_id, thread.model_id)
-        clean_body = _validate_prices(clean_body, _get_known_prices(self.env))
+        clean_body = _validate_prices(clean_body, _get_known_prices_by_product(self.env))
+
+        # Live beobachtet (21.08.): die Bereinigung oben wurde bisher NUR auf
+        # typing_message geschrieben - die fuer den Besucher sichtbare Kopie
+        # im discuss.channel. Die eigentliche Assistant-Nachricht im
+        # llm.thread (reply) blieb unveraendert mit dem ROHEN, halluzinierten
+        # Text stehen. Genau reply.body ist aber das, was als Gespraechs-
+        # verlauf an das Modell zurueckgegeben wird (siehe
+        # llm_ollama/models/mail_message.py: ollama_format_message() liest
+        # self.body der Assistant-Nachricht direkt als "content" fuer
+        # kuenftige Turns). Ergebnis: der Kunde hat auf Nachfrage
+        # ("29 EUR erscheint mir sehr preiswert, bitte bestaetigen") vom
+        # Modell den falschen Preis erneut serviert bekommen - das Modell hat
+        # schlicht seine eigene ungefilterte erste Antwort aus dem
+        # gespeicherten Verlauf zitiert, die Bereinigung war rein kosmetisch
+        # fuer die Anzeige und hat das Modellgedaechtnis nie erreicht. Beide
+        # Kopien muessen daher denselben bereinigten Text bekommen, sonst
+        # bleibt der Fehler im Kontext des laufenden Chats dauerhaft bestehen.
+        reply.write({'body': clean_body})
+
         typing_message.write({'body': clean_body})
         typing_message._bus_send_store(typing_message, {
             'body': typing_message.body,

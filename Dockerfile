@@ -37,6 +37,8 @@ RUN echo "\nemoji\nmarkdown2\njinja2\npyyaml\njsonschema\nollama\npydantic>=2.0.
 # Python-Abhaengigkeiten fuer die RAG-Module (llm_knowledge, llm_pgvector, llm_tool_knowledge)
 # und den website.page-Connector in im_livechat_llm_bot
 RUN echo "\nrequests\nmarkdownify\nPyMuPDF\nnumpy\npgvector\nbeautifulsoup4" >> requirements.txt
+# Python-Abhaengigkeiten fuer die LLM-Provider-Module llm_openai, llm_mistral
+RUN echo "\nopenai\nmistralai" >> requirements.txt
 RUN pip3 install -r requirements.txt
 
 

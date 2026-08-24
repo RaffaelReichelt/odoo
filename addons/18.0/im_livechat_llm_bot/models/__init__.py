@@ -1,4 +1,5 @@
 from . import llm_mcp_compat
+from . import llm_ollama_format_message_compat
 from . import im_livechat_channel
 from . import discuss_channel
 from . import llm_provider

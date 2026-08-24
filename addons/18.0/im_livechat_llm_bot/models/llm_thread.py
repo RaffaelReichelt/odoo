@@ -6,7 +6,18 @@ from markupsafe import Markup
 
 from odoo import models
 
+from .llm_provider import FORCED_TEXT_NUM_PREDICT
+
 _logger = logging.getLogger(__name__)
+
+# Live beobachtet (23.08.): ohne Tools UND ohne Laengenlimit generiert das
+# Modell in der erzwungenen Text-Runde (siehe unten) manchmal einfach weiter,
+# statt zu stoppen - ein einzelner Fall lief >1200 Tokens weit ueber jede
+# sinnvolle Chat-Antwort hinaus, nur ein zufaelliger Server-Neustart beendete
+# ihn. 500 Tokens sind grosszuegig fuer eine normale Chat-Antwort in
+# natuerlicher Sprache (kein Tool-Call-JSON mehr moeglich, da Tools entzogen
+# sind), begrenzen aber den Schaden falls das Modell trotzdem nicht stoppt.
+_FORCED_TEXT_MAX_TOKENS = 500
 
 
 class LLMThread(models.Model):
@@ -47,6 +58,7 @@ class LLMThread(models.Model):
         kwargs = super()._prepare_chat_kwargs(message_history, use_streaming)
         max_calls = self.assistant_id.tool_calls_max or 0
         if max_calls and self._llm_bot_consecutive_tool_rounds() >= max_calls:
+            FORCED_TEXT_NUM_PREDICT.set(_FORCED_TEXT_MAX_TOKENS)
             _logger.info(
                 "Thread %s: tool_calls_max (%s) erreicht, biete dem Modell keine "
                 "Tools mehr an, um eine Text-Antwort zu erzwingen.",
@@ -74,6 +86,12 @@ class LLMThread(models.Model):
                     llm_role='system',
                 )
                 kwargs['messages'] = self.get_llm_messages()
+        else:
+            # Explizit zuruecksetzen statt nur im if-Zweig zu setzen: sonst
+            # bliebe das Limit vom letzten erzwungenen Call dieses Threads
+            # (oder eines anderen, im selben Worker vorher bedienten Threads)
+            # faelschlich fuer normale Tool-Runden aktiv.
+            FORCED_TEXT_NUM_PREDICT.set(None)
         return kwargs
 
     def _llm_bot_consecutive_tool_rounds(self):

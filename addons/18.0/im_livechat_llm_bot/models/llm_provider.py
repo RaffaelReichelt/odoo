@@ -62,8 +62,24 @@ DEFAULT_TEMPERATURE = 0.1
 # Haenger, nur ohne GPU-Dauerlast. Fix: Denkmodus fuer die erzwungene Runde
 # per think=False komplett abschalten, damit das ganze Budget in die
 # sichtbare Antwort geht.
-FORCED_TEXT_NUM_PREDICT = contextvars.ContextVar(
-    'im_livechat_llm_bot_forced_text_num_predict', default=None,
+#
+# Live beobachtet (26.08., gemma4:12b, waehrend eines Preistests mit dem
+# neuen faq_price_lookup-Tool): das Limit war urspruenglich BEWUSST nur fuer
+# die letzte, erzwungene Runde gedacht (siehe llm_thread.py) - Annahme war,
+# dass ein Modell mit noch angebotenen Tools "von selbst" rechtzeitig
+# stoppt oder ein Tool aufruft. Diese Annahme haelt nicht: eine GANZ NORMALE
+# Tool-Runde (Tools noch verfuegbar, tool_calls_max noch nicht erreicht) hat
+# ueber 48.700 Tokens am Stueck generiert, ohne je ein Tool aufzurufen oder
+# zu stoppen - >35 Minuten volle GPU-Last (95%), bis der Odoo-Worker manuell
+# abgebrochen wurde. Umbenannt und in llm_thread.py jetzt fuer JEDE Runde
+# gesetzt, nicht mehr nur die erzwungene - der Name "FORCED_TEXT" waere
+# sonst irrefuehrend. Nebeneffekt bewusst in Kauf genommen: think=False gilt
+# jetzt ebenfalls fuer jede Runde, auch waehrend der Tool-Auswahl - reduziert
+# moeglicherweise die Tool-Auswahl-Qualitaet gegenueber "mit Denkschritt",
+# aber ein Modell, das mangels Denkschritt ein suboptimales Tool waehlt, ist
+# ein weit kleineres Problem als eines, das die GPU 35 Minuten lang blockiert.
+PER_CALL_NUM_PREDICT = contextvars.ContextVar(
+    'im_livechat_llm_bot_per_call_num_predict', default=None,
 )
 
 
@@ -71,7 +87,7 @@ class _LowTemperatureOllamaClient(ollama.Client):
     def chat(self, *args, **kwargs):
         options = dict(kwargs.get('options') or {})
         options.setdefault('temperature', DEFAULT_TEMPERATURE)
-        num_predict = FORCED_TEXT_NUM_PREDICT.get()
+        num_predict = PER_CALL_NUM_PREDICT.get()
         if num_predict:
             options.setdefault('num_predict', num_predict)
             kwargs.setdefault('think', False)

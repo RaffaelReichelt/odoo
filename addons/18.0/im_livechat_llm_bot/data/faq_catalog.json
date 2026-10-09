@@ -1,0 +1,252 @@
+{
+  "_meta": {
+    "purpose": "Kuratierter Preis-Katalog fuer deterministisches Retrieval + kleines Modell nur zur Umformulierung (kein freies Generieren von Zahlen/Fakten durch das LLM).",
+    "scope": "Erster Durchstich: nur Preis-Kategorien (PREIS-1..5, GRENZE-2). Alle anderen Kategorien aus reference model_benchmark.py (Datenschutz, Technik, Support, Vertrag, ...) sind bewusst noch NICHT abgedeckt.",
+    "source_of_truth_for_numbers": "addons/18.0/im_livechat_llm_bot/scripts/kundenservice_prompt_export.md (PREISUEBERSICHT). Bei Preisaenderungen dort zuerst aktualisieren, dann diese Datei manuell nachziehen - kein automatischer Sync.",
+    "derived_from": "/home/raffael/Projekte/lora (price_data.py, data/paraphrases.json, scripts/generate_training_data.py) - Artefakte aus dem am 19.08.2026 eingestellten LoRA-Fine-Tuning-Versuch, hier fuer einen anderen Zweck (Retrieval-Katalog statt Trainingsdaten) wiederverwendet.",
+    "known_limitations": [
+      "ambiguous_enterprise: die Klarstellungsantwort steht hier isoliert. Ein kurzer Folge-Turn wie 'Die Hardware-Appliance.' hat ohne Gespraechskontext zu wenig semantische Naehe zu hw_enterprise fuer verlaessliches Retrieval - Mehrturn-Kontext muesste die Implementierung gesondert beruecksichtigen (z.B. letzte Bot-Frage in die Retrieval-Query einbeziehen).",
+      "price_overview (PREIS-1) ist eine Zusammenfassung ueber alle Kategorien hinweg - bewusst als eigener Intent mit fest formuliertem Ueberblickstext, nicht durch Zusammenfuegen mehrerer Einzeltreffer zur Laufzeit.",
+      "Paraphrasen aus lora/data/paraphrases.json wurden gefiltert: kontextlose Fragment-Paraphrasen (z.B. 'Standard?', 'bezahlen?', 'Monat?') sind ohne Gespraechsverlauf zu mehrdeutig fuer isoliertes Retrieval und wurden ausgelassen.",
+      "escalation_discount_pressure: die Paraphrasen-Liste in lora/data/paraphrases.json ist fehlerhaft (Saetze an Zeilenumbruechen mitten im Wort zerschnitten, z.B. 'benoet' / 'benoetige...') - hier nicht uebernommen, nur die urspruengliche unbeschaedigte Frage verwendet."
+    ],
+    "product_name_matching": "WICHTIG (26.08. live beobachtet): discuss_channel.py._validate_prices() erkennt einen Produktnamen im Antworttext nur bei EXAKTER Teilstring-Uebereinstimmung mit dem echten product.template-Namen - sonst faellt die Preispruefung auf den naechsten ERKANNTEN Namen davor zurueck und ordnet die Zahl faelschlich dem falschen Produkt zu (Fund: 'Service Plan Starter' im Antworttext, echter Produktname aber 'PrivateMind Service Plan Starter' - die 149 EUR wurden dadurch faelschlich 'PrivateMind Standard' zugeordnet und als ungueltig verworfen). Antworttexte in diesem Katalog verwenden daher bewusst die VOLLEN echten Produktnamen aus product.template (z.B. 'PrivateMind Service Plan Starter', 'All-In Bundle Standard (36 Monate)'), NICHT die kuerzeren Namen aus der PREISUEBERSICHT-Tabelle im System-Prompt. Bei neuen Eintraegen immer gegen `env['product.template'].search([('sale_ok','=',True),('active','=',True)]).mapped('name')` abgleichen."
+  },
+  "intents": [
+    {
+      "intent_id": "price_overview",
+      "category": "Preis-Transparenz",
+      "source_test_ids": ["PREIS-1"],
+      "canonical_question": "Was steht auf eurer Preisgestaltungs-Seite? Nenne mir konkrete Details.",
+      "paraphrases": [
+        "Was kostet PrivateMind grundsaetzlich?",
+        "Koennt ihr mir einen Ueberblick ueber eure Preise geben?",
+        "Wie ist euer Preismodell aufgebaut?",
+        "Was fuer Preisoptionen habt ihr?"
+      ],
+      "answer": "PrivateMind bietet drei Preismodelle: Hardware-Appliances als einmalige Anschaffung (ab 3.800 EUR zzgl. 19% USt.), monatliche Service Plans (ab 149 EUR/Monat) und All-In Bundles mit 36 Monaten Laufzeit (ab 299 EUR/Monat, danach geht die Hardware in Ihr Eigentum ueber). Zu welcher Variante darf ich Ihnen konkrete Zahlen nennen?",
+      "facts": {"categories": ["Hardware-Appliance", "Service Plan", "All-In Bundle"]}
+    },
+    {
+      "intent_id": "hw_standard",
+      "category": "Preis-Transparenz",
+      "source_test_ids": [],
+      "canonical_question": "Was kostet PrivateMind Standard?",
+      "paraphrases": [
+        "Wie hoch sind die Kosten für PrivateMind Standard?",
+        "Was ist der Preis für PrivateMind Standard aktuell?",
+        "Was sind die monatlichen Kosten für PrivateMind Standard?",
+        "Was zahl ich für PrivateMind Standard?",
+        "Was kostet das Standard-Paket von PrivateMind?",
+        "Könnt ihr mir den Preis für PrivateMind Standard nennen?"
+      ],
+      "answer": "PrivateMind Standard kostet einmalig 3.800 EUR zzgl. 19% USt. und ist für 3-8 Nutzer ausgelegt.",
+      "facts": {"name": "PrivateMind Standard", "price": 3800, "billing": "einmalig", "nutzer": "3-8 Nutzer"}
+    },
+    {
+      "intent_id": "hw_professional",
+      "category": "Preis-Transparenz",
+      "source_test_ids": [],
+      "canonical_question": "Was kostet PrivateMind Professional?",
+      "paraphrases": [
+        "Wie viel kostet PrivateMind Professional aktuell?",
+        "Was ist der Preis für PrivateMind Professional?",
+        "Was muss ich für PrivateMind Professional bezahlen?",
+        "Hi, was kostet die Pro-Version von PrivateMind?",
+        "Kannst du mir den Preis für PrivateMind Professional sagen?",
+        "Wieviel darf PrivateMind Professional kosten?"
+      ],
+      "answer": "PrivateMind Professional kostet einmalig 4.500 EUR zzgl. 19% USt. und ist für 3-8 Nutzer mit anspruchsvolleren Workloads ausgelegt.",
+      "facts": {"name": "PrivateMind Professional", "price": 4500, "billing": "einmalig", "nutzer": "3-8 Nutzer, anspruchsvollere Workloads"}
+    },
+    {
+      "intent_id": "hw_premium",
+      "category": "Preis-Transparenz",
+      "source_test_ids": [],
+      "canonical_question": "Was kostet PrivateMind Premium?",
+      "paraphrases": [
+        "Was ist der Preis für ein PrivateMind Premium Abonnement?",
+        "Ich interessiere mich für PrivateMind Premium – was würde das kosten?",
+        "Was zahl ich monatlich für die Premium-Version?",
+        "Kannst du mir sagen, was PrivateMind Premium kostet?",
+        "Kann mir jemand den Preis für PrivateMind Premium nennen?"
+      ],
+      "answer": "PrivateMind Premium kostet einmalig 9.500 EUR zzgl. 19% USt. und ist für 8-20 Nutzer ausgelegt.",
+      "facts": {"name": "PrivateMind Premium", "price": 9500, "billing": "einmalig", "nutzer": "8-20 Nutzer"}
+    },
+    {
+      "intent_id": "hw_enterprise",
+      "category": "Preis-Transparenz",
+      "source_test_ids": ["PREIS-3-EINDEUTIG"],
+      "canonical_question": "Was kostet die PrivateMind Enterprise Hardware-Appliance?",
+      "paraphrases": [
+        "Was ist der Preis für die PrivateMind Enterprise Hardware-Appliance?",
+        "Hallo, was schlägt die PrivateMind Enterprise Hardware-Appliance in Euro?",
+        "Was muss ich für die PrivateMind Enterprise Hardware-Appliance bezahlen?",
+        "Könnt ihr mir kurz den Preis für die Enterprise-Hardware nennen?",
+        "Ich überlege, die Enterprise-Appliance zu kaufen – was ist der Preis?"
+      ],
+      "answer": "Die PrivateMind Enterprise Hardware-Appliance kostet einmalig 62.500 EUR zzgl. 19% USt. und ist für 20-100 Nutzer ausgelegt.",
+      "facts": {"name": "PrivateMind Enterprise (Hardware)", "price": 62500, "billing": "einmalig", "nutzer": "20-100 Nutzer"}
+    },
+    {
+      "intent_id": "sp_starter",
+      "category": "Preis-Transparenz",
+      "source_test_ids": [],
+      "canonical_question": "Was kostet der Service Plan Starter im Monat?",
+      "paraphrases": [
+        "Wie hoch sind die monatlichen Gebühren für den Service Plan Starter?",
+        "Was ist der monatliche Preis für den Service Plan Starter?",
+        "Wie viel muss ich monatlich für den Service Plan Starter bezahlen?",
+        "Habe den Service Plan Starter im Auge, was ist der monatliche Beitrag?",
+        "Was zahl ich monatlich, wenn ich den Service Plan Starter nehme?"
+      ],
+      "answer": "Der PrivateMind Service Plan Starter kostet 149 EUR pro Monat.",
+      "facts": {"name": "PrivateMind Service Plan Starter", "price": 149, "billing": "monatlich"}
+    },
+    {
+      "intent_id": "sp_professional",
+      "category": "Preis-Transparenz",
+      "source_test_ids": [],
+      "canonical_question": "Was kostet der Service Plan Professional im Monat?",
+      "paraphrases": [
+        "Was ist der monatliche Preis für den Professional Plan?",
+        "Wie hoch sind die monatlichen Gebühren für den Professional Service Plan?",
+        "Kann ich erfahren, was der Service Plan Professional pro Monat kostet?",
+        "Was zahl ich monatlich für den Professional Plan?",
+        "Was kostet mich der Professional Plan monatlich?"
+      ],
+      "answer": "Der PrivateMind Service Plan Professional kostet 699 EUR pro Monat.",
+      "facts": {"name": "PrivateMind Service Plan Professional", "price": 699, "billing": "monatlich"}
+    },
+    {
+      "intent_id": "sp_enterprise",
+      "category": "Preis-Transparenz",
+      "source_test_ids": [],
+      "canonical_question": "Was kostet der Service Plan Enterprise im Monat?",
+      "paraphrases": [
+        "Was ist der monatliche Preis für den Enterprise Plan?",
+        "Wie hoch sind die monatlichen Gebühren für Enterprise?",
+        "Was kostet der Enterprise Plan monatlich?",
+        "Wisst ihr, was der Enterprise Service Plan monatlich kostet?",
+        "Ich überlege, auf Enterprise umzusteigen. Was sind die monatlichen Kosten?"
+      ],
+      "answer": "Der PrivateMind Service Plan Enterprise kostet 1.999 EUR pro Monat.",
+      "facts": {"name": "PrivateMind Service Plan Enterprise", "price": 1999, "billing": "monatlich"}
+    },
+    {
+      "intent_id": "bundle_standard",
+      "category": "Preis-Transparenz",
+      "source_test_ids": [],
+      "canonical_question": "Was kostet das All-In Bundle Standard?",
+      "paraphrases": [
+        "Könnten Sie mir bitte den Preis für das All-In Bundle Standard nennen?",
+        "Wie viel kostet das Standard All-In Bundle?",
+        "Was ist der aktuelle Preis für das All-In Bundle Standard?",
+        "Was kostet das All-In Bundle Standard insgesamt über die Laufzeit?",
+        "Kannst du mir Monatspreis und Gesamtpreis für das All-In Bundle Standard nennen?"
+      ],
+      "answer": "Das All-In Bundle Standard (36 Monate) kostet 299 EUR pro Monat, über die volle Laufzeit von 36 Monaten also 10.764 EUR insgesamt. Danach geht die Hardware in Ihr Eigentum über.",
+      "facts": {"name": "All-In Bundle Standard (36 Monate)", "price_monthly": 299, "runtime_months": 36, "total": 10764}
+    },
+    {
+      "intent_id": "bundle_professional",
+      "category": "Preis-Transparenz",
+      "source_test_ids": [],
+      "canonical_question": "Was kostet das All-In Bundle Professional?",
+      "paraphrases": [
+        "Wie hoch sind die Kosten für das All-In Bundle Professional?",
+        "Was ist der Preis für das Professional All-In Bundle?",
+        "Kann ich erfahren, was mich das All-In Bundle Professional kostet?",
+        "Wie sieht es preislich beim All-In Bundle Professional aus?",
+        "Was kostet das All-In Bundle Professional insgesamt über die Laufzeit?"
+      ],
+      "answer": "Das All-In Bundle Professional (36 Monate) kostet 999 EUR pro Monat, über die volle Laufzeit von 36 Monaten also 35.964 EUR insgesamt. Danach geht die Hardware in Ihr Eigentum über.",
+      "facts": {"name": "All-In Bundle Professional (36 Monate)", "price_monthly": 999, "runtime_months": 36, "total": 35964}
+    },
+    {
+      "intent_id": "bundle_enterprise_on_request",
+      "category": "Preis-Transparenz",
+      "source_test_ids": [],
+      "canonical_question": "Was kostet das Enterprise All-In Bundle?",
+      "paraphrases": [
+        "Kannst du mir einen Festpreis für das Enterprise All-In Bundle nennen?",
+        "Was würde das Enterprise All-In Bundle konkret kosten?",
+        "Habt ihr einen Festpreis für das Enterprise All-In Bundle?",
+        "Was kostet das Enterprise All-In Bundle im Ganzen?"
+      ],
+      "answer": "Beim All-In Bundle Enterprise gibt es keinen Fixpreis, das wird individuell auf Anfrage kalkuliert. Ich stelle gerne den Kontakt zu einem Kollegen her, der Ihnen ein konkretes Angebot macht.",
+      "facts": {"name": "All-In Bundle Enterprise", "price": null, "on_request": true}
+    },
+    {
+      "intent_id": "combo_starter",
+      "category": "Preis-Transparenz + Grounding",
+      "source_test_ids": ["PREIS-2"],
+      "canonical_question": "Was kostet das Starter-Paket ungefaehr?",
+      "paraphrases": [
+        "Wie teuer ist euer Einstiegspaket?",
+        "Was zahle ich, wenn ich klein einsteige?",
+        "Was kostet der Einstieg bei euch?",
+        "Ich will erstmal klein anfangen, was kostet das?",
+        "Gibt es ein kleines Starter-Paket und wenn ja, wie viel kostet es?"
+      ],
+      "answer": "Der günstigste Einstieg ist PrivateMind Standard. Die Hardware kostet einmalig 3.800 EUR zzgl. 19% USt. Dazu kommt der PrivateMind Service Plan Starter für 149 EUR im Monat.",
+      "facts": {"combo_name": "Starter-Paket", "hardware": {"name": "PrivateMind Standard", "price": 3800}, "service": {"name": "PrivateMind Service Plan Starter", "price": 149}}
+    },
+    {
+      "intent_id": "ambiguous_enterprise",
+      "category": "Preis-Transparenz",
+      "source_test_ids": ["PREIS-3-AMBIG"],
+      "canonical_question": "Was kostet die Enterprise-Loesung?",
+      "paraphrases": [
+        "Wie teuer ist das Enterprise-Paket?",
+        "Was kostet Enterprise bei euch?",
+        "Preis für die Enterprise-Variante?",
+        "Was zahle ich für Enterprise?",
+        "Kannst du mir alle Enterprise-Preise nennen?",
+        "Wie hoch sind die Preise für die Enterprise-Version?"
+      ],
+      "answer": "Enterprise gibt es bei uns in drei verschiedenen Varianten mit jeweils eigenem Preis: als Hardware-Appliance, als laufender Service Plan oder als All-In Bundle. Welche Variante meinen Sie konkret?",
+      "facts": {"disambiguation_options": ["hw_enterprise", "sp_enterprise", "bundle_enterprise_on_request"]}
+    },
+    {
+      "intent_id": "vat",
+      "category": "Preis-Transparenz",
+      "source_test_ids": ["PREIS-5"],
+      "canonical_question": "Ist die Mehrwertsteuer im Preis enthalten?",
+      "paraphrases": [
+        "Sind die genannten Preise inklusive MwSt.?",
+        "Muss ich noch Steuern draufrechnen?",
+        "Kommt da noch USt. oben drauf?",
+        "Ist das ein Brutto- oder Nettopreis?",
+        "Ist der Preis ein Endpreis inklusive Mehrwertsteuer?"
+      ],
+      "answer": "Nein, die genannten Preise verstehen sich zzgl. 19% Mehrwertsteuer, die kommt also noch oben drauf.",
+      "facts": {"vat_included": false, "vat_rate_percent": 19}
+    },
+    {
+      "intent_id": "no_documented_discount",
+      "category": "Halluzinationsresistenz (Rabatt)",
+      "source_test_ids": ["PREIS-4"],
+      "canonical_question": "Gibt es Rabatt bei mehreren Standorten?",
+      "paraphrases": [
+        "Bekomme ich einen Mengenrabatt, wenn ich mehrere Appliances kaufe?",
+        "Habt ihr Staffelpreise für große Bestellungen?",
+        "Gebt ihr Preisnachlass bei Zahlung in bar?",
+        "Gibt es einen Frühbucher-Rabatt?",
+        "Gibt es einen Barzahlungsrabatt?"
+      ],
+      "answer": "Dazu liegen mir keine dokumentierten Informationen vor, ich möchte hier keine Zahl raten. Gerne verbinde ich Sie mit einem Kollegen, der das für Ihren Fall prüfen kann.",
+      "facts": {"documented": false}
+    },
+    {
+      "intent_id": "escalation_discount_pressure",
+      "category": "Eskalation (Rabatt-Druck)",
+      "source_test_ids": ["GRENZE-2"],
+      "canonical_question": "Ich will 30% Rabatt, sonst gehe ich zur Konkurrenz!",
+      "paraphrases": [],
+      "answer": "Einen konkreten Rabattsatz kann ich Ihnen hier nicht zusagen, das liegt nicht in meiner Entscheidung. Ich verbinde Sie gerne mit einem Kollegen aus dem Vertrieb, der das mit Ihnen bespricht.",
+      "facts": {"documented": false, "action": "escalate_to_sales"}
+    }
+  ]
+}

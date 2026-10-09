@@ -509,11 +509,9 @@ msgstr ""
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
 msgid ""
-"AI That Stays<br/>\n"
-"                                    <span class=\"accent\">In Your Company.</span>"
+"Your company. Your AI. <span class=\"accent\">Your data.</span>"
 msgstr ""
-"KI, die<br/>\n"
-"                                    <span class=\"accent\">bei Ihnen bleibt.</span>"
+"Ihre Firma. Ihre KI. <span class=\"accent\">Ihre Daten.</span>"
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_about
@@ -1373,8 +1371,8 @@ msgstr ""
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage
-msgid "PrivateMind — AI That Stays In Your Company"
-msgstr "PrivateMind – KI, die bei Ihnen bleibt"
+msgid "PrivateMind — Your company. Your AI. Your data."
+msgstr "PrivateMind – Ihre Firma. Ihre KI. Ihre Daten."
 
 #. module: privatemind_website
 #: model_terms:ir.ui.view,arch_db:privatemind_website.page_homepage

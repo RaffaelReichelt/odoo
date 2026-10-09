@@ -3,7 +3,7 @@
     <template id="page_homepage" name="PrivateMind Homepage">
         <t t-call="website.layout">
             <t t-set="pageName" t-value="'homepage'"/>
-            <t t-set="additional_title">PrivateMind — AI That Stays In Your Company</t>
+            <t t-set="additional_title">PrivateMind — Your company. Your AI. Your data.</t>
             <t t-set="meta_description">Enterprise-grade AI for European SMEs. Local, private, GDPR-compliant. No cloud, no data leaves your company. NVIDIA GB10 Grace Blackwell Appliance.</t>
 
             <div id="wrap">
@@ -20,8 +20,7 @@
                                     <span>🇪🇺</span> GDPR-Compliant · Made in Germany · NVIDIA-Powered
                                 </div>
                                 <h1>
-                                    AI That Stays<br/>
-                                    <span class="accent">In Your Company.</span>
+                                    Your company. Your AI. <span class="accent">Your data.</span>
                                 </h1>
                                 <p class="pm-lead">
                                     Enterprise-grade AI for European SMEs — local, private, fully managed.

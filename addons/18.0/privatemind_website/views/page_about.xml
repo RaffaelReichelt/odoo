@@ -93,9 +93,8 @@
                                 <div class="pm-contact-card mt-4">
                                     <div class="row align-items-center g-4">
                                         <div class="col-auto">
-                                            <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#00d4ff,#007bff,#8b2af8);display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:700;color:#fff;">
-                                                R
-                                            </div>
+                                            <img src="/privatemind_website/static/src/img/founder.jpg" alt="Raffael Reichelt"
+                                                 style="width:96px;height:96px;border-radius:50%;object-fit:cover;object-position:35% 22%;display:block;"/>
                                         </div>
                                         <div class="col">
                                             <h4 style="font-weight:700;margin-bottom:4px;">Raffael Reichelt</h4>
@@ -179,26 +178,7 @@
                                 <p style="color:#4a5d73;line-height:1.75;">
                                     PrivateMind GmbH (in Gründung) is headquartered in Dresden, Saxony —
                                     in the heart of one of Germany's fastest-growing tech ecosystems.
-                                    We serve customers across the DACH region with plans for expansion
-                                    into the Netherlands, Nordics, and UK.
                                 </p>
-                                <div class="d-flex justify-content-center gap-4 mt-4 flex-wrap">
-                                    <span class="badge" style="background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;">
-                                        🇩🇪 Germany
-                                    </span>
-                                    <span class="badge" style="background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;">
-                                        🇦🇹 Austria
-                                    </span>
-                                    <span class="badge" style="background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;">
-                                        🇨🇭 Switzerland
-                                    </span>
-                                    <span class="badge" style="background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;">
-                                        🇳🇱 Netherlands
-                                    </span>
-                                    <span class="badge" style="background:#f0f4f8;color:#4a5d73;font-size:0.85rem;font-weight:500;padding:8px 16px;border-radius:6px;">
-                                        🇬🇧 United Kingdom
-                                    </span>
-                                </div>
                             </div>
                         </div>
                     </div>

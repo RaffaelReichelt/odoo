@@ -71,8 +71,14 @@
         </xpath>
     </template>
 
-    <!-- Ohne Hauptnavigation soll die rechte Header-Leiste am rechten Rand bleiben. -->
-    <template id="header_default_end_aligned" inherit_id="website.template_header_default" name="Header rechts ausgerichtet">
+    <!--
+        Ohne Hauptnavigation soll die rechte Header-Leiste am rechten Rand bleiben. Der Desktop-Header
+        laeuft ueber die volle Fensterbreite (container-fluid): Logo links am Rand, Leiste rechts.
+    -->
+    <template id="header_default_end_aligned" inherit_id="website.template_header_default" name="Header volle Breite, Leiste rechts">
+        <xpath expr="//div[@id='o_main_nav']" position="attributes">
+            <attribute name="class" remove="container" add="container-fluid px-4" separator=" "/>
+        </xpath>
         <xpath expr="//div[@id='o_main_nav']/ul[hasclass('justify-content-end')]" position="attributes">
             <attribute name="class" add="ms-auto" separator=" "/>
         </xpath>

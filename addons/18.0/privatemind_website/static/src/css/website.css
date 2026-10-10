@@ -555,3 +555,21 @@
         margin: -28px 0;
     }
 }
+
+/*
+ * Footer-Logo: so breit wie der Tagline-Text darunter. Der Block schrumpft auf die Textbreite
+ * (inline-block); das Logo traegt mit width:0 + min-width:100% nicht zur Breite bei und fuellt
+ * sie dann komplett aus. Farbige Variante fuer dunklen Hintergrund (logo_dark.svg). Das SVG hat oben/unten transparenten Rand, den der negative Rand
+ * kompensiert.
+ */
+.pm-footer-brand {
+    display: inline-block;
+    max-width: 100%;
+}
+.pm-footer-logo {
+    display: block;
+    width: 0;
+    min-width: 100%;
+    height: auto;
+    margin: -14% 0 -3%;
+}

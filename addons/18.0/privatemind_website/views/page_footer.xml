@@ -11,14 +11,16 @@
 
                         <!-- Col 1: Brand -->
                         <div class="col-lg-4">
-                            <a href="/" class="d-inline-block mb-3">
-                                <img src="/privatemind_website/static/src/img/logo.svg"
-                                     alt="PrivateMind" height="36" style="filter:brightness(0) invert(1);"/>
-                            </a>
-                            <p class="pm-footer-tagline">
-                                Enterprise-grade AI for European SMEs.<br/>
-                                Local. Private. Fully managed.
-                            </p>
+                            <div class="pm-footer-brand">
+                                <a href="/" class="d-block">
+                                    <img src="/privatemind_website/static/src/img/logo_dark.svg"
+                                         alt="PrivateMind" class="pm-footer-logo"/>
+                                </a>
+                                <p class="pm-footer-tagline">
+                                    Enterprise-grade AI for European SMEs.<br/>
+                                    Local. Private. Fully managed.
+                                </p>
+                            </div>
                             <div class="pm-footer-badges">
                                 <span class="pm-footer-badge">🇩🇪 Made in Germany</span>
                                 <span class="pm-footer-badge">✅ GDPR-compliant</span>

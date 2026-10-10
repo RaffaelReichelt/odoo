@@ -32,7 +32,7 @@ services:
     secrets:
       - odoo_conf
     environment:
-      - ODOO_ADDONS_PATH=/usr/src/odoo/community/addons,/home/odoo/addons/18.0,/usr/src/odoo/reporting-engine,/usr/src/odoo/OCA/web,/usr/src/odoo/svn_orbitpdf-18,/usr/src/odoo/theme_liquid_glass,/home/odoo/extra-addons
+      - ODOO_ADDONS_PATH=/usr/src/odoo/community/addons,/home/odoo/addons/18.0,/usr/src/odoo/reporting-engine,/usr/src/odoo/OCA/web,/usr/src/odoo/svn_orbitpdf-18,/usr/src/odoo/theme_liquid_glass,/usr/src/odoo/odoo-llm,/home/odoo/extra-addons
       - ODOO_DB_PORT=5432
       - ODOO_DB_USER=odoo
       - ODOO_DB_NAME=odoo
@@ -52,6 +52,7 @@ services:
       - /home/raffael/Projekte/PrivateMind/odoo/reporting-engine:/usr/src/odoo/reporting-engine
       - /home/raffael/Projekte/PrivateMind/odoo/theme_liquid_glass:/usr/src/odoo/theme_liquid_glass
       - /home/raffael/Projekte/PrivateMind/odoo/svn_orbitpdf-18:/usr/src/odoo/svn_orbitpdf-18
+      - /home/raffael/Projekte/PrivateMind/odoo/odoo-llm:/usr/src/odoo/odoo-llm
       - /home/raffael/Projekte/PrivateMind/odoo/filestore:/usr/src/odoo/data/filestore
       - /home/raffael/Projekte/PrivateMind/odoo/OCA/Subscription_Management_OCA:/home/odoo/extra-addons/Subscription_Management_OCA
     networks:

@@ -541,3 +541,17 @@
     .pm-footer-badges { gap: 6px; }
     .pm-footer-bottom .col-md-6:last-child { margin-top: 8px; }
 }
+
+/*
+ * Header-Logo (nur Desktop): Das SVG hat viel transparenten Rand oben/unten, der sichtbare
+ * Inhalt fuellt nur ~60% der Bildhoehe. Die Bildbox ist deshalb groesser als die Kopfzeile
+ * und ragt per negativem Rand ueber; die Kopfzeile behaelt ihre Hoehe.
+ */
+@media (min-width: 992px) {
+    #wrapwrap > header .navbar-brand.logo img {
+        height: 96px;
+        width: auto;
+        max-height: none;
+        margin: -28px 0;
+    }
+}

@@ -61,6 +61,54 @@
         </xpath>
     </template>
 
+    <!--
+        Hauptnavigation (ul.top_menu) im Desktop-Header ausblenden. navbar_nav wird fuer
+        Desktop und Mobile genutzt; das Hamburger-Menue (is_mobile) bleibt erhalten.
+    -->
+    <template id="navbar_nav_mobile_only" inherit_id="website.navbar_nav" name="Hauptnavigation nur mobil">
+        <xpath expr="//ul" position="attributes">
+            <attribute name="t-if">is_mobile</attribute>
+        </xpath>
+    </template>
+
+    <!-- Ohne Hauptnavigation soll die rechte Header-Leiste am rechten Rand bleiben. -->
+    <template id="header_default_end_aligned" inherit_id="website.template_header_default" name="Header rechts ausgerichtet">
+        <xpath expr="//div[@id='o_main_nav']/ul[hasclass('justify-content-end')]" position="attributes">
+            <attribute name="class" add="ms-auto" separator=" "/>
+        </xpath>
+    </template>
+
+    <!--
+        Standard-Kontaktseite /contactus und Danke-Seite: Demo-Block ("My Company",
+        3575 Fake Buena Vista Avenue, +1 555-555-5556, info@yourcompany.example.com)
+        durch die Daten des Firmeneintrags ersetzen.
+    -->
+    <template id="contactus_company_data" inherit_id="website.contactus" name="Kontaktseite mit Firmendaten">
+        <xpath expr="//ul[li/i[hasclass('fa-map-marker')]]/preceding-sibling::h5[1]" position="replace">
+            <h5 t-out="res_company.name"/>
+        </xpath>
+        <xpath expr="//ul[li/i[hasclass('fa-map-marker')]]" position="replace">
+            <ul class="list-unstyled mb-0 ps-2">
+                <li><i class="fa fa-map-marker fa-fw me-2"/><span class="o_force_ltr"><t t-out="res_company.street"/><t t-if="res_company.street2">, <t t-out="res_company.street2"/></t>, <t t-out="res_company.zip"/> <t t-out="res_company.city"/></span></li>
+                <li><i class="fa fa-phone fa-fw me-2"/><span class="o_force_ltr"><a t-attf-href="tel:#{res_company.phone}" t-out="res_company.phone"/></span></li>
+                <li><i class="fa fa-1x fa-fw fa-envelope me-2"/><span><a t-attf-href="mailto:#{res_company.email}" t-out="res_company.email"/></span></li>
+            </ul>
+        </xpath>
+    </template>
+
+    <template id="contactus_thanks_company_data" inherit_id="website.contactus_thanks_ir_ui_view" name="Danke-Seite mit Firmendaten">
+        <xpath expr="//ul[li/i[hasclass('fa-map-marker')]]/preceding-sibling::h5[1]" position="replace">
+            <h5 t-out="res_company.name"/>
+        </xpath>
+        <xpath expr="//ul[li/i[hasclass('fa-map-marker')]]" position="replace">
+            <ul class="list-unstyled mb-0 ps-2">
+                <li><i class="fa fa-map-marker fa-fw me-2"/><span class="o_force_ltr"><t t-out="res_company.street"/><t t-if="res_company.street2">, <t t-out="res_company.street2"/></t>, <t t-out="res_company.zip"/> <t t-out="res_company.city"/></span></li>
+                <li><i class="fa fa-phone fa-fw me-2"/><span class="o_force_ltr"><a t-attf-href="tel:#{res_company.phone}" t-out="res_company.phone"/></span></li>
+                <li><i class="fa fa-1x fa-fw fa-envelope me-2"/><span><a t-attf-href="mailto:#{res_company.email}" t-out="res_company.email"/></span></li>
+            </ul>
+        </xpath>
+    </template>
+
     <!-- Breadcrumbs auf der Produktseite entfernen; der Link ueber das Logo reicht. -->
     <template id="product_no_breadcrumb" inherit_id="website_sale.product" name="Produktseite ohne Breadcrumbs">
         <xpath expr="//ol[hasclass('o_wsale_breadcrumb')]" position="replace"/>

@@ -32,11 +32,11 @@
 
                                 <address style="font-style:normal;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:24px;margin-bottom:32px;font-size:1rem;line-height:1.9;">
                                     <strong>Raffael Reichelt</strong><br/>
-                                    Kurparkstraße 6<br/>
-                                    01324 Dresden<br/>
+                                    <t t-out="res_company.street"/><br/>
+                                    <t t-out="res_company.zip"/> <t t-out="res_company.city"/><br/>
                                     <br/>
-                                    Email: <a href="mailto:info@privatemind.eu">info@privatemind.eu</a><br/>
-                                    Phone: <a href="tel:+4935148271891">+49 351 48271891</a>
+                                    Email: <a t-attf-href="mailto:#{res_company.email}" t-out="res_company.email"/><br/>
+                                    Phone: <a t-attf-href="tel:#{res_company.phone}" t-out="res_company.phone"/>
                                 </address>
 
                                 <div class="p-4 rounded" style="background:#f0f7ff;border-left:4px solid #0052cc;">

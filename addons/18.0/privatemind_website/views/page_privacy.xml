@@ -43,8 +43,8 @@
                                     Raffael Reichelt<br/>
                                     Dresden, Saxony · Germany<br/>
                                     <br/>
-                                    Email: <a href="mailto:info@privatemind.eu">info@privatemind.eu</a><br/>
-                                    Phone: <a href="tel:+4935148271891">+49 351 48271891</a><br/>
+                                    Email: <a t-attf-href="mailto:#{res_company.email}" t-out="res_company.email"/><br/>
+                                    Phone: <a t-attf-href="tel:#{res_company.phone}" t-out="res_company.phone"/><br/>
                                     Web: <a href="https://privatemind.eu">privatemind.eu</a>
                                 </address>
 
@@ -125,7 +125,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mt-3">To exercise your rights, please contact: <a href="mailto:info@privatemind.eu">info@privatemind.eu</a></p>
+                                <p class="mt-3">To exercise your rights, please contact: <a t-attf-href="mailto:#{res_company.email}" t-out="res_company.email"/></p>
 
                                 <!-- 6 -->
                                 <h2 style="font-size:1.25rem;font-weight:700;color:#0a0f1e;margin:40px 0 16px;padding-bottom:8px;border-bottom:2px solid #e2e8f0;">6. Right to Lodge a Complaint</h2>

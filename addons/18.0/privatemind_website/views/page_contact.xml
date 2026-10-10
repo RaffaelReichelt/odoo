@@ -101,7 +101,7 @@
                                     <div class="pm-contact-icon">📧</div>
                                     <div>
                                         <h6>Email</h6>
-                                        <p><a href="mailto:info@privatemind.eu" style="color:#007bff;text-decoration:none;">info@privatemind.eu</a></p>
+                                        <p><a t-attf-href="mailto:#{res_company.email}" style="color:#007bff;text-decoration:none;" t-out="res_company.email"/></p>
                                     </div>
                                 </div>
 
@@ -109,7 +109,7 @@
                                     <div class="pm-contact-icon">📞</div>
                                     <div>
                                         <h6>Phone</h6>
-                                        <p><a href="tel:+4935148271891" style="color:#007bff;text-decoration:none;">+49 351 48271891</a></p>
+                                        <p><a t-attf-href="tel:#{res_company.phone}" style="color:#007bff;text-decoration:none;" t-out="res_company.phone"/></p>
                                     </div>
                                 </div>
 
@@ -117,7 +117,7 @@
                                     <div class="pm-contact-icon">📍</div>
                                     <div>
                                         <h6>Location</h6>
-                                        <p>Kurparkstraße 6<br/>01324 Dresden<br/>Germany</p>
+                                        <p><t t-out="res_company.street"/><t t-if="res_company.street2"><br/><t t-out="res_company.street2"/></t><br/><t t-out="res_company.zip"/> <t t-out="res_company.city"/><br/><t t-out="res_company.country_id.name"/></p>
                                     </div>
                                 </div>
 

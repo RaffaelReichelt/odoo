@@ -54,15 +54,15 @@
                             <ul class="pm-footer-links">
                                 <li>
                                     <span class="pm-footer-icon">📧</span>
-                                    <a href="mailto:info@privatemind.eu">info@privatemind.eu</a>
+                                    <a t-attf-href="mailto:#{res_company.email}" t-out="res_company.email"/>
                                 </li>
                                 <li>
                                     <span class="pm-footer-icon">📞</span>
-                                    <a href="tel:+4935148271891">+49 351 48271891</a>
+                                    <a t-attf-href="tel:#{res_company.phone}" t-out="res_company.phone"/>
                                 </li>
                                 <li>
                                     <span class="pm-footer-icon">📍</span>
-                                    Kurparkstraße 6 · 01324 Dresden · Germany
+                                    <t t-out="res_company.street"/> · <t t-out="res_company.zip"/> <t t-out="res_company.city"/> · <t t-out="res_company.country_id.name"/>
                                 </li>
                                 <li>
                                     <span class="pm-footer-icon">🌐</span>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!--
+        Website-Anpassungen am Standard-Frontend (Header-Toolbar, Produktseite).
+        Bewusst als View-Overrides im Modul statt per Website-Builder, damit sie in Git
+        liegen und bei einer frischen Installation reproduzierbar sind.
+    -->
+
+    <!--
+        Toolbar im Header: Odoo-Demo-Kontaktdaten (+1 555-555-5556, info@yourcompany.example.com)
+        durch die Daten des Firmeneintrags (res_company) ersetzen. Die Varianten 'sentence'
+        und 'list' enthalten keine Kontaktdaten und bleiben unveraendert.
+    -->
+    <template id="header_text_element_phone" inherit_id="website.header_text_element" name="Header Toolbar Kontaktdaten aus Firmeneintrag">
+        <xpath expr="//li/t[@t-elif=&quot;_txt_elt_content == 'phone_mail'&quot;]" position="replace">
+            <t t-elif="_txt_elt_content == 'phone_mail'">
+                <div t-attf-class="s_text_block #{_div_class}" data-name="Text">
+                    <a t-attf-href="tel:#{res_company.phone}" class="nav-link o_nav-link_secondary">
+                        <small>
+                            <i class="fa fa-1x fa-fw fa-phone me-1"/>
+                            <span class="o_force_ltr" t-out="res_company.phone"/>
+                        </small>
+                    </a>
+                    <a t-attf-href="mailto:#{res_company.email}" class="nav-link o_nav-link_secondary">
+                        <small>
+                            <i class="fa fa-1x fa-fw fa-envelope me-1"/>
+                            <t t-out="res_company.email"/>
+                        </small>
+                    </a>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//li/t[@t-elif=&quot;_txt_elt_content == 'mail'&quot;]" position="replace">
+            <t t-elif="_txt_elt_content == 'mail'">
+                <div t-attf-class="s_text_block #{_div_class}" data-name="Text">
+                    <a t-attf-href="mailto:#{res_company.email}" class="nav-link o_nav-link_secondary">
+                        <small><i class="fa fa-1x fa-fw fa-envelope me-1"/> <t t-out="res_company.email"/></small>
+                    </a>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//li/t[@t-elif=&quot;_txt_elt_content == 'mail_stretched'&quot;]" position="replace">
+            <t t-elif="_txt_elt_content == 'mail_stretched'">
+                <div t-attf-class="s_text_block #{_div_class}" data-name="Text">
+                    <a t-attf-href="tel:#{res_company.phone}" class="nav-link o_nav-link_secondary p-2 o_navlink_background_hover d-flex align-items-center h-100 text-reset">
+                        <i class="fa fa-1x fa-fw fa-phone me-1"/>
+                        <span class="o_force_ltr"><small t-out="res_company.phone"/></span>
+                    </a>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//li/t[@t-else]" position="replace">
+            <t t-else="">
+                <div t-attf-class="s_text_block #{_div_class}" data-name="Text">
+                    <a t-attf-href="tel:#{res_company.phone}" class="nav-link o_nav-link_secondary p-2">
+                        <i class="fa fa-1x fa-fw fa-phone me-1"/>
+                        <span class="o_force_ltr"><small t-out="res_company.phone"/></span>
+                    </a>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <!-- Breadcrumbs auf der Produktseite entfernen; der Link ueber das Logo reicht. -->
+    <template id="product_no_breadcrumb" inherit_id="website_sale.product" name="Produktseite ohne Breadcrumbs">
+        <xpath expr="//ol[hasclass('o_wsale_breadcrumb')]" position="replace"/>
+    </template>
+</odoo>

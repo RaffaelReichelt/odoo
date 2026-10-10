@@ -19,6 +19,7 @@
         'views/website_menu.xml',
         'views/checkout_autocomplete.xml',
         'views/login_customization.xml',
+        'views/website_overrides.xml',
     ],
     'installable': True,
     'application': False,

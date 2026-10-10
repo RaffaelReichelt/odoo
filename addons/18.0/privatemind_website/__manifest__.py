@@ -6,6 +6,7 @@
     'author': 'Raffael Reichelt | PrivateMind',
     'website': 'https://privatemind.eu',
     'depends': ['website', 'website_mail', 'website_sale'],
+    'license': 'LGPL-3',
     'data': [
         'views/assets.xml',
         'views/page_footer.xml',
